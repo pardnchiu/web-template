@@ -1,16 +1,18 @@
 # 網站前端範例合輯
 
-> 沒有個人設計，只有仿製。
+> 沒有個人設計，只有仿製<br>
 > 唯一有自行設計的項目為 [JOBALL找專家](https://joball.tw)
 
 ![](https://img.shields.io/github/repo-size/pardnchiu/web-template?label=size&color=bb4444) ![](https://img.shields.io/github/license/pardnchiu/web-template?label=license&color=44bb44) ![](https://img.shields.io/badge/creator-邱敬幃-4444bb)
+
+## 項目介紹
 
 這些範例的代碼包含了 HTML 渲染，純 JS 渲染<br>
 隨著 2023/09 開始 [PDRenderKit](https://github.com/pardnchiu/PDRenderKit) (原 PDExtension) 的框架功能開發，有修改幾個項目來測試與完善框架<br>
 原本打算花時間全部改寫為 PDRenderKit 渲染，但在過程中又開啟了 [Website Builder](https://github.com/pardnchiu/website-builder) 項目<br>
 因此決定範例改為導入 Website Builder 裡，不會再針對現有的項目進行修改<br>
-並且授權皆從 GPL3.0 改爲 MIT<br>
-如果對你有一點幫助，可以給個 ★ 讓我知道
+並且 2024/10 開始，授權從 GPL3.0 改爲 MIT<br>
+如果對你有一點幫助，可以給個 ★ 讓我知道<br>
 
 | 項目 | |
 | - | - |
@@ -38,7 +40,7 @@
 | **Product Introduction**<br>製作日期: 2023/03/12 | 製作日期: 2023/03/11 |
 | 處理中 | [![](./image/gallery-page-20230309.jpg)](https://pardnchiu.github.io/web-template/target/gallery-page-20230309) |
 | 製作日期: 2023/03/10 | **Gallery Page**<br>製作日期: 2023/03/09 |
-| 處理中 | [![](./image/app-introduction-20230302.jpg)](https://pardnchiu.github.io/web-template/target/app-introduction-202303021) |
+| 處理中 | [![](./image/app-introduction-20230302.jpg)](https://pardnchiu.github.io/web-template/target/app-introduction-20230302) |
 | 製作日期: 2023/03/06 | **App Introduction**<br>製作日期: 2023/03/02 |
 | [![](./image/service-info-20230301.jpg)](https://pardnchiu.github.io/web-template/target/service-info-20230301) | [![](./image/personal-portfolio-20230226.jpg)](https://pardnchiu.github.io/web-template/target/personal-portfolio-20230226) |
 | **Service Info**<br>製作日期: 2023/03/01 | **Personal Portfolio**<br>製作日期: 2023/02/26 |
@@ -52,7 +54,7 @@
 | 製作日期: 2023/04/12 | **Basic**<br>製作日期: 2022/04/09 |
 | [![](./image/basic-20220408.jpg)](https://pardnchiu.github.io/web-template/target/basic-20220408) ||
 | **Basic**<br>製作日期: 2022/04/08<br><mark>最後更新: 2024/08/03</mark> ||
- 
+
 ## Creator
 
 <img src="https://avatars.githubusercontent.com/u/25631760" align="left" style="float: left; margin-right: 0.5rem; width: 96px; height: 96px;" />

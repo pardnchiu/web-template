@@ -1,10 +1,10 @@
-import { viewer } from "https://cdn.jsdelivr.net/gh/pardnchiu/PDMarkdownKit@1.3.3/dist/PDMarkdownKit.js";
+import { viewer } from "https://cdn.jsdelivr.net/npm/pdmarkdownkit@1.6.0/dist/PDMarkdownKit.module.js";
 let delay_observer, pre;
 
 (_ => {
     document.addEventListener("DOMContentLoaded", async function () {
 
-        await fetch('https://raw.githubusercontent.com/pardnchiu/PDMarkdownKit/refs/heads/main/README.md')
+        await fetch('https://cdn.jsdelivr.net/npm/pdmarkdownkit@1.6.0/README.md')
         .then(response => response.text())
         .then(data => {
             pre = data;
@@ -80,9 +80,13 @@ let delay_observer, pre;
                         };
 
                         const dom_viewer = new viewer({
-                            id: "",
-                            pre: pre,
-                            delay: 0
+                            emptyContent: pre, 
+                            sync: {
+                                delay: 0
+                            },
+                            style: {
+                                fill: 0
+                            }
                         });
                         "blog".$.$child([0, 0])._child(dom_viewer.body, "section.page".$);
                         dom_viewer.init();

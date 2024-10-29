@@ -56,8 +56,8 @@
 
         <!-- 資源預載: https://cdn.jsdelivr.net -->
         <link rel="preconnect" href="https://cdn.jsdelivr.net">
-        <link rel="preload" href="https://cdn.jsdelivr.net/gh/pardnchiu/PDMarkdownKit@1.3.3/dist/PDMarkdownKit.js" as="script">
-        <script src="https://cdn.jsdelivr.net/gh/pardnchiu/PDRenderKit@1.5.2/dist/PDRenderKit.js" copyright="Pardn Ltd"></script>
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/pdmarkdownkit@1.6.0/dist/PDMarkdownKit.module.js" as="script">
+        <script src="https://cdn.jsdelivr.net/npm/pdrenderkit@1.5.2/dist/PDRenderKit.js" copyright="Pardn Ltd"></script>
 
         <!-- 資源預載: https://pardnchiu.github.io -->
         <link rel="preconnect" href="https://pardnchiu.github.io">
@@ -77,7 +77,7 @@
         </nav>
 
         <script type="module">
-            import { viewer } from "https://cdn.jsdelivr.net/gh/pardnchiu/PDMarkdownKit@1.3.3/dist/PDMarkdownKit.js";
+            import { viewer } from "https://cdn.jsdelivr.net/npm/pdmarkdownkit@1.6.0/dist/PDMarkdownKit.module.js";
 
             document.addEventListener("DOMContentLoaded", async _ => {
                 let pre = "";
@@ -95,6 +95,7 @@
                     id: "app",
                     next: _ => {
                         const dom = new viewer({
+                            id: "PDMDViewer",
                             delay: 50,
                             pre: pre
                         });

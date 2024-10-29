@@ -1,9 +1,9 @@
-import { viewer } from "https://cdn.jsdelivr.net/gh/pardnchiu/PDMarkdownKit@1.3.3/dist/PDMarkdownKit.js";
+import { viewer } from "https://cdn.jsdelivr.net/npm/pdmarkdownkit@1.6.0/dist/PDMarkdownKit.module.js";
 let pre;
 
 document.addEventListener("DOMContentLoaded", async function () {
 
-    await fetch('https://raw.githubusercontent.com/pardnchiu/PDMarkdownKit/refs/heads/main/README.md')
+    await fetch('https://cdn.jsdelivr.net/npm/pdmarkdownkit@1.6.0/README.md')
     .then(response => response.text())
     .then(data => {
         pre = data;
@@ -16,9 +16,13 @@ document.addEventListener("DOMContentLoaded", async function () {
         id: "app",
         next: _ => {           
             const dom_viewer = new viewer({ 
-                pre: pre, 
-                delay: 50,
-                fillMode: 0
+                emptyContent: pre, 
+                sync: {
+                    delay: 0
+                },
+                style: {
+                    fill: 0
+                }
             });
 
             "section.markdown".$._child([
