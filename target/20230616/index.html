@@ -56,7 +56,7 @@
         <link rel="stylesheet" href="css/index.css">
         <!--  -->
         <script src="https://pardnchiu.github.io/js/repo.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/pdrenderkit@1.0.0/dist/PDRenderKit.js" copyright="Pardn Ltd"></script>
+        <script src="https://cdn.jsdelivr.net/npm/pdquickui@0.5.1/dist/PDQuickUI.js" copyright="Pardn Ltd"></script>
         <!--  -->
         <style>
             :root {
@@ -79,15 +79,15 @@
 
     <body id="page">
 
-        <section :path="view/left-tab.html"></section>
+        <temp :path="view/left-tab.html"></temp>
 
         <section id="body">
-            <section :path="view/home.html"></section>
-            <section :path="view/features.html"></section>
-            <section :path="view/portfolio.html"></section>
-            <section :path="view/resume.html"></section>
-            <section :path="view/pricing.html"></section>
-            <section :path="view/contact.html"></section>
+            <temp :path="view/home.html"></temp>
+            <temp :path="view/features.html"></temp>
+            <temp :path="view/portfolio.html"></temp>
+            <temp :path="view/resume.html"></temp>
+            <temp :path="view/pricing.html"></temp>
+            <temp :path="view/contact.html"></temp>
             <footer>
                 <p>(c) 帕登國際有限公司 Pardn Ltd</p>
             </footer>
@@ -99,80 +99,75 @@
             ary.forEach(e => e.tag = e.tag === "iOS" ? 2 : 1);
 
             document.addEventListener("DOMContentLoaded", _ => {
-                const page = new PD({
+                const page = new QUI({
                     id: "page",
                     data: {
-                        albums: Array.from({ length: 20}, (e, i) => {
+                        albums: Array.from({ length: 20 }, (e, i) => {
                             return {
                                 sn: i,
                                 href: "",
                                 src: "https://picsum.photos/640?random=" + Math.random(),
-                                title: "Lorem ipsum dolor sit amet consectetur.",
+                                name: "Lorem ipsum dolor sit amet consectetur.",
                                 tag: Math.random() > 0.5 ? 2 : 1
                             }
                         })
                     },
-                    next: function () {
+                    when: {
 
-                        "#body-portfolio".$.$child(0).$childAll.forEach((e, i) => {
-                            e._click(function () {
-                                this.$parent(1)._attr({
-                                    "filter-index": i
-                                })
+                        rendered: function () {
+                            [...document.getElementById("body-portfolio").children[0].children].forEach((e, i) => {
                             });
-                        });
 
-                        "#body-resume".$.$child(0).$childAll.forEach((e, i) => {
-                            e._click(function () {
-                                this.$parent(1)._attr({
-                                    "filter-index": i
-                                })
+                            [...document.getElementById("body-resume").children[0].children].forEach((e, i) => {
+                                e.onclick = function () {
+                                    this.parentElement.setAttribute("filter-index", i);
+                                };
                             });
-                        });
 
-                        "#body-pricing".$.$child(0).$childAll.forEach((e, i) => {
-                            e._click(function () {
-                                this.$parent(1)._attr({
-                                    "filter-index": i
-                                })
+                            [...document.getElementById("body-pricing").children[0].children].forEach((e, i) => {
+                                e.onclick = function () {
+                                    this.parentElement.setAttribute("filter-index", i);
+                                };
                             });
-                        });
 
-                        function offsetY(index) {
-                            var y = 0;
-                            if (index === 0) return y;
-                            for (let i = 0; i < index; i++) {
-                                y += "#body".$.$child(i).clientHeight;
+                            function offsetY(index) {
+                                var y = 0;
+                                if (index === 0) return y;
+                                for (let i = 0; i < index; i++) {
+                                    y += document.getElementById("body").children[i].clientHeight;
+                                };
+                                return y;
                             };
-                            return y;
-                        };
 
-                        "#body-tab".$.$childAll.forEach((e, i) => {
-                            e._click(function () {
-                                document.body.scrollTop = offsetY(i);
+
+                            [...document.getElementById("body-tab").children].forEach((e, i) => {
+                                e.onclick = function () {
+                                    document.body.scrollTop = offsetY(i);
+                                };
                             });
-                        });
 
-                        document.body.addEventListener("scroll", function () {
-                            var st = this.scrollTop;
-                            var vh = document.body.clientHeight;
+                            document.body.addEventListener("scroll", function () {
+                                const st = this.scrollTop;
+                                const vh = document.body.clientHeight;
+                                const dom = document.getElementById("body-tab");
 
-                            if (st > offsetY(6) - vh / 3) {
-                                "#body-tab".$._attr({ index: 6 });
-                            } else if (st > offsetY(5) - vh / 3) {
-                                "#body-tab".$._attr({ index: 5 });
-                            } else if (st > offsetY(4) - vh / 3) {
-                                "#body-tab".$._attr({ index: 4 });
-                            } else if (st > offsetY(3) - vh / 3) {
-                                "#body-tab".$._attr({ index: 3 });
-                            } else if (st > offsetY(2) - vh / 3) {
-                                "#body-tab".$._attr({ index: 2 });
-                            } else if (st > offsetY(1) - vh / 3) {
-                                "#body-tab".$._attr({ index: 1 });
-                            } else {
-                                "#body-tab".$._attr({ index: 0 });
-                            };
-                        });
+                                if (st > offsetY(6) - vh / 3) {
+                                    dom.setAttribute("index", 6)
+                                } else if (st > offsetY(5) - vh / 3) {
+                                    dom.setAttribute("index", 5)
+                                } else if (st > offsetY(4) - vh / 3) {
+                                    dom.setAttribute("index", 4)
+                                } else if (st > offsetY(3) - vh / 3) {
+                                    dom.setAttribute("index", 3)
+                                } else if (st > offsetY(2) - vh / 3) {
+                                    dom.setAttribute("index", 2)
+                                } else if (st > offsetY(1) - vh / 3) {
+                                    dom.setAttribute("index", 1)
+                                } else {
+                                    dom.setAttribute("index", 0)
+                                };
+                            });
+                        }
                     }
                 })
             })

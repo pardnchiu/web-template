@@ -2,63 +2,63 @@
 const images = [
     {
         type: "laptop",
-        src: "https://picsum.photos/id/0/320.webp"
+        src: "https://picsum.photos/id/0/512.webp"
     },
     {
         type: "laptop",
-        src: "https://picsum.photos/id/1/320.webp"
+        src: "https://picsum.photos/id/1/512.webp"
     },
     {
         type: "laptop",
-        src: "https://picsum.photos/id/2/320.webp"
+        src: "https://picsum.photos/id/2/512.webp"
     },
     {
         type: "laptop",
-        src: "https://picsum.photos/id/3/320.webp"
+        src: "https://picsum.photos/id/3/512.webp"
     },
     {
         type: "laptop",
-        src: "https://picsum.photos/id/4/320.webp"
+        src: "https://picsum.photos/id/4/512.webp"
     },
     {
         type: "landscape",
-        src: "https://picsum.photos/id/10/320.webp"
+        src: "https://picsum.photos/id/10/512.webp"
     },
     {
         type: "landscape",
-        src: "https://picsum.photos/id/11/320.webp"
+        src: "https://picsum.photos/id/11/512.webp"
     },
     {
         type: "landscape",
-        src: "https://picsum.photos/id/13/320.webp"
+        src: "https://picsum.photos/id/13/512.webp"
     },
     {
         type: "landscape",
-        src: "https://picsum.photos/id/14/320.webp"
+        src: "https://picsum.photos/id/14/512.webp"
     },
     {
         type: "landscape",
-        src: "https://picsum.photos/id/15/320.webp"
+        src: "https://picsum.photos/id/15/512.webp"
     },
     {
         type: "city",
-        src: "https://picsum.photos/id/43/320.webp"
+        src: "https://picsum.photos/id/43/512.webp"
     },
     {
         type: "city",
-        src: "https://picsum.photos/id/49/320.webp"
+        src: "https://picsum.photos/id/49/512.webp"
     },
     {
         type: "city",
-        src: "https://picsum.photos/id/57/320.webp"
+        src: "https://picsum.photos/id/57/512.webp"
     },
     {
         type: "city",
-        src: "https://picsum.photos/id/61/320.webp"
+        src: "https://picsum.photos/id/61/512.webp"
     },
     {
         type: "city",
-        src: "https://picsum.photos/id/88/320.webp"
+        src: "https://picsum.photos/id/88/512.webp"
     }
 ];
 
@@ -72,11 +72,11 @@ const types = images.map(e => {
 })
 
 document.addEventListener("DOMContentLoaded", _ => {
-    const page = location.href.$query("page") || "home";
-    const type = (location.href.$query("type") || "ALL").toUpperCase();
+    const page = (new URL(location.href)).searchParams.get("page") || "home";
+    const type = ((new URL(location.href)).searchParams.get("type") || "ALL").toUpperCase();
     const is_home = page === "home";
     const is_portfolio = page === "portfolio";
-    const app = new PD({
+    const app = new QUI({
         id: "body",
         data: {
             is_home: is_home,
@@ -109,7 +109,6 @@ document.addEventListener("DOMContentLoaded", _ => {
             expand: e => {
                 const href = e.target.dataset.href;
                 const dom_ul = e.target.$parent(0);
-                console.log(dom_ul);
                 if (document.body.clientWidth < 800 && !dom_ul.$$class("expand")) {
                     dom_ul._class("expand");
                 }
@@ -131,56 +130,59 @@ document.addEventListener("DOMContentLoaded", _ => {
                 }, 500);
             }
         },
-        next: _ => {
-            (_ => {
-                if (!is_home) {
-                    return;
-                };
+        when: {
 
-                let start = 0;
-                const ary = ["iOS工程師", "網站工程師", "程式設計師", "Pardn Chiu"];
-                const dom = "typing-area".$;
+            rendered: _ => {
+                (_ => {
+                    if (!is_home) {
+                        return;
+                    };
 
-                changeTitle();
-                setInterval(_ => changeTitle(), 8000);
+                    let start = 0;
+                    const ary = ["iOS工程師", "網站工程師", "程式設計師", "Pardn Chiu"];
+                    const dom = document.getElementById("typing-area");
 
-                function changeTitle() {
-                    const now_text_len = dom.$text.length;
-                    let now_index = now_text_len;
-                    let timer_delete_text = setInterval(_ => {
-                        dom.__(dom.$text.slice(0, now_index));
-                        now_index -= 1;
-                    }, 1000 / now_text_len);
+                    changeTitle();
+                    setInterval(_ => changeTitle(), 8000);
 
-                    let timer_next = setTimeout(() => {
-                        clearInterval(timer_delete_text);
-                        clearTimeout(timer_next);
+                    function changeTitle() {
+                        const now_text_len = dom.innerText.length;
+                        let now_index = now_text_len;
+                        let timer_delete_text = setInterval(_ => {
+                            dom.innerText = dom.innerText.slice(0, now_index);
+                            now_index -= 1;
+                        }, 1000 / now_text_len);
 
-                        if (dom.$text.length) {
-                            dom.__("");
-                        };
+                        let timer_next = setTimeout(() => {
+                            clearInterval(timer_delete_text);
+                            clearTimeout(timer_next);
 
-                        const txt = ary[start];
-                        let index = 0;
-                        let text_len = txt.length;
-                        let timer_add_text = setInterval(() => {
-                            dom.innerText += txt.charAt(index);
-                            index += 1;
-                        }, 3000 / text_len);
-
-                        let timer_stop = setTimeout(() => {
-                            clearInterval(timer_add_text);
-                            clearTimeout(timer_stop);
-
-                            start += 1;
-
-                            if (start > ary.length - 1) {
-                                start = 0;
+                            if (dom.innerText.length) {
+                                dom.innerText = "";
                             };
-                        }, 3000 / text_len * (text_len + 1));
-                    }, 1000 / now_text_len * (now_text_len + 2));
-                };
-            })();
+
+                            const txt = ary[start];
+                            let index = 0;
+                            let text_len = txt.length;
+                            let timer_add_text = setInterval(() => {
+                                dom.innerText += txt.charAt(index);
+                                index += 1;
+                            }, 3000 / text_len);
+
+                            let timer_stop = setTimeout(() => {
+                                clearInterval(timer_add_text);
+                                clearTimeout(timer_stop);
+
+                                start += 1;
+
+                                if (start > ary.length - 1) {
+                                    start = 0;
+                                };
+                            }, 3000 / text_len * (text_len + 1));
+                        }, 1000 / now_text_len * (now_text_len + 2));
+                    };
+                })();
+            }
         }
     })
 });

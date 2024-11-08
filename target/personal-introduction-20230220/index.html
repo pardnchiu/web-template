@@ -67,8 +67,10 @@
         <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" as="style">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
 
-        <link rel="preload" href="https://cdn.jsdelivr.net/npm/pdrenderkit@1.0.2/dist/PDRenderKit.js" as="script">
-        <script src="https://cdn.jsdelivr.net/npm/pdrenderkit@1.0.2/dist/PDRenderKit.js" copyright="Pardn Ltd"></script>
+        <!-- <link rel="preload" href="https://cdn.jsdelivr.net/npm/pdrenderkit@1.0.2/dist/PDRenderKit.js" as="script">
+        <script src="https://cdn.jsdelivr.net/npm/pdrenderkit@1.0.2/dist/PDRenderKit.js" copyright="Pardn Ltd"></script> -->
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/pdquickui@0.2.0/dist/PDQuickUI.js" as="script">
+        <script src="https://cdn.jsdelivr.net/npm/pdquickui@0.5.1/dist/PDQuickUI.js" copyright="Pardn Ltd"></script>
         <!-- Stylesheet Files -->
         <link rel="stylesheet" href="./css/index.css">
         <style>
@@ -161,7 +163,7 @@
                     </ul>
                     <div id="portfolio-list">
                         <div :for="e in portfolio">
-                            <img class="lazyload" :data-src="e.src" src="" alt="">
+                            <img :lazyload="e.src" src="" alt="">
                             <ul>
                                 <li>
                                     <a :href="e.src" target="_blank">
