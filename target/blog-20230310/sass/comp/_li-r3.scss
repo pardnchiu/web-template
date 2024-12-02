@@ -1,0 +1,32 @@
+&.r3>li {
+    @media screen and (min-width: 480px) {
+        margin-top: 2rem;
+        width: 400px;
+    }
+
+    @media screen and (min-width: 640px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 512px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        margin-right: 2rem;
+        width: calc((100% - 2rem * 2) / 3 - 1px);
+
+        &:nth-child(2),
+        &:nth-child(3) {
+            margin-top: 0;
+        }
+
+        &:nth-child(2n) {
+            margin-right: 2rem;
+        }
+
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+    }
+}

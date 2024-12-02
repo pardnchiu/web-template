@@ -1,0 +1,107 @@
+/**
+ * HEADER-002
+ * 純文字
+ */
+>section[header="2"] {
+
+  // 顯示動畫
+  @keyframes header-002-show {
+    0% {
+      padding-top: 10rem;
+      margin-bottom: -10rem;
+      opacity: 0;
+    }
+
+    20% {
+      opacity: 0;
+    }
+
+    100% {
+      padding-top: 0;
+      margin-bottom: 0;
+      opacity: 1;
+    }
+  }
+
+  >div {
+
+    // 區塊 - 文字內容
+    >div {
+      position: relative;
+      display: block;
+      margin: 0 15%;
+      width: 70%;
+      height: initial;
+      text-align: center;
+      animation-name: header-002-show;
+      animation-duration: 0.5s;
+
+      @media screen and (max-width: 1139px) {
+        margin: 0 20%;
+        width: 60%;
+      }
+
+      @media screen and (max-width: 799px) {
+        margin: 0 10%;
+        width: 80%;
+      }
+
+      @media screen and (max-width: 479px) {
+        margin: 0 1.5rem;
+        width: calc(100% - 3rem);
+      }
+
+      // 標題
+      >h1,
+      >h2,
+      >h3,
+      >h4,
+      >h5,
+      >h6 {
+        position: relative;
+        display: block;
+        width: 100%;
+        line-height: 2.75rem;
+        height: initial;
+        font-size: 2rem;
+        font-weight: 500;
+        color: #404040;
+
+        @media screen and (max-width: 799px) {
+          line-height: 2.625rem;
+          font-size: 1.875rem;
+        }
+
+        @media screen and (max-width: 479px) {
+          line-height: 2.5rem;
+          font-size: 1.75rem;
+        }
+      }
+
+      // 內容
+      >p {
+        position: relative;
+        display: block;
+        margin-top: 1rem;
+        width: 100%;
+        line-height: 1.875rem;
+        font-size: 1rem;
+        color: #6f6f6f;
+
+        @media screen and (max-width: 799px) {
+          line-height: 1.75rem;
+          font-size: 0.875rem;
+        }
+
+        @import "../comp/innerText";
+      }
+
+      // 區塊 - 按鈕
+      @import "../comp/ul-button";
+
+      >ul {
+        margin-top: 2rem;
+      }
+    }
+  }
+}

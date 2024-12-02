@@ -1,0 +1,67 @@
+/*
+
+  樣式一
+  透明 ＋ 變色
+
+*/
+
+nav[num="1"] {
+  @keyframes nav-001-show {
+    0% {
+      background-color: transparent;
+    }
+
+    100% {
+      background-color: var(--col-nav);
+    }
+  }
+
+  @keyframes nav-001-hide {
+    0% {
+      background-color: var(--col-nav);
+    }
+
+    100% {
+      background-color: transparent;
+    }
+  }
+
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: 6rem;
+  background-color: transparent;
+  z-index: 10;
+
+  @media screen and (min-width: 1040px) {
+    &.scroll {
+      animation-name: nav-001-show;
+      animation-duration: 0.3s;
+      background-color: var(--col-nav);
+
+      &.rm {
+        animation-name: nav-001-hide;
+        animation-duration: 0.3s;
+        background-color: transparent;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1039px) {
+    background-color: var(--col-nav);
+  }
+
+  >div {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: var(--max-width);
+    height: inherit;
+    @import "body";
+  }
+}

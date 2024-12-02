@@ -1,0 +1,143 @@
+#section-011>div,
+section[num="11"]>div {
+
+  // 文字內容
+  >div {
+    position: relative;
+    display: block;
+    margin: 0 20%;
+    width: 60%;
+    height: initial;
+    text-align: center;
+
+    @media screen and (max-width: 1139px) {
+      margin: 0 5%;
+      width: 90%;
+    }
+
+    // 標題
+    >h2 {
+      position: relative;
+      display: block;
+      width: 100%;
+      line-height: 2.75rem;
+      font-size: 2rem;
+      font-weight: 500;
+
+      @media screen and (max-width: 799px) {
+        line-height: 2.625rem;
+        font-size: 1.875rem;
+      }
+
+      @media screen and (max-width: 479px) {
+        line-height: 2.5rem;
+        font-size: 1.75rem;
+      }
+    }
+
+    // 內容
+    >p {
+      position: relative;
+      display: block;
+      margin-top: 1rem;
+      width: 100%;
+      line-height: 1.875rem;
+      font-size: 1rem;
+
+      @media screen and (max-width: 799px) {
+        line-height: 1.75rem;
+        font-size: 0.875rem;
+      }
+
+      >a {
+        line-height: inherit;
+        font-size: inherit;
+        color: inherit;
+      }
+    }
+
+    // 按鈕
+    >ul {
+      position: relative;
+      display: block;
+      margin-top: 2.5rem;
+      font-size: 0;
+
+      >li {
+        position: relative;
+        display: inline-block;
+        margin-right: 1rem;
+        vertical-align: top;
+        width: initial;
+        height: initial;
+        border-radius: 0.5rem;
+        overflow: hidden;
+
+        &:nth-last-child(1) {
+          margin-right: 0;
+        }
+      }
+
+      &.img>li>button {
+        position: relative;
+        display: block;
+        width: initial;
+        height: initial;
+
+        >img {
+          position: relative;
+          display: block;
+          width: auto;
+          height: 44px;
+          object-fit: cover;
+        }
+      }
+
+      &.txt>li>button {
+        position: relative;
+        display: block;
+        padding: 0 1.5rem;
+        width: initial;
+        height: initial;
+        font-size: 0;
+
+        &[col="1"] {
+          background-color: var(--col-system);
+          color: #fff;
+        }
+
+        >p,
+        >b,
+        >strong {
+          position: relative;
+          display: inline-block;
+          vertical-align: top;
+          width: initial;
+          line-height: 2.5rem;
+          height: 2.5rem;
+          font-size: 0.875rem;
+          color: inherit;
+        }
+
+        >i {
+          position: relative;
+          display: inline-block;
+          vertical-align: top;
+          width: initial;
+          line-height: 2.5rem !important;
+          height: 2.5rem;
+          font-size: 0.875rem;
+          color: inherit;
+
+          &.right {
+            margin-left: 0.75rem;
+          }
+
+          &.left {
+            margin-right: 0.75rem;
+          }
+        }
+      }
+    }
+  }
+}

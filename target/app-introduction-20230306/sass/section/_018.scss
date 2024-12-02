@@ -1,0 +1,128 @@
+section[num="18"] {
+  >div {
+
+    @import "../comp/div-info";
+  
+    >ul {
+      position: relative;
+      display: block;
+      margin-top: 2rem;
+      width: 100%;
+      height: initial;
+      font-size: 0;
+      text-align: center;
+
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+
+      @import "../comp/li-r2";
+      @import "../comp/li-r3";
+      @import "../comp/li-r4";
+
+      > li {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 2rem;
+        width: 100%;
+        font-size: 0;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 0.5rem;
+        overflow: hidden;
+
+        &:nth-child(1) {
+          margin-top: 0;
+        }
+        > div,
+        > a,
+        > button {
+          position: relative;
+          display: block;
+          width: 100%;
+          height: initial;
+          > a,
+          > figure {
+            position: relative;
+            display: block;
+            width: 100%;
+            padding-top: calc(100% / 4 * 3);
+            background-color: rgba(0, 0, 0, 0.05);
+            > img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              bottom: 0;
+              right: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+            &::after,
+            >figcaption {
+              
+            }
+          }
+          > div {
+            position: relative;
+            display: block;
+            padding: 1rem;
+            width: 100%;
+            height: initial;
+            text-align: left;
+            word-wrap: break-word;
+            border-bottom: 1px solid var(--col-border);
+
+            &:nth-last-child(1) {
+              border-bottom: none;
+            }
+            > h6 {
+              position: relative;
+              display: block;
+              width: 100%;
+              line-height: 1.625rem;
+              font-size: 1.125rem;
+              font-weight: 500;
+              color: #000;
+            }
+            > p {
+              position: relative;
+              display: block;
+              margin-top: 0.5rem;
+              width: 100%;
+              line-height: 1.5rem;
+              font-size: 1rem;
+              color: #6f6f6f;
+
+              @import "../comp/innerText";
+            }
+            > a,
+            > button {
+              position: relative;
+              display: block;
+              width: 100%;
+              line-height: 1.5rem;
+              font-size: 1rem;
+              font-weight: 500;
+              text-align: left;
+              color: var(--col-system);
+            }
+            > i {
+              position: absolute;
+              display: block;
+              top: 50%;
+              right: 1rem;
+              bottom: 0;
+              transform: translateY(-50%);
+              line-height: 1.5rem !important;
+              font-size: 1rem;
+              font-weight: 500;
+              color: var(--col-system);
+            }
+          }
+        }
+      }
+    }
+  }
+}

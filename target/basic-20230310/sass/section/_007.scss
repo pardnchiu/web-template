@@ -1,0 +1,271 @@
+>section[num="7"]>div {
+  @import "../comp/div-info";
+
+  // 內容區塊
+  >ul {
+    position: relative;
+    display: block;
+    margin-top: 4rem;
+    width: 100%;
+    height: initial;
+    font-size: 0;
+    text-align: center;
+
+    &:nth-child(1) {
+      margin-top: 0;
+    }
+
+    &.r2>li {
+      @media screen and (min-width: 480px) {
+        margin-top: 2rem;
+        width: 400px;
+      }
+      @media screen and (min-width: 640px) {
+        margin-top: 2rem;
+        margin-right: 2rem;
+        width: calc((100% - 2rem) / 2 - 1px);
+
+        &:nth-child(2) {
+          margin-top: 0;
+        }
+
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+      }
+    }
+
+    &.r3>li {
+      @media screen and (min-width: 480px) {
+        margin-top: 2rem;
+        width: 400px;
+      }
+      @media screen and (min-width: 640px) {
+        margin-top: 3rem;
+        width: 480px;
+      }
+      @media screen and (min-width: 768px) {
+        width: 512px;
+      }
+      @media screen and (min-width: 1024px) {
+        margin-top: 2rem;
+        margin-right: 2rem;
+        width: calc((100% - 2rem * 2) / 3 - 1px);
+
+        &:nth-child(2),
+        &:nth-child(3) {
+          margin-top: 0;
+        }
+
+        &:nth-child(2n) {
+          margin-right: 2rem;
+        }
+
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+      }
+    }
+
+    &.r4>li {
+      @media screen and (min-width: 480px) {
+        margin-top: 2rem;
+        width: 400px;
+      }
+      @media screen and (min-width: 640px) {
+        margin-top: 2rem;
+        margin-right: 2rem;
+        width: calc((640px / 2) - 2rem - 1px);
+
+        &:nth-child(2) {
+          margin-top: 0;
+        }
+
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+      }
+      @media screen and (min-width: 768px) {
+        margin-top: 2rem;
+        margin-right: 2rem;
+        width: calc((768px / 2) - 2rem - 1px);
+
+        &:nth-child(2) {
+          margin-top: 0;
+        }
+
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+      }
+
+      @media screen and (min-width: 1024px) {
+        margin-top: 2rem;
+        margin-right: 2rem;
+        width: calc((100% - 2rem * 3) / 4 - 1px);
+
+        &:nth-child(3),
+        &:nth-child(4) {
+          margin-top: 0;
+        }
+
+        &:nth-child(2n),
+        &:nth-child(3n) {
+          margin-right: 2rem;
+        }
+
+        &:nth-child(4n) {
+          margin-right: 0;
+        }
+      }
+    }
+
+    >li {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 1rem;
+      width: 100%;
+      height: initial;
+      font-size: 0;
+      text-align: center;
+      background-color: #fff;
+      border-radius: 0.5rem;
+
+      &.align-left {
+        text-align: left;
+      }
+
+      &.align-right {
+        text-align: right;
+      }
+
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+
+      // 預設Icon 背景顏色
+      $bgcolors: (
+        #9999dd99,
+        #99dd9999,
+        #dd999999,
+        #dddd9999,
+        #99dddd99,
+        #dd99dd99
+      );
+      // 預設Icon 字體顏色
+      $colors: (
+        #000099ff,
+        #009900ff,
+        #990000ff,
+        #999900ff,
+        #009999ff,
+        #990099ff
+      );
+
+      @each $bgcolor in $bgcolors {
+        $index: index($bgcolors, $bgcolor);
+        $color: nth($colors, $index);
+
+        &:nth-child(n + #{$index}) {
+
+          >div,
+          >a,
+          >button {
+            >i {
+              background-color: $bgcolor;
+              color: $color;
+            }
+          }
+        }
+      }
+
+      >div,
+      >a,
+      >button {
+        position: relative;
+        display: block;
+        padding: 2rem;
+        width: 100%;
+        height: initial;
+        text-align: inherit;
+
+        >i,
+        >img {
+          position: relative;
+          display: inline-block;
+          vertical-align: top;
+          width: 5rem;
+          line-height: 5rem;
+          height: 5rem;
+          font-size: 1.5rem;
+          text-align: center;
+          border-radius: 50%;
+          object-fit: cover;
+          border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        >h2,
+        >h3,
+        >h4,
+        >h5,
+        >h6 {
+          position: relative;
+          display: block;
+          margin-top: 1.5rem;
+          width: 100%;
+          line-height: 1.625rem;
+          height: initial;
+          font-size: 1.125rem;
+          font-weight: 500;
+          text-align: inherit;
+          color: #404040;
+
+          &:nth-child(1) {
+            margin-top: 0;
+          }
+        }
+
+        >p {
+          position: relative;
+          display: block;
+          margin-top: 0.5rem;
+          width: 100%;
+          line-height: 1.5rem;
+          height: initial;
+          font-size: 1rem;
+          font-weight: 400;
+          text-align: inherit;
+          color: #6f6f6f;
+
+          &:nth-child(1) {
+            margin-top: 0;
+          }
+
+          >* {
+            position: relative;
+            width: initial;
+            line-height: inherit !important;
+            height: inherit;
+            font-size: inherit;
+            color: inherit;
+          }
+
+          >i {
+            margin: 0 0.125rem;
+
+            &:nth-child(1) {
+              margin-left: 0;
+              margin-right: 0.5rem;
+            }
+
+            &:nth-last-child(1) {
+              margin-left: 0.5rem;
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,181 @@
+/*
+  圖片 + 文字
+*/
+>section[header="1"]>div {
+
+  // 顯示動畫
+  @keyframes header-001-content-show {
+    0% {
+      top: 10rem;
+      opacity: 0;
+    }
+
+    20% {
+      opacity: 0;
+    }
+
+    100% {
+      top: 0;
+      opacity: 1;
+    }
+  }
+
+  @keyframes header-001-img-right-show {
+    0% {
+      left: 100%;
+    }
+
+    100% {
+      left: 0;
+    }
+  }
+
+  @keyframes header-001-img-left-show {
+    0% {
+      right: 100%;
+    }
+
+    100% {
+      right: 0;
+    }
+  }
+
+  >ul {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: initial;
+    font-size: 0;
+
+    >li {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      width: initial;
+      max-width: 512px;
+      height: initial;
+      text-align: center;
+      animation-name: header-001-content-show;
+      animation-duration: 0.5s;
+
+      @media screen and (min-width: 1024px) {
+        margin-left: 2rem;
+        width: calc((100% - 2rem) / 2 - 1px);
+        max-width: unset;
+        &:nth-child(1):nth-last-child(1) {
+          width: initial;
+        }
+      }
+
+      &:nth-child(1) {
+        margin-left: 0;
+      }
+      
+      &:nth-child(1):nth-last-child(1) {
+        max-width: 640px;
+      }
+
+      &:has(img) {
+        display: none;
+
+        // 有圖片 ＆ 圖片於左方
+        &:nth-child(1) {
+          animation-name: header-001-img-left-show;
+        }
+
+        // 有圖片 ＆ 圖片於右方
+        &:nth-child(2) {
+          animation-name: header-001-img-right-show;
+        }
+
+        // 桌面版顯示圖片
+        @media screen and (min-width: 1024px) {
+          display: inline-block;
+        }
+      }
+
+      &.align-left {
+        text-align: left;
+      }
+
+      &.align-right {
+        text-align: right;
+      }
+
+      // 圖片
+      >img {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+
+      // 圖片 ＆ 文字／連結
+      >a,
+      >figure {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: initial;
+
+        >img {
+          position: relative;
+          display: block;
+          width: 100%;
+          height: auto;
+          max-height: 512px;
+          object-fit: contain;
+        }
+      }
+
+      // 標題
+      >h1,
+      >h2,
+      >h3,
+      >h4,
+      >h5,
+      >h6 {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: initial;
+        line-height: var(--h-max);
+        font-size: var(--size-max);
+        font-weight: 500;
+        text-align: inherit;
+        color: #404040;
+
+        @media screen and (max-width: 799px) {
+          line-height: var(--h-xxl);
+          font-size: var(--size-xxl);
+        }
+
+        @media screen and (max-width: 479px) {
+          line-height: var(--h-xl);
+          font-size: var(--size-xl);
+        }
+      }
+
+      // 內容
+      >p {
+        position: relative;
+        display: block;
+        margin-top: 1rem;
+        width: 100%;
+        line-height: var(--h-m);
+        font-size: var(--size-m);
+        text-align: inherit;
+        color: #6f6f6f;
+
+        @import "../comp/innerText";
+      }
+
+      @import "../comp/ul-button";
+
+      >ul {
+        margin-top: 2rem;
+      }
+    }
+  }
+}

@@ -11,11 +11,18 @@
         </ul>
         <a :for="item in albums" :filter-key="item.tag" :href="item.href" target="_blank">
             <figure>
-                <img :src="item.src" :alt="item.name">
+                <img :lazyload="item.src" :alt="item.name">
                 <figcaption>{{ item.name }}</figcaption>
             </figure>
         </a>
     </section>
+    <style>
+        img {
+            /* width: 1rem !important; */
+            /* height: 1rem !important; */
+            /* object-fit: contain !important; */
+        }
+    </style>
 </section>
 
 <!-- <script>

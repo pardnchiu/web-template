@@ -1,0 +1,63 @@
+section[num="8"]>div {
+  @import "../comp/div-info";
+  
+  >ul {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: initial;
+    font-size: 0;
+
+    >li {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      width: calc(50% - 1px);
+      height: initial;
+
+      >h2,
+      >h3,
+      >h4,
+      >h5,
+      >h6 {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: initial;
+        line-height: var(--h-m);
+        font-size: var(--size-m);
+        font-weight: 500;
+        text-align: left;
+        color: #000;
+
+        &:nth-child(1) {
+          margin-top: 0;
+        }
+      }
+
+      >p {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: initial;
+        line-height: var(--h-s);
+        font-size: var(--size-s);
+        text-align: left;
+        color: #777;
+
+        &:nth-child(1) {
+          margin-top: 0;
+        }
+
+        &.hint {
+          line-height: var(--h-xs);
+          font-size: var(--size-xs);
+        }
+
+        @import "../comp/innerText";
+      }
+
+      @import "../comp/ul-button";
+    }
+  }
+}

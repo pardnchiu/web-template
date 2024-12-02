@@ -1,0 +1,61 @@
+>section {
+  position: relative;
+  display: block;
+  width: inherit;
+  height: initial;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &[position="center"] {
+    background-position: center;
+  }
+
+  &[position="bottom"] {
+    background-position: bottom;
+  }
+
+  &[fixed="1"],
+  &[fixed="true"] {
+    background-attachment: fixed;
+  }
+
+  // top
+  >svg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  // mask
+  >a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  // body
+  >div {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: var(--max-width);
+    height: initial;
+    font-size: 0;
+    text-align: center;
+    z-index: 2;
+
+    @media screen and (max-width: 1139px) {
+      width: calc(100% - 2rem);
+      max-width: 1024px;
+    }
+  }
+}

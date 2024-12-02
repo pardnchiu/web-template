@@ -1,0 +1,386 @@
+/**
+ * HEADER-003
+ * 輸入框 + 文字
+ */
+>section[header="3"] {
+
+  // 顯示動畫
+  @keyframes header-003-content-show {
+    0% {
+      top: 10rem;
+      opacity: 0;
+    }
+
+    20% {
+      opacity: 0;
+    }
+
+    100% {
+      top: 0;
+      opacity: 1;
+    }
+  }
+
+  @keyframes header-003-img-show-right {
+    0% {
+      left: 100%;
+    }
+
+    100% {
+      left: 0;
+    }
+  }
+
+  @keyframes header-003-img-show-left {
+    0% {
+      right: 100%;
+    }
+
+    100% {
+      right: 0;
+    }
+  }
+
+  >div {
+
+    // 圖片靠左（預設靠右）
+    &.left {
+
+      >form {
+        margin-left: 0;
+
+        >img {
+          left: unset;
+          right: 0;
+          animation-name: header-001-img-show-left;
+        }
+      }
+
+      >div {
+        left: unset;
+        right: 0;
+
+        >div {
+          left: 3rem;
+          right: 0;
+        }
+      }
+    }
+
+    // 區塊 - 輸入框內容
+    >form {
+      position: relative;
+      display: block;
+      margin-left: 50%;
+      width: 50%;
+      height: initial;
+      background-color: #fff;
+      border-radius: 0.5rem;
+      font-size: 0;
+      text-align: left;
+      overflow: hidden;
+
+      @media screen and (max-width: 1023px) {
+        display: none;
+      }
+
+      >h6 {
+        position: relative;
+        display: block;
+        padding: 0 1.5rem;
+        width: 100%;
+        line-height: 4rem;
+        height: 4rem;
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: left;
+        background-color: rgba(0, 0, 10, 0.03);
+        color: var(--col-system);
+      }
+
+      >label {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 1.5rem;
+        padding: 0 1.5rem;
+        width: 100%;
+        font-size: 0.875rem;
+        text-align: left;
+        color: #6f6f6f;
+
+        &.r2 {
+          width: calc((100% - 1px) / 2);
+        }
+
+        &:has(input[type="radio"]) {
+          width: initial;
+        }
+
+        >input {
+          position: relative;
+          display: block;
+          margin-top: 0.25rem;
+          padding: 0 1rem;
+          width: 100%;
+          line-height: 2.5rem;
+          font-size: 1rem;
+          border: 1px solid var(--col-border);
+          border-radius: 0.25rem;
+          color: #000;
+
+          &[type="radio"] {
+            display: inline-block;
+            vertical-align: top;
+            width: initial;
+          }
+        }
+      }
+
+      >button {
+        position: relative;
+        display: block;
+        margin: 1.5rem;
+        width: calc(100% - 3rem);
+        line-height: 2.5rem;
+        height: 2.5rem;
+        border-radius: 0.25rem;
+        font-size: 0.875rem;
+        background-color: var(--col-system);
+        color: #fff;
+
+        >b,
+        >strong,
+        >i,
+        >em {
+          line-height: inherit;
+          font-size: inherit;
+          color: inherit;
+        }
+
+        >i {
+          margin-right: 0.125rem;
+
+          &:nth-child(1) {
+            margin-right: 0.25rem;
+          }
+
+          &:nth-last-child(1) {
+            margin-left: 0.25rem;
+          }
+        }
+      }
+    }
+
+    // 區塊 - 文字內容外框
+    >div {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 50%;
+      height: initial;
+      text-align: left;
+      animation-name: header-001-content-show;
+      animation-duration: 0.5s;
+
+      @media screen and (max-width: 1023px) {
+        position: relative;
+        top: unset;
+        left: unset;
+        bottom: unset;
+        margin: 0 20%;
+        width: 60%;
+      }
+
+      @media screen and (max-width: 799px) {
+        margin: 0 10%;
+        width: 80%;
+      }
+
+      @media screen and (max-width: 479px) {
+        margin: 0 1.5rem;
+        width: calc(100% - 3rem);
+      }
+
+      // 區塊 - 文字內容內容
+      >div {
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 0;
+        right: 3rem;
+        transform: translateY(-50%);
+        width: calc(100% - 3rem);
+        height: initial;
+        text-align: left;
+        overflow: hidden;
+
+        @media screen and (max-width: 1023px) {
+          position: relative;
+          top: unset;
+          transform: unset;
+          width: 100%;
+          height: initial;
+        }
+
+        >b {
+          position: relative;
+          display: inline-block;
+          vertical-align: top;
+          padding: 0.25rem 0.75rem;
+          width: initial;
+          line-height: initial;
+          height: initial;
+          font-size: 0.75rem;
+          font-weight: 500;
+          background-color: #ffffffbf;
+          color: var(--col-system);
+          border-radius: 1rem;
+        }
+
+        // 標題
+        >h1 {
+          position: relative;
+          display: block;
+          margin-top: 0.75rem;
+          width: 100%;
+          line-height: 2.75rem;
+          height: initial;
+          font-size: 2rem;
+          font-weight: 500;
+          text-align: left;
+          color: #404040;
+
+          &:nth-child(1) {
+            margin-top: 0;
+          }
+
+          @media screen and (max-width: 799px) {
+            line-height: 2.625rem;
+            font-size: 1.875rem;
+          }
+
+          @media screen and (max-width: 479px) {
+            line-height: 2.5rem;
+            font-size: 1.75rem;
+          }
+        }
+
+        // 內容
+        >p {
+          position: relative;
+          display: block;
+          margin-top: 1rem;
+          width: 100%;
+          line-height: 1.875rem;
+          font-size: 1rem;
+          text-align: left;
+          color: #6f6f6f;
+
+          &:nth-child(1) {
+            margin-top: 0;
+          }
+
+          @media screen and (max-width: 799px) {
+            line-height: 1.75rem;
+            font-size: 0.875rem;
+          }
+
+          >a,
+          >b,
+          >strong,
+          >i,
+          >em {
+            line-height: inherit;
+            font-size: inherit;
+            color: inherit;
+          }
+        }
+
+        // 區塊 - 按鈕
+        >ul {
+          position: relative;
+          display: block;
+          margin-top: 2.5rem;
+          width: 100%;
+          height: initial;
+          font-size: 0;
+
+          &:nth-child(1) {
+            margin-top: 0;
+          }
+
+          >li {
+            position: relative;
+            display: inline-block;
+            margin-right: 1rem;
+            vertical-align: top;
+            width: initial;
+            height: initial;
+            border-radius: 0.5rem;
+            overflow: hidden;
+
+            &:nth-last-child(1) {
+              margin-right: 0;
+            }
+
+            >a,
+            >button {
+              position: relative;
+              display: block;
+              padding: 0 1.5rem;
+              width: initial;
+              line-height: 2.5rem !important;
+              height: 2.5rem;
+              font-size: 0.875rem;
+
+              &[col="1"] {
+                background-color: var(--col-system);
+                color: #fff;
+              }
+
+              /*
+               * 圖片按鈕
+               * 移除 padding
+               */
+              &:has(img) {
+                padding: 0;
+              }
+
+              >img {
+                position: relative;
+                display: block;
+                width: auto;
+                height: inherit;
+                object-fit: cover;
+              }
+
+              >b,
+              >strong,
+              >i,
+              >em {
+                position: relative;
+                margin: 0 0.125rem;
+                width: initial;
+                line-height: inherit !important;
+                height: inherit;
+                font-size: inherit;
+                color: inherit;
+
+                &:nth-child(1) {
+                  margin-right: 0.25rem;
+                }
+
+                &:nth-last-child(1) {
+                  margin-left: 0.25rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

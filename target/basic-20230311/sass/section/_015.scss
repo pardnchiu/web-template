@@ -1,0 +1,21 @@
+/*
+
+  文章列表
+
+*/
+section[num="15"] {
+  >div {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: var(--max-width);
+    height: initial;
+    font-size: 0;
+
+    @import "015-top";
+    @import "015-center";
+    @import "015-bottom";
+  }
+}

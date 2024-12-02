@@ -1,0 +1,486 @@
+<!--
+
+    Copyright 2023 Pardn Ltd 帕登國際有限公司.
+    Created by Pardn Chiu 邱敬幃.
+    Email: dev@pardn.io
+
+    -->
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+    <head>
+        <!-- Character Encoding -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+        <meta name="robots" content="index, follow">
+        <meta name="theme-color" content="#000000">
+
+        <!-- Page Title & Description -->
+        <title>Blog (2023/03/10) - 邱敬幃 Pardn Chiu</title>
+        <meta name="description" content="一個 Blog (2023/03/10) 範例，展示最佳的 HTML 結構與優化。">
+        <meta name="keywords" content="Website範例, 邱敬幃, Pardn Chiu, HTML, SEO">
+
+        <!-- Author & Copyright -->
+        <meta name="author" content="邱敬幃 Pardn Chiu">
+        <meta name="copyright" content="邱敬幃 Pardn Chiu">
+        <link rel="canonical" href="https://pardnchiu.github.io/web-template/target/blog-20230310">
+
+        <!-- Open Graph Metadata -->
+        <meta property="og:title" content="Blog (2023/03/10) - 邱敬幃 Pardn Chiu">
+        <meta property="og:description" content="一個 Blog (2023/03/10) 範例，展示最佳的 HTML 結構與優化。">
+        <meta property="og:image" content="https://pardnchiu.github.io/web-template/image/blog-20230310.jpg">
+        <meta property="og:site_name" content="邱敬幃 Pardn Chiu">
+        <meta property="og:url" content="https://pardnchiu.github.io/web-template/target/blog-20230310">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="zh_TW">
+
+        <!-- Twitter Metadata -->
+        <meta name="twitter:title" content="Blog (2023/03/10) - 邱敬幃 Pardn Chiu">
+        <meta name="twitter:description" content="一個 Blog (2023/03/10) 範例，展示最佳的 HTML 結構與優化。">
+        <meta name="twitter:image" content="https://pardnchiu.github.io/web-template/image/blog-20230310.jpg">
+        <meta name="twitter:site" content="@pardnchiu">
+        <meta name="twitter:card" content="summary_large_image">
+
+        <!-- Structured Data for Rich Snippets -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Blog (2023/03/10) - 邱敬幃 Pardn Chiu",
+            "description": "一個 Blog (2023/03/10) 範例，展示最佳的 HTML 結構與優化。",
+            "url": "https://pardnchiu.github.io/web-template/target/blog-20230310",
+            "image": "https://pardnchiu.github.io/web-template/image/blog-20230310.jpg",
+            "author": {
+                "@type": "Person",
+                "name": "邱敬幃 Pardn Chiu",
+                "url": "https://pardnchiu.github.io"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Pardn Chiu Web",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://pardnchiu.github.io/web-template/image/logo.png"
+                }
+            },
+            "datePublished": "2023-03-10",
+            "dateModified": "2024-12-02"
+        }
+        </script>
+
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-L5VYEZPVXX"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-L5VYEZPVXX');
+        </script>
+
+        <!-- Preconnect -->
+        <link rel="preconnect" href="https://cdn.jsdelivr.net">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <!-- Preloads for CDN -->
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" as="style">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/pdrenderkit@1.5.2/dist/PDRenderKit.js" as="script">
+        <script src="https://cdn.jsdelivr.net/npm/pdrenderkit@1.5.2/dist/PDRenderKit.js" copyright="Pardn Ltd"></script>
+
+        <!--  -->
+        <link rel="stylesheet" href="./css/index.css">
+        <script src="./js/index.js" defer></script>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-L5VYEZPVXX"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-L5VYEZPVXX');
+        </script>
+    </head>
+
+    <style>
+        :root {
+            /* 頂部導覽列顏色 */
+            --col-nav: #fff;
+            /* 主色調 */
+            --col-system: #5c4106;
+            --col-txt: #7f7f7f;
+            --col-border: #e0e0e0;
+
+            --max-width: 1024px;
+        }
+    </style>
+
+    <body>
+
+        <nav id="nav-002">
+            <div>
+                <div class="left">
+                    <a href="">
+                        <b>PARDN LTD</b>
+                    </a>
+                </div>
+                <div class="right">
+                    <ul style="color: #777;">
+                        <li>
+                            <button>首頁</button>
+                        </li>
+                        <li>
+                            <button>列表<i class="fas fa-angle-right right"></i></button>
+                        </li>
+                        <li>
+                            <button>列表<i class="fas fa-angle-right right"></i></button>
+                        </li>
+                        <li>
+                            <button>列表<i class="fas fa-angle-right right"></i>
+                            </button>
+                        </li>
+                    </ul>
+                    <a href="https://pardnchiu.github.io/">
+                        <b>我的頁面</b>
+                        <i class="fa-brands fa-github right"></i>
+                    </a>
+                </div>
+                <button class="right">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <section num="15" top="8rem" bottom="4rem" bg-col="#F2F6FC">
+            <div>
+                <div class="top">
+                    <nav>
+                        <div class="left">
+                            <h6>精選內容</h6>
+                        </div>
+                        <div class="right">
+                            <a>MORE<i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </nav>
+                    <ul class="img-left">
+                        <li class="img">
+                            <a href="" target="_blank" bg-col="#eee">
+                                <img src="https://picsum.photos/1024?random=0" alt="Website Template 12 預覽">
+                            </a>
+                        </li>
+                        <li class="txt">
+                            <div _align="l">
+                                <b>Web</b>
+                                <h6>Website Template 12</h6>
+                                <p>
+                                    名稱: 網站模板 12<br>
+                                    公司: Pardn Ltd 帕登國際有限公司<br>
+                                    開發: Pardn Chiu 邱敬幃<br>
+                                    工具: Html, Css/Sass, Javascript<br>
+                                    圖示: Font Awesome 6<br>
+                                    頭像: Userpics
+                                </p>
+                                <a href="https://github.com/pardnchiu/web-template" target="_blank">查看源碼<i class="fa-brands fa-github right"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="center">
+                    <nav>
+                        <div class="left">
+                            <h6>最新內容</h6>
+                        </div>
+                        <div class="right">
+                            <a>MORE<i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </nav>
+                    <ul>
+                        <li class="left">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <h6>Lorem ipsum dolor sit amet.</h6>
+                                    </a>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum laborum ea cupiditate placeat odit dolorum est sapiente? Odio a doloremque repudiandae aut alias autem temporibus soluta, optio tenetur illo distinctio.
+                                    </p>
+                                    <a href="">前往內容<i class="fas fa-arrow-right"></i></a>
+                                    <img src="https://picsum.photos/1024?random=1" alt="">
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <h6>Lorem ipsum dolor sit amet.</h6>
+                                    </a>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure officia at alias consequatur, quis nemo consequuntur exercitationem modi itaque nam veniam illum officiis mollitia illo placeat obcaecati est ullam sed.
+                                    </p>
+                                    <a href="">前往內容<i class="fas fa-arrow-right"></i></a>
+                                    <img src="https://picsum.photos/1024?random=2" alt="">
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <h6>Lorem ipsum dolor sit amet.</h6>
+                                    </a>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consectetur cupiditate placeat qui, neque officia, quae mollitia ad doloremque sapiente cumque quibusdam, nobis illo ducimus deserunt! Suscipit cupiditate vel accusamus?
+                                    </p>
+                                    <a href="">前往內容<i class="fas fa-arrow-right"></i></a>
+                                    <img src="https://picsum.photos/1024?random=3" alt="">
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="right">
+                            <h6>最新回應</h6>
+                            <ul>
+                                <li>
+                                    <img src="https://picsum.photos/1024?random=4" alt="">
+                                    <a href=""><b>Website Template 網站模板 8</b>Pardn Chiu
+                                        邱敬幃</a>
+                                </li>
+                                <li>
+                                    <img src="https://picsum.photos/1024?random=5" alt="">
+                                    <a href=""><b>Website Template 網站模板 7</b>Pardn Chiu
+                                        邱敬幃</a>
+                                </li>
+                                <li>
+                                    <img src="https://picsum.photos/1024?random=6" alt="">
+                                    <a href=""><b>Instagram Template 仿製模板</b>Pardn
+                                        Chiu 邱敬幃</a>
+                                </li>
+                                <li>
+                                    <img src="https://picsum.photos/1024?random=7" alt="">
+                                    <a href=""><b>Management Template 後台模板 1</b>Pardn Chiu
+                                        邱敬幃</a>
+                                </li>
+                                <li>
+                                    <img src="https://picsum.photos/1024?random=8" alt="">
+                                    <a href=""><b>Website Template 網站模板 6</b>Pardn Chiu
+                                        邱敬幃</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <ul>
+                        <li>
+                            <h6>功能模板</h6>
+                            <ul>
+                                <li>
+                                    <a href="https://pardnchiu.github.io/firebase-messager-web/">
+                                        <h6>Firebase Messager 即時訊息</h6>
+                                        <p>歡迎使用 PD Web Pro ，一個快速架站的網站模版組合包，您可以透過此組合包快速建立專業又亮眼的網站，此模板由 Pardn Chiu 所開發。</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://pardnchiu.github.io/markdown-editor-web/">
+                                        <h6>Markdown Editor 編輯器</h6>
+                                        <p>歡迎使用 PD Web Pro ，一個快速架站的網站模版組合包，您可以透過此組合包快速建立專業又亮眼的網站，此模板由 Pardn Chiu 所開發。</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h6>網站模板</h6>
+                            <ul>
+                                <li>
+                                    <a href="https://pardnchiu.github.io/website-template-5/">
+                                        <h6>Website Template 網站模板 5</h6>
+                                        <p>歡迎使用 PD Web Pro ，一個快速架站的網站模版組合包，您可以透過此組合包快速建立專業又亮眼的網站，此模板由 Pardn Chiu 所開發。</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://pardnchiu.github.io/website-template-4/">
+                                        <h6>Website Template 網站模板 4</h6>
+                                        <p>歡迎使用 PD Web Pro ，一個快速架站的網站模版組合包，您可以透過此組合包快速建立專業又亮眼的網站，此模板由 Pardn Chiu 所開發。</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://pardnchiu.github.io/website-template-3/">
+                                        <h6>Website Template 網站模板 3</h6>
+                                        <p>歡迎使用 PD Web Pro ，一個快速架站的網站模版組合包，您可以透過此組合包快速建立專業又亮眼的網站，此模板由 Pardn Chiu 所開發。</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a>更多內容<i class="fas fa-arrow-right"></i></a>
+                        </li>
+                        <li>
+                            <h6>JOBALL</h6>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <a href="https://joball.tw" target="_blank">
+                                            <h6>提供服務</h6>
+                                            <p>與數千位的專家一起，在JOBALL平台上提供您的服務</p>
+                                        </a>
+                                </li>
+                                <li>
+                                    <a href="https://joball.tw/album" target="_blank">
+                                        <h6>曝光作品</h6>
+                                        <p>展示您的個人成果，讓更多有需求的案主發現您的才華</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://joball.tw/case" target="_blank">
+                                        <h6>刊登需求</h6>
+                                        <p>描述您的需求，讓平台專家看見您的需求並與您聯繫</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://joball.tw/post" target="_blank">
+                                        <h6>張貼貼文</h6>
+                                        <p>2023/02 新功能，讓您可以詢問、分享、曝光自己</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a>更多內容<i class="fas fa-arrow-right"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section num="19" top="4rem" bottom="16rem">
+            <span mask="arc-down"></span>
+            <div>
+                <ul>
+                    <li class="show">
+                        <button onclick="showContent(this)">還在找人才協助自己嗎？<i class="fas fa-chevron-right"></i></button>
+                        <p>已有上千位專家、團隊在平台提供服務<br>立即前往平台與上千位專家取得聯繫</p>
+                    </li>
+                    <li class="">
+                        <button onclick="showContent(this)">還在找更多地方曝光自己嗎？<i class="fas fa-chevron-right"></i></button>
+                        <p>只需註冊即可刊登服務、上傳作品<br>透過平台在網路上曝光你自己，讓有需求的用戶們直接與你聯繫</p>
+                    </li>
+                </ul>
+            </div>
+            <script>
+                function showContent(e) {
+                    var isShow = e.parentElement.classList.contains('show');
+                    if (e.parentElement.parentElement.querySelector('li.show')) e.parentElement.parentElement.querySelector('li.show').classList.remove('show');
+                    isShow ? e.parentElement.classList.remove('show') : e.parentElement.classList.add('show');
+                };
+            </script>
+        </section>
+
+        <section num="8" bg-col="#212831">
+            <span mask="arc" col="#212831"></span>
+            <div style="top: -12rem; height: 0;">
+                <ul>
+                    <li>
+                        <h6>想瞭解更多JOBALL資訊？</h6>
+                        <p>輸入您的Email 來追蹤JOBALL 最新消息（無實際功能，純範例展示）</p>
+                    </li>
+                    <li>
+                        <ul class="input">
+                            <li>
+                                <input type="text" placeholder="youtemail@example.com" bg-col="#F2F6FC">
+                            </li>
+                            <li>
+                                <a href="" bg-col="--col-system" col="#fff">送出</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <footer num="1" top="2rem" style="background-color: #212831;">
+            <div>
+                <div>
+                    <h6>Website Template 12</h6>
+                    <p>Created by Pardn Chiu</p>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/pardnchiu" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/pardnchiu" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/chiuchingwei" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul>
+                    <li>
+                        <h6>ABOUT</h6>
+                        <ul>
+                            <li>
+                                <a href="https://github.com/pardnchiu" target="_blank">Github</a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/chiuchingwei" target="_blank">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/pardnchiu" target="_blank">Instagram</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6>PRODUCTS</h6>
+                        <ul>
+                            <li>
+                                <a href="">Landing Pages</a>
+                            </li>
+                            <li>
+                                <a href="">Inner Pages</a>
+                            </li>
+                            <li>
+                                <a href="">Header Examples</a>
+                            </li>
+                            <li>
+                                <a href="">Documentation</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6>TECHNICAL</h6>
+                        <ul>
+                            <li>
+                                <a href="">Changelog</a>
+                            </li>
+                            <li>
+                                <a href="">Theme Customizer</a>
+                            </li>
+                            <li>
+                                <a href="">Documentation</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6>LEGAL</h6>
+                        <ul>
+                            <li>
+                                <a href="">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="">Terms and Conditions</a>
+                            </li>
+                            <li>
+                                <a href="">License</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div>
+                    <p class="left">Copyright © Pardn Ltd 2023</p>
+                    <p class="right">
+                        <a href="">Privacy Policy</a>
+                        ·
+                        <a href="">Contact</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+
+</html>

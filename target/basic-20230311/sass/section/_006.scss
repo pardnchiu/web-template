@@ -1,0 +1,73 @@
+>section[num="6"]>div {
+  @import "../comp/div-info";
+
+  >ul {
+    position: relative;
+    display: block;
+    margin-top: 4rem;
+    width: 100%;
+    height: initial;
+    font-size: 0;
+    text-align: center;
+
+    &:nth-child(1) {
+      margin-top: 0;
+    }
+
+    @import "../comp/li-r2";
+
+    >li {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 2rem;
+      padding: 2rem 1.5rem;
+      width: 100%;
+      height: initial;
+      background-color: #fff;
+      border-radius: 0.5rem;
+      font-size: 0;
+      text-align: left;
+
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+
+      >i {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 4rem;
+        line-height: 4rem;
+        height: 4rem;
+        font-size: 1.5rem;
+        text-align: center;
+        border-radius: 50%;
+        background-color: var(--col-system);
+        color: #fff;
+      }
+
+      >p {
+        position: relative;
+        display: inline-block;
+        vertical-align:  middle;
+        margin-left: 1.5rem;
+        width: calc(100% - 4rem - 1.5rem - 1px);
+        height: initial;
+        line-height: var(--h-s);
+        font-size: var(--size-s);
+        color: #6f6f6f;
+
+        >b {
+          position: relative;
+          display: block;
+          margin-bottom: 0.25rem;
+          line-height: var(--h-,);
+          font-size: var(--size-m);
+          font-weight: 500;
+          color: var(--col-system);
+        }
+      }
+    }
+  }
+}

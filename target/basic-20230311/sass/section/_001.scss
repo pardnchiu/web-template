@@ -1,0 +1,131 @@
+// 預設Icon 背景顏色
+$bgcolors: (
+  #9999dd99,
+  #99dd9999,
+  #dd999999,
+  #dddd9999,
+  #99dddd99,
+  #dd99dd99
+);
+// 預設Icon 字體顏色
+$colors: (
+  #000099ff,
+  #009900ff,
+  #990000ff,
+  #999900ff,
+  #009999ff,
+  #990099ff
+);
+
+>section[num="1"]>div {
+
+  @import "../comp/div-info";
+
+  >ul {
+    position: relative;
+    display: block;
+    margin-top: 3rem;
+    width: 100%;
+    height: initial;
+    text-align: center;
+
+    &:nth-child(1) {
+      margin-top: 0;
+    }
+
+    @import "../comp/li-r2";
+    @import "../comp/li-r3";
+    @import "../comp/li-r4";
+
+    >li {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 2rem;
+      width: 100%;
+      height: initial;
+      font-size: 0;
+      text-align: center;
+
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+
+      @each $bgcolor in $bgcolors {
+        $index: index($bgcolors, $bgcolor);
+        $color: nth($colors, $index);
+
+        &:nth-child(n + #{$index}) {
+
+          >div,
+          >a,
+          >button {
+            >i {
+              background-color: $bgcolor;
+              color: $color;
+            }
+          }
+        }
+      }
+
+      >div,
+      >a,
+      >button {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: initial;
+        text-align: inherit;
+
+        >img,
+        >i {
+          position: relative;
+          display: inline-block;
+          vertical-align: top;
+          width: 4rem;
+          height: 4rem;
+          line-height: 4rem;
+          font-size: var(--size-xl);
+          text-align: center;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        >h6 {
+          position: relative;
+          display: block;
+          margin-top: 1.25rem;
+          width: 100%;
+          height: initial;
+          line-height: initial;
+          font-size: var(--size-l);
+          font-weight: 500;
+          text-align: inherit;
+          color: #000;
+
+          &:nth-child(1) {
+            margin-top: 0;
+          }
+        }
+
+        >p {
+          position: relative;
+          display: block;
+          margin-top: 0.5rem;
+          width: 100%;
+          height: initial;
+          line-height: var(--h-s);
+          font-size: var(--size-s);
+          text-align: inherit;
+          color: #777;
+
+          &:nth-child(1) {
+            margin-top: 0;
+          }
+
+          @import "../comp/innerText";
+        }
+      }
+    }
+  }
+}

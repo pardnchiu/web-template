@@ -1,0 +1,202 @@
+>section[num="2"]>div {
+  @keyframes section-002-right-show {
+    0% {
+      right: -100%;
+    }
+
+    100% {
+      right: 0;
+    }
+  }
+
+  @keyframes section-002-left-show {
+    0% {
+      left: -100%;
+    }
+
+    100% {
+      left: 0;
+    }
+  }
+
+  >ul {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: initial;
+    font-size: 0;
+
+    >li {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 3rem;
+      width: initial;
+      max-width: 512px;
+      height: initial;
+      text-align: center;
+      animation-duration: 0.5s;
+
+      @media screen and (min-width: 1024px) {
+        width: calc((100% - 3rem) / 2 - 1px);
+        max-width: unset;
+      }
+
+      &:nth-child(1) {
+        margin-left: 0;
+        animation-name: section-002-left-show;
+      }
+
+      &:nth-last-child(1) {
+        animation-name: section-002-right-show;
+      }
+
+      &:has(img) {
+        display: none;
+
+        // 有圖片 ＆ 圖片於左方
+        &:nth-child(1) {
+          padding-left: 1.6rem;
+          padding-right: 1.6rem;
+
+          >img,
+          >a>img,
+          >figure>img {
+            transform: skew(10deg, -2deg);
+          }
+        }
+
+        // 有圖片 ＆ 圖片於右方
+        &:nth-child(2) {
+          padding-left: 1.6rem;
+          padding-right: 1.6rem;
+
+          >img,
+          >a>img,
+          >figure>img {
+            transform: skew(-10deg, 2deg);
+          }
+        }
+
+        // 桌面版顯示圖片
+        @media screen and (min-width: 1024px) {
+          display: inline-block;
+        }
+      }
+
+      &.align-left {
+        text-align: left;
+      }
+
+      &.align-right {
+        text-align: right;
+      }
+
+      // 圖片
+      >img {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        border-radius: 0.25rem;
+      }
+
+      // 圖片 ＆ 文字／連結
+      >a,
+      >figure {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: initial;
+
+        >img {
+          position: relative;
+          display: block;
+          width: 100%;
+          height: auto;
+          max-height: 512px;
+          object-fit: contain;
+          border-radius: 0.25rem;
+        }
+      }
+
+      @import "../comp/div-info";
+
+      >ul {
+        position: relative;
+        display: block;
+        margin-top: 1rem;
+        width: 100%;
+        height: initial;
+        font-size: 0;
+        text-align: center;
+
+        &.align-left {
+          text-align: left;
+        }
+  
+        &.align-right {
+          text-align: right;
+        }
+
+        >li {
+          position: relative;
+          display: inline-block;
+          vertical-align: top;
+          margin-top: 2rem;
+          margin-right: 2rem;
+          width: calc((100% - 2rem) / 2 - 1px);
+          height: initial;
+          text-align: inherit;
+
+          &:nth-child(2n) {
+            margin-right: 0;
+          }
+
+          >h2,
+          >h3,
+          >h4,
+          >h5,
+          >h6 {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: initial;
+            line-height: var(--h-m);
+            font-size: var(--size-m);
+            font-weight: 500;
+            color: #000;
+            text-align: inherit;
+          }
+
+          >p {
+            position: relative;
+            display: block;
+            margin-top: 0.5rem;
+            width: 100%;
+            height: initial;
+            line-height: var(--h-s);
+            font-size: var(--size-s);
+            color: #777;
+            text-align: inherit;
+            @import "../comp/innerText";
+          }
+
+          >a,
+          >button {
+            position: relative;
+            display: block;
+            margin-top: 0.5rem;
+            width: 100%;
+            height: initial;
+            line-height: var(--h-s);
+            font-size: var(--size-s);
+            color: var(--col-system);
+            @import "../comp/innerText";
+          }
+        }
+      }
+    }
+  }
+}

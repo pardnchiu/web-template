@@ -1,0 +1,199 @@
+>footer[num="1"] {
+  position: relative;
+  display: block;
+  width: inherit;
+  height: initial;
+
+  // top
+  >svg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  // body
+  >div {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 1rem;
+    width: 100%;
+    max-width: var(--max-width);
+    height: initial;
+    font-size: 0;
+    z-index: 2;
+
+    @media screen and (max-width: 1139px) {
+      max-width: 480px;
+    }
+
+    >div:nth-child(1) {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      width: 300px;
+      height: initial;
+
+      @media screen and (max-width: 1139px) {
+        display: block;
+        width: 100%;
+      }
+      >h6 {
+        position: relative;
+        display: block;
+        width: initial;
+        height: initial;
+        font-size: 1rem;
+        color: #9f9f9f;
+      }
+
+      >p {
+        position: relative;
+        display: block;
+        margin-top: 0.25rem;
+        width: initial;
+        height: initial;
+        font-size: 0.75rem;
+        color: #9f9f9f;
+      }
+
+      >ul {
+        position: relative;
+        display: block;
+        margin-top: 1.25rem;
+        width: 100%;
+        height: initial;
+        font-size: 0;
+
+        >li {
+          position: relative;
+          display: inline-block;
+          vertical-align: top;
+          margin-right: 0.5rem;
+          width: initial;
+          height: initial;
+
+          &:nth-last-child(1) {
+            margin-right: 0;
+          }
+          
+          >a {
+            position: relative;
+            display: block;
+            width: initial;
+            height: initial;
+            
+            >i {
+              position: relative;
+              display: block;
+              width: 1.25rem;
+              line-height: 1.25rem;
+              height: 1.25rem;
+              font-size: 1.125rem;
+              color: #9f9f9f;
+            }
+          }
+        }
+      }
+    }
+
+    >ul {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      width: calc(100% - 300px - 1px);
+      height: initial;
+      @media screen and (max-width: 1139px) {
+        display: block;
+        width: 100%;
+      }
+      > li {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        width: calc(25% - 1px);
+        height: initial;
+        @media screen and (max-width: 1139px) {
+          margin-top: 3rem;
+          width: calc(50% - 1px);
+        }
+        > h6 {
+          position: relative;
+          display: block;
+          width: 100%;
+          height: initial;
+          font-size: 0.875rem;
+          color: #9f9f9f;
+        }
+        > ul {
+          position: relative;
+          display: block;
+          margin-top: 1.25rem;
+          width: 100%;
+          height: initial;
+          > li {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: initial;
+            >a,
+            >button {
+              position: relative;
+              display: block;
+              width: 100%;
+              line-height: 1.875rem;
+              height: initial;
+              font-size: 0.875rem;
+              color: #9f9f9f;
+            }
+          }
+        }
+      }
+    }
+
+    >div:nth-last-child(1) {
+      position: relative;
+      display: block;
+      margin-top: 3rem;
+      height: 6rem;
+      border-top: 1px solid var(--col-border);
+      >p,
+      >a,
+      >button{
+        position: absolute;
+        display: block;
+        top: 2rem;
+        bottom: 2rem;
+        line-height: 2rem;
+        font-size: 0.75rem;
+        color: #9f9f9f;
+        &.left {
+          left: 0;
+        }
+        &.right {
+          right: 0;
+        }
+        > p,
+        > b,
+        > i,
+        > strong,
+        > em,
+        > span,
+        > a,
+        > button {
+          position: relative;
+          display: inline-block;
+          vertical-align: top;
+          line-height: inherit;
+          font-size: inherit;
+          color: inherit;
+        };
+      }
+    }
+  }
+}

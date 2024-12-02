@@ -1,0 +1,105 @@
+section[num="17"] {
+  >div {
+
+    @import "../comp/div-info";
+  
+    >ul {
+      position: relative;
+      display: block;
+      margin-top: 2rem;
+      width: 100%;
+      height: initial;
+      font-size: 0;
+      text-align: center;
+
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+
+      @import "../comp/li-r2";
+      @import "../comp/li-r3";
+      @import "../comp/li-r4";
+
+      > li {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 2rem;
+        width: 100%;
+        font-size: 0;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 0.5rem;
+        overflow: hidden;
+
+        &:nth-child(1) {
+          margin-top: 0;
+        }
+
+        > a,
+        > figure {
+          position: relative;
+          display: block;
+          width: 100%;
+          padding-top: calc(100% / 4 * 3);
+          background-color: rgba(0, 0, 0, 0.05);
+          > img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+          &::after,
+          >figcaption {
+            
+          }
+        }
+        > div {
+          position: relative;
+          display: block;
+          width: initial;
+          margin-top: 0.25rem;
+          height: 1rem;
+          font-size: 0;
+          > svg {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            margin: 0.0.125rem;
+            width: 1rem;
+            height: 1rem;
+          }
+        }
+        >p {
+          position: relative;
+          display: block;
+          margin-top: 0.75rem;
+          width: 100%;
+          font-size: 1rem;
+          color: #404040;
+          &.hint {
+            margin-top: 0.5rem;
+            font-size: 0.75rem;
+            color: #6f6f6f;
+          }
+          &.bottom {
+            margin-top: 1rem;
+            padding: 0.75rem 0;
+            font-size: 0.75rem;
+            background-color: rgba(0, 0, 0, 0.025);
+            color: #6f6f6f;
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+          }
+          @import "../comp/innerText";
+          > b {
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}

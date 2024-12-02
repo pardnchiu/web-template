@@ -1,0 +1,35 @@
+/*
+
+  樣式一
+  純色 + 底線
+
+*/
+#nav-002,
+nav[num="2"] {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: inherit;
+  height: 6rem;
+  background-color: var(--col-nav);
+  z-index: 10;
+
+  &.scroll {
+    border-bottom: 1px solid var(--col-border);
+  }
+
+  >div {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: var(--max-width);
+    height: inherit;
+
+    @import "body";
+  }
+}

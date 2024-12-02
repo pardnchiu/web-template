@@ -1,0 +1,120 @@
+/*
+
+  用戶評論
+
+*/
+>section[num="5"]>div {
+  @import "../comp/div-info";
+
+  // 內容區塊
+  >ul {
+    position: relative;
+    display: block;
+    margin-top: 4rem;
+    width: 100%;
+    height: initial;
+    font-size: 0;
+    text-align: center;
+
+    &:nth-child(1) {
+      margin-top: 0;
+    }
+
+    @import "../comp/li-r2";
+    @import "../comp/li-r3";
+
+    &.r2>li {
+      @media screen and (min-width: 1024px) {
+        &:nth-child(2) {
+          margin-top: 0;
+          padding-top: 0;
+          border-top: unset;
+        }
+      }
+    }
+
+    &.r3>li {
+      @media screen and (min-width: 1024px) {
+
+        &:nth-child(2),
+        &:nth-child(3) {
+          margin-top: 0;
+          padding-top: 0;
+          border-top: unset;
+        }
+      }
+    }
+
+    >li {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      margin: 1.5rem 0 0;
+      padding-top: 1.5rem;
+      width: 100%;
+      height: initial;
+      font-size: 0;
+      border-top: 1px solid var(--col-border);
+
+      &:nth-child(1) {
+        margin-top: 0;
+        padding-top: 0;
+        border-top: unset;
+      }
+
+      >i,
+      >img {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        width: 4rem;
+        height: 4rem;
+        line-height: 4rem;
+        text-align: center;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        border-radius: 50%;
+        object-fit: cover;
+
+      }
+
+      >p:nth-child(2) {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 2rem;
+        margin-left: 1rem;
+        transform: translateY(-50%);
+        width: calc(100% - 4rem - 1rem - 1px);
+        height: initial;
+        line-height: var(--h-s);
+        font-size: var(--size-s);
+        text-align: left;
+        color: #777;
+
+        >b,
+        >strong {
+          position: relative;
+          display: block;
+          line-height: var(--h-m);
+          font-size: var(--size-m);
+          font-weight: 500;
+          color: #000;
+        }
+      }
+
+      >p:nth-child(3) {
+        position: relative;
+        display: block;
+        margin-top: 0;
+        padding: 0;
+        width: 100%;
+        line-height: var(--h-s);
+        font-size: var(--size-s);
+        text-align: left;
+        color: #777;
+
+        @import "../comp/innerText";
+      }
+    }
+  }
+}

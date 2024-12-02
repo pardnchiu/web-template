@@ -140,7 +140,7 @@
     <p>對開發技術充滿熱情，並能提供高品質的解決方案。<br>在開發iOS與網站皆具有豐富的經驗。<br>如果您對我的技能和經驗感興趣，歡迎與我聯繫。</p>
     <ul>
         <li>Email：<a href="mailto:dev@pardn.io" target="_blank">dev@pardn.io</a></li>
-        <li>Website：<a href="https://pardn.ltd" target="_blank">pardn.ltd</a></li>
+        <li>Website：<a href="https://pardnchiu.github.io" target="_blank">pardn.ltd</a></li>
         <li>GitHub：<a href="https://github.com/pardnchiu" target="_blank">github.com/pardnchiu</a></li>
         <li>Linkedin：<a href="https://linkedin.com/in/pardnchiu"
                 target="_blank">linkedin.com/in/pardnchiu</a></li>

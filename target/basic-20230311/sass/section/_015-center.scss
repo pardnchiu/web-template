@@ -1,0 +1,296 @@
+>div.center {
+  position: relative;
+  display: block;
+  margin-top: 2rem;
+  width: 100%;
+  height: initial;
+
+  // 導覽列
+  >nav {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
+    border-bottom: 1px solid var(--col-border);
+
+    // 左右區塊
+    >div {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: initial;
+      line-height: inherit;
+      height: inherit;
+      font-weight: 0;
+
+      &.left {
+        left: 0;
+      }
+
+      &.right {
+        right: 0;
+      }
+
+      // 區塊標題
+      >h6 {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        width: initial;
+        line-height: inherit;
+        height: inherit;
+        font-size: 1.125rem;
+        color: #404040;
+      }
+
+      // 查看更多
+      >a,
+      >button {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        width: initial;
+        line-height: inherit;
+        height: inherit;
+        font-size: 0.875rem;
+        color: var(--col-system);
+
+        >* {
+          position: relative;
+          width: initial;
+          line-height: inherit !important;
+          height: inherit;
+          font-size: inherit;
+          color: inherit;
+        }
+
+        >i {
+          margin: 0 0.125rem;
+
+          &:nth-child(1) {
+            margin-left: 0;
+            margin-right: 0.5rem;
+          }
+
+          &:nth-last-child(1) {
+            margin-left: 0.5rem;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  >ul {
+    position: relative;
+    display: block;
+    margin-top: 2rem;
+    padding-bottom: 1.5rem;
+    width: 100%;
+    height: initial;
+    font-size: 0;
+    border-bottom: 1px solid var(--col-border);
+
+    >li {
+      position: relative;
+      display: none;
+      vertical-align: top;
+      height: inherit;
+
+      &.left {
+        display: inline-block;
+        margin-right: 3rem;
+        width: calc(100% - 3rem - 20rem - 1px);
+        height: initial;
+
+        >ul {
+          position: relative;
+          display: block;
+          width: 100%;
+          height: initial;
+
+          >li {
+            position: relative;
+            display: block;
+            margin-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            width: 100%;
+            height: initial;
+            border-bottom: 1px solid var(--col-border);
+            text-align: left;
+
+            &:nth-child(1) {
+              margin-top: 0;
+            }
+
+            &:nth-last-child(1) {
+              padding-bottom: 0;
+              border-bottom: unset;
+            }
+
+            >p {
+              position: relative;
+              display: -webkit-box;
+              text-overflow: ellipsis;
+              -webkit-line-clamp: 3;
+              -webkit-box-orient: vertical;  
+              margin-top: 0.75rem;
+              width: calc(100% - 6rem - 1rem);
+              line-height: 1.5rem;
+              height: initial;
+              max-height: calc(1.5rem * 3);
+              font-size: 1rem;
+              text-align: left;
+              color: #868686;
+              overflow: hidden;
+
+              &:nth-child(1) {
+                margin-top: 0;
+              }
+            }
+
+            >a {
+              position: relative;
+              display: inline-block;
+              vertical-align: top;
+              margin-top: 1rem;
+              width: initial;
+              max-width: calc(100% - 6rem - 1rem);
+              line-height: initial;
+              height: initial;
+              font-size: 1rem;
+              text-align: left;
+              color: var(--col-system);
+
+              &:nth-child(1) {
+                margin-top: 0;
+              }
+
+              >h2,
+              >h3,
+              >h4,
+              >h5,
+              >h6 {
+                position: relative;
+                width: initial;
+                line-height: initial;
+                height: initial;
+                font-size: 1.125rem;
+                font-weight: 500;
+                text-align: left;
+                color: #000;
+              }
+
+              >i {
+                line-height: inherit;
+                height: inherit;
+                font-size: inherit;
+                text-align: inherit;
+
+                &:nth-child(1) {
+                  margin-right: 0.5rem;
+                }
+
+                &:nth-last-child(1) {
+                  margin-left: 0.5rem;
+                }
+              }
+            }
+
+            >img {
+              position: absolute;
+              top: 0;
+              right: 0;
+              width: 6rem;
+              height: 6rem;
+              border-radius: 0.5rem;
+              -moz-box-shadow: 0 1px 12px rgba(0, 0, 0, 0.05), 0 2px 24px rgba(0, 0, 0, 0.05);
+              -webkit-box-shadow: 0 1px 12px rgba(0, 0, 0, 0.05), 0 2px 24px rgba(0, 0, 0, 0.05);
+              box-shadow: 0 1px 12px rgba(0, 0, 0, 0.05), 0 2px 24px rgba(0, 0, 0, 0.05);
+              object-fit: cover;
+            }
+          }
+        }
+      }
+
+      &.right {
+        display: inline-block;
+        padding: 1rem;
+        width: 320px;
+        height: initial;
+        background-color: #fff;
+        -moz-box-shadow: 0 1px 12px rgba(0, 0, 0, 0.05), 0 2px 24px rgba(0, 0, 0, 0.05);
+        -webkit-box-shadow: 0 1px 12px rgba(0, 0, 0, 0.05), 0 2px 24px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 1px 12px rgba(0, 0, 0, 0.05), 0 2px 24px rgba(0, 0, 0, 0.05);
+        border-radius: 0.5rem;
+
+        >h2,
+        >h3,
+        >h4,
+        >h5,
+        >h6 {
+          position: relative;
+          display: block;
+          padding-bottom: 1rem;
+          width: initial;
+          line-height: initial;
+          height: initial;
+          font-size: 1rem;
+          font-weight: 500;
+          text-align: left;
+          color: #404040;
+          border-bottom: 1px solid var(--col-border);
+        }
+
+        >ul {
+          position: relative;
+          display: block;
+          margin-top: 1rem;
+          width: 100%;
+          height: initial;
+
+          >li {
+            position: relative;
+            display: block;
+            margin-top: 1.5rem;
+            width: 100%;
+            height: initial;
+            font-size: 0;
+            text-align: left;
+            &:nth-child(1) {
+              margin-top: 0;
+            }
+
+            >img {
+              position: relative;
+              display: inline-block;
+              vertical-align: top;
+              width: 3rem;
+              height: 3rem;
+              border-radius: 50%;
+            }
+
+            >p,
+            >a,
+            >button {
+              position: relative;
+              display: inline-block;
+              vertical-align: top;
+              margin-left: 1rem;
+              width: calc(100% - 3rem - 1rem - 1px);
+              font-size: 0.875rem;
+              color: #6f6f6f;
+              >b {
+                position: relative;
+                display: block;
+                margin-bottom: 0.25rem;
+                color: #000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,176 @@
+>nav {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+
+    >h2,
+    >h3,
+    >h4,
+    >h5,
+    >h6 {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: initial;
+        line-height: inherit;
+        height: inherit;
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-align: left;
+        color: #000;
+    }
+
+    >ul {
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: initial;
+        line-height: inherit;
+        height: inherit;
+        text-align: left;
+        font-size: 0;
+
+        >li {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            width: initial;
+            line-height: inherit;
+            height: inherit;
+            text-align: left;
+            font-size: 0.875rem;
+            color: #6f6f6f;
+            border-radius: 0.25rem;
+
+            >a,
+            >button {
+                position: relative;
+                padding: 0 1rem;
+                width: initial;
+                line-height: inherit;
+                height: inherit;
+                text-align: left;
+                font-size: inherit;
+                color: inherit;
+                border-radius: inherit;
+
+                >i {
+                    position: relative;
+                    vertical-align: top;
+                    margin-left: 0.5rem;
+                    line-height: inherit;
+                    height: inherit;
+                    font-size: 0.75rem;
+                    color: inherit;
+                }
+            }
+        }
+    }
+}
+
+// 文字區塊
+>div {
+    position: relative;
+    display: block;
+    margin-top: 4rem;
+    width: 100%;
+    height: initial;
+
+    &:nth-child(1) {
+        margin-top: 0;
+    }
+
+    &.align-left {
+        text-align: left;
+    }
+
+    &.align-right {
+        text-align: right;
+    }
+
+    >b {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0.25rem 0.75rem;
+        width: initial;
+        height: initial;
+        line-height: initial;
+        font-size: 0.75rem;
+        font-weight: 500;
+        background-color: var(--col-system);
+        color: #fff;
+        border-radius: 1rem;
+    }
+
+    >h1,
+    >h2,
+    >h3,
+    >h4,
+    >h5,
+    >h6 {
+        position: relative;
+        display: block;
+        margin-top: 0.75rem;
+        width: 100%;
+        height: initial;
+        line-height: var(--h-xl);
+        font-size: var(--size-xl);
+        font-weight: 500;
+        text-align: inherit;
+        color: #000;
+
+        &:nth-child(1) {
+            margin-top: 0;
+        }
+
+        &.s {
+            line-height: var(--h-l);
+            font-size: var(--size-l);
+        }
+
+        &.l {
+            line-height: var(--h-xxl);
+            font-size: var(--size-xxl);
+        }
+
+        &.xl {
+            line-height: var(--h-max);
+            font-size: var(--size-max);
+        }
+
+        &.b {
+            font-weight: 600;
+        }
+    }
+
+    >p {
+        position: relative;
+        display: block;
+        margin-top: 0.75rem;
+        width: 100%;
+        height: initial;
+        line-height: var(--h-m);
+        font-size: var(--size-m);
+        text-align: inherit;
+        color: #777;
+
+        &:nth-child(1) {
+            margin-top: 0;
+        }
+
+        @import "innerText";
+    }
+
+    @import "ul-button";
+
+    >ul {
+        margin-top: 1.5rem;
+    }
+}

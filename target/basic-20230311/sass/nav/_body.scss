@@ -1,0 +1,236 @@
+>div.left {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: initial;
+    height: initial;
+    font-size: 0;
+    text-align: left;
+
+    @media screen and (max-width: 1139px) {
+        left: 1.5rem;
+    }
+
+    >div,
+    >a,
+    >button {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 1rem;
+        width: initial;
+        line-height: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.25rem;
+        color: var(--col-system);
+
+        &:nth-child(1) {
+            margin-left: 0;
+        }
+
+        @import "../comp/innerText";
+
+        >img {
+            position: relative;
+            width: auto;
+            height: inherit;
+            object-fit: cover;
+        }
+    }
+}
+
+>div.center {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: initial;
+    height: initial;
+    font-size: 0;
+    text-align: center;
+
+    >div,
+    >a,
+    >button {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 0.25rem;
+        width: initial;
+        line-height: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.25rem;
+        color: var(--col-system);
+
+        @import "../comp/innerText";
+
+        >img {
+            position: relative;
+            width: auto;
+            height: inherit;
+            object-fit: cover;
+        }
+    }
+}
+
+>div.right {
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: initial;
+    height: initial;
+    font-size: 0;
+    text-align: right;
+
+    @media screen and (max-width: 1139px) {
+        right: 1.5rem;
+    }
+
+    @media screen and (max-width: 799px) {
+        top: 0;
+        right: 0;
+        transform: unset;
+        width: 100%;
+        text-align: left;
+        background-color: var(--col-nav);
+
+        &.show {
+            margin-top: 6rem;
+            padding: 0 1.5rem 2rem;
+
+            >ul,
+            >ol,
+            >button:nth-last-child(1) {
+                display: block;
+            }
+        }
+    }
+
+
+    >ul,
+    >ol {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 2rem;
+        width: initial;
+        height: 2.5rem;
+        font-size: 0;
+        color: #404040;
+
+        @media screen and (max-width: 1139px) {
+            margin-right: 0;
+        }
+
+        @media screen and (max-width: 799px) {
+            display: none;
+            height: initial;
+        }
+
+        >li {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 2rem;
+            width: initial;
+            height: initial;
+            font-size: 0;
+            color: inherit;
+
+            @media screen and (max-width: 799px) {
+                display: block;
+            }
+
+            >div,
+            >a,
+            >button {
+                position: relative;
+                display: inline-block;
+                vertical-align: top;
+                margin-left: 1rem;
+                width: initial;
+                line-height: 2.5rem;
+                height: 2.5rem;
+                font-size: 1rem;
+                color: inherit;
+
+                &:nth-child(1) {
+                    margin-left: 0;
+                }
+
+                @import "../comp/innerText";
+
+                >img {
+                    position: relative;
+                    width: auto;
+                    height: inherit;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    >div,
+    >a,
+    >button {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 1rem;
+        padding: 0 1.25rem;
+        width: initial;
+        line-height: 2.5rem;
+        height: 2.5rem;
+        font-size: 0.875rem;
+        background-color: var(--col-system);
+        color: #fff;
+        border-radius: 0.25rem;
+
+        @media screen and (max-width: 799px) {
+            display: none;
+            margin-top: 2rem;
+        }
+
+
+        &:nth-last-child(1) {
+            margin-right: 0;
+        }
+
+        @import "../comp/innerText";
+
+        >img {
+            position: relative;
+            width: auto;
+            height: inherit;
+            object-fit: cover;
+        }
+    }
+}
+
+>button {
+    position: absolute;
+    display: none;
+    top: calc((6rem - 2rem) / 2);
+    right: 1.5rem;
+    width: initial;
+    height: initial;
+
+    @media screen and (max-width: 799px) {
+        display: block;
+    }
+
+    >i {
+        position: relative;
+        width: 2rem;
+        line-height: 2rem;
+        height: 2rem;
+        text-align: center;
+        font-size: 1.5rem;
+        color: #fff;
+    }
+}

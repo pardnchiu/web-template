@@ -1,0 +1,129 @@
+/*
+  圖片展示
+*/
+section[num="22"] { // 顯示動畫
+  @keyframes section-022-content-show {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 0.8;
+    }
+  }
+  >div {
+    @import "../comp/div-info";
+
+    // 內容區塊
+    >ul {
+      position: relative;
+      display: block;
+      margin-top: 2rem;
+      width: 100%;
+      height: initial;
+      font-size: 0;
+      text-align: center;
+
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+
+      @import "../comp/li-r2";
+      @import "../comp/li-r3";
+      @import "../comp/li-r4";
+
+      >li {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 2rem;
+        width: 100%;
+        height: initial;
+        font-size: 0;
+        text-align: center;
+        background-color: transparent;
+        border-radius: 0.5rem;
+
+        &:nth-child(1) {
+          margin-top: 0;
+        }
+
+        >div,
+        >a,
+        >button {
+          position: relative;
+          display: block;
+          margin-top: 2rem;
+          width: 100%;
+          height: initial;
+          border-radius: 0.25rem;
+          &.s {
+            padding-top: calc(100% / 4 * 3);
+          }
+          &.l {
+            padding-top: calc(100% / 3 * 4);
+          }
+          &:nth-child(1) {
+            margin-top: 0;
+          }
+          >figure {
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+            &:hover {
+              >figcaption {
+                display: block;
+                animation-name: section-022-content-show;
+                animation-duration: 0.5s;
+              }
+            }
+            > img {
+              position: absolute;
+              display: block;
+              top: 0;
+              left: 0;
+              bottom: 0;
+              right: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: inherit;
+            }
+            >figcaption {
+              position: absolute;
+              display: none;
+              top: 0;
+              left: 0;
+              bottom: 0;
+              right: 0;
+              width: 100%;
+              height: 100%;
+              border-radius: inherit;
+              background-color: var(--col-system);
+              opacity: 0.8;
+              > p {
+                position: absolute;
+                display: block;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 100%;
+                line-height: 1.5rem;
+                font-size: 1rem;
+                text-align: center;
+                color: #fff;
+                
+                @import "../comp/innerText";
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

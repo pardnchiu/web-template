@@ -1,0 +1,188 @@
+/*
+
+  方案介紹
+
+*/
+>section[num="3"]>div {
+  @import "../comp/div-info";
+
+  >ul {
+    position: relative;
+    display: block;
+    margin-top: 4rem;
+    width: 100%;
+    height: initial;
+    font-size: 0;
+    text-align: center;
+
+    &:nth-child(1) {
+      margin-top: 0;
+    }
+
+    @import "../comp/li-r2";
+    @import "../comp/li-r3";
+    @import "../comp/li-r4";
+
+    >li {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 2rem;
+      width: 100%;
+      height: initial;
+      font-size: 0;
+      text-align: center;
+      background-color: #fff;
+      border-radius: 0.5rem;
+      transition: 0.2s;
+
+      &:hover {
+        transform: translateY(-0.5rem);
+        -moz-box-shadow: 0 4px 1rem rgba(0, 0, 0, 0.15), 0 8px 3rem rgba(0, 0, 0, 0.15);
+        -webkit-box-shadow: 0 4px 1rem rgba(0, 0, 0, 0.15), 0 8px 3rem rgba(0, 0, 0, 0.15);
+        box-shadow: 0 4px 1rem rgba(0, 0, 0, 0.15), 0 8px 3rem rgba(0, 0, 0, 0.15);
+      }
+
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+
+      >div,
+      >a,
+      >button {
+        position: relative;
+        display: block;
+        padding: 2rem 0;
+        width: 100%;
+        height: initial;
+        min-height: 20rem;
+        // 方案標籤
+      >b {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0.25rem 0.75rem;
+        width: initial;
+        height: initial;
+        line-height: var(--h-xs);
+        font-size: var(--size-xs);
+        font-weight: 500;
+        border-radius: 1rem;
+        background-color: #F0F5FB;
+        color: #404040;
+
+        &.sel {
+          background-color: #dae7fb;
+          color: var(--col-system);
+        }
+      }
+
+      // 方案價格
+      >p {
+        position: relative;
+        display: block;
+        margin-top: 0.75rem;
+        width: 100%;
+        height: initial;
+        line-height: 3.75rem;
+        font-size: 3rem;
+        text-align: center;
+        color: #000;
+
+        &:nth-child(1) {
+          margin-top: 0;
+        }
+
+        &::before {
+          content: "$";
+          position: relative;
+          display: inline-block;
+          vertical-align: top;
+          margin-right: 0.5rem;
+          padding-top: 0.5rem;
+          line-height: var(--h-xl);
+          font-size: var(--size-xl);
+          color: #000;
+        }
+
+        &::after {
+          content: "/ 每月";
+          position: relative;
+          display: inline-block;
+          vertical-align: bottom;
+          margin-left: 0.5rem;
+          padding-bottom: 0.5rem;
+          line-height: var(--h-m);
+          font-size: var(--size-m);
+          color: #000;
+        }
+      }
+
+      // 方案內容
+      >ul {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 1.25rem;
+        min-width: 12rem;
+        font-size: 0;
+        text-align: center;
+
+        >li {
+          position: relative;
+          display: block;
+          padding: 0 1rem;
+          width: 100%;
+          line-height: 2rem;
+          height: initial;
+          font-size: 0;
+          text-align: left;
+
+          &.checked {
+            >i {
+              &.far.fa-circle {
+                display: none;
+              }
+
+              &.far.fa-check-circle {
+                display: inline-block;
+              }
+            }
+          }
+
+          >i {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            width: 2rem;
+            height: 2rem;
+            line-height: var(--h-m);
+            font-size: var(--size-m);
+            text-align: left;
+            color: #ddd;
+
+            &.far.fa-check-circle {
+              display: none;
+              color: var(--col-system);
+            }
+          }
+
+          >p {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            width: initial;
+            max-width: calc(100% - 2rem - 1px);
+            height: initial;
+            line-height: var(--h-m);
+            font-size: var(--size-m);
+            text-align: left;
+            word-wrap: break-word;
+            color: #777;
+          }
+        }
+      }
+      }
+    }
+  }
+}

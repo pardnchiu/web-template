@@ -1,0 +1,158 @@
+/*
+  產品項目介紹
+*/
+section[num="21"] {
+  >div {
+    @import "../comp/div-info";
+
+    // 內容區塊
+    >ul {
+      position: relative;
+      display: block;
+      margin-top: 2rem;
+      width: 100%;
+      height: initial;
+      font-size: 0;
+      text-align: center;
+
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+
+      @import "../comp/li-r2";
+      @import "../comp/li-r3";
+      @import "../comp/li-r4";
+
+      >li {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 2rem;
+        width: 100%;
+        font-size: 0;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 0.5rem;
+        overflow: hidden;
+
+        &:nth-child(1) {
+          margin-top: 0;
+        }
+
+        >div,
+        >a,
+        >button {
+          position: relative;
+          display: block;
+          width: 100%;
+          height: initial;
+
+          >a,
+          >figure {
+            position: relative;
+            display: block;
+            padding-top: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.05);
+
+            @import "../comp/w-h-rate";
+
+            >img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              bottom: 0;
+              right: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+
+            >p {
+              position: absolute;
+              top: 0.5rem;
+              right: 0.5rem;
+              padding: 0 0.5rem;
+              line-height: 1.25rem;
+              font-size: 0.75rem;
+              background-color: rgba(0, 0, 0, 0.5);
+              color: #fff;
+              border-radius: 0.25rem;
+            }
+          }
+
+          >div {
+            position: relative;
+            display: block;
+            padding: 1rem;
+            width: 100%;
+            height: initial;
+            text-align: left;
+            word-wrap: break-word;
+            border-bottom: 1px solid var(--col-border);
+
+            &:nth-last-child(1) {
+              border-bottom: none;
+            }
+
+            >p {
+              position: relative;
+              display: block;
+              width: 100%;
+              text-align: left;
+
+              &.price {
+                line-height: 1.75rem;
+                font-size: 1.25rem;
+                color: var(--col-system);
+
+                &::before {
+                  content: "$";
+                }
+              }
+
+              &.hint1 {
+                line-height: 1.375rem;
+                font-size: 0.875rem;
+                color: #000;
+              }
+
+              &.hint2 {
+                line-height: 1.375rem;
+                font-size: 0.875rem;
+                color: #9f9f9f;
+              }
+
+              @import "../comp/innerText";
+            }
+
+            >div,
+            >a,
+            >button {
+              position: relative;
+              display: block;
+              width: 100%;
+              line-height: 1.375rem;
+              font-size: 0.875rem;
+              font-weight: 500;
+              text-align: left;
+              color: #9f9f9f;
+
+              >i {
+                position: absolute;
+                display: block;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                line-height: inherit !important;
+                font-size: inherit;
+                font-weight: inherit;
+                color: inherit;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

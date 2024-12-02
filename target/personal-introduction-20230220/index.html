@@ -5,23 +5,23 @@
 
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Personal Introduction (2023/02/20) | 邱敬幃 Pardn Chiu</title>
-        <meta name="description" content="Personal Introduction (2023/02/20) | 邱敬幃 Pardn Chiu">
+        <title>Personal Introduction (2023/02/20) - 邱敬幃 Pardn Chiu</title>
+        <meta name="description" content="Personal Introduction (2023/02/20) - 邱敬幃 Pardn Chiu">
         <meta name="keywords" content="Website範例, 邱敬幃, Pardn Chiu">
         <meta name="theme-color" content="#000000">
         <meta name="author" content="邱敬幃 Pardn Chiu">
         <meta name="copyright" content="邱敬幃 Pardn Chiu">
         <!-- Open Graph Metadata -->
-        <meta property="og:title" content="Personal Introduction (2023/02/20) | 邱敬幃 Pardn Chiu">
-        <meta property="og:description" content="Personal Introduction (2023/02/20) | 邱敬幃 Pardn Chiu">
+        <meta property="og:title" content="Personal Introduction (2023/02/20) - 邱敬幃 Pardn Chiu">
+        <meta property="og:description" content="Personal Introduction (2023/02/20) - 邱敬幃 Pardn Chiu">
         <meta property="og:image" content="https://pardnchiu.github.io/web-template/image/personal-introduction-20230220.jpg">
         <meta property="og:site_name" content="邱敬幃 Pardn Chiu">
         <meta property="og:url" content="https://pardnchiu.github.io/web-template/target/personal-introduction-20230220">
         <meta property="og:type" content="website">
         <meta property="og:locale" content="zh_TW">
         <!-- Twitter Metadata -->
-        <meta property="twitter:title" content="Personal Introduction (2023/02/20) | 邱敬幃 Pardn Chiu">
-        <meta property="twitter:description" content="Personal Introduction (2023/02/20) | 邱敬幃 Pardn Chiu">
+        <meta property="twitter:title" content="Personal Introduction (2023/02/20) - 邱敬幃 Pardn Chiu">
+        <meta property="twitter:description" content="Personal Introduction (2023/02/20) - 邱敬幃 Pardn Chiu">
         <meta property="twitter:image" content="https://pardnchiu.github.io/web-template/image/personal-introduction-20230220.jpg">
         <meta property="twitter:site" content="">
         <meta property="twitter:card" content="summary_large_image">
@@ -43,8 +43,8 @@
         {
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "name": "Personal Introduction (2023/02/20) | 邱敬幃 Pardn Chiu",
-            "description": "Personal Introduction (2023/02/20) | 邱敬幃 Pardn Chiu",
+            "name": "Personal Introduction (2023/02/20) - 邱敬幃 Pardn Chiu",
+            "description": "Personal Introduction (2023/02/20) - 邱敬幃 Pardn Chiu",
             "url": "https://pardnchiu.github.io/web-template/target/personal-introduction-20230220",
             "image": "https://pardnchiu.github.io/web-template/image/personal-introduction-20230220.jpg",
             "author": {
@@ -70,7 +70,7 @@
         <!-- <link rel="preload" href="https://cdn.jsdelivr.net/npm/pdrenderkit@1.0.2/dist/PDRenderKit.js" as="script">
         <script src="https://cdn.jsdelivr.net/npm/pdrenderkit@1.0.2/dist/PDRenderKit.js" copyright="Pardn Ltd"></script> -->
         <link rel="preload" href="https://cdn.jsdelivr.net/npm/pdquickui@0.2.0/dist/PDQuickUI.js" as="script">
-        <script src="https://cdn.jsdelivr.net/npm/pdquickui@0.5.1/dist/PDQuickUI.js" copyright="Pardn Ltd"></script>
+        <script src="https://cdn.jsdelivr.net/npm/pdquickui@0.5.2/dist/PDQuickUI.js" copyright="Pardn Ltd"></script>
         <!-- Stylesheet Files -->
         <link rel="stylesheet" href="./css/index.css">
         <style>
@@ -88,8 +88,6 @@
                 --grid-radio: 1 / 1;
             }
         </style>
-        <!-- JavaScript Files -->
-        <script src="./js/index.js"></script>
     </head>
 
     <body id="body">
@@ -98,7 +96,7 @@
                 <a href="">{{ nav.title }}<b>.</b></a>
                 <ul class="page">
                     <li :class="e.class" :for="e in nav.tab">
-                        <a :href="e.href">{{ e.title }}</a>
+                        <button @click="page" :data-page="e.title">{{ e.title }}</button>
                     </li>
                 </ul>
                 <ul class="contact">
@@ -136,7 +134,7 @@
                     </li>
                 </ul>
             </ul>
-            <div :if="is_home">
+            <div :if="isHome">
                 <div class="home">
                     <p>Hello</p>
                     <h1>I'm <b id="typing-area">Pardn Chiu</b></h1>
@@ -155,7 +153,7 @@
                 <span :path="image/home.svg"></span>
                 <img src="image/temp1.png" alt="">
             </div>
-            <div :elseif="is_portfolio">
+            <div :else>
                 <div class="portfolio">
                     <ul id="portfolio-tab" :data-target="type_index">
                         <li data-href="?page=portfolio&type=all" @click="expand">ALL</li>
@@ -163,7 +161,7 @@
                     </ul>
                     <div id="portfolio-list">
                         <div :for="e in portfolio">
-                            <img :lazyload="e.src" src="" alt="">
+                            <img :lazyload="e.src" alt="">
                             <ul>
                                 <li>
                                     <a :href="e.src" target="_blank">
@@ -183,6 +181,216 @@
                 </div>
             </div>
         </section>
+        <script>
+
+            const imageSample = [
+                {
+                    type: "laptop",
+                    src: "https://picsum.photos/640?random=" + Math.random()
+                },
+                {
+                    type: "laptop",
+                    src: "https://picsum.photos/640?random=" + Math.random()
+                },
+                {
+                    type: "laptop",
+                    src: "https://picsum.photos/640?random=" + Math.random()
+                },
+                {
+                    type: "laptop",
+                    src: "https://picsum.photos/640?random=" + Math.random()
+                },
+                {
+                    type: "laptop",
+                    src: "https://picsum.photos/640?random=" + Math.random()
+                },
+                {
+                    type: "landscape",
+                    src: "https://picsum.photos/640?random=" + Math.random()
+                },
+                {
+                    type: "landscape",
+                    src: "https://picsum.photos/640?random=" + Math.random()
+                },
+                {
+                    type: "landscape",
+                    src: "https://picsum.photos/640?random=" + Math.random()
+                },
+                {
+                    type: "landscape",
+                    src: "https://picsum.photos/640?random=" + Math.random()
+                },
+                {
+                    type: "landscape",
+                    src: "https://picsum.photos/640?random=" + Math.random()
+                },
+                {
+                    type: "city",
+                    src: "https://picsum.photos/640?random=" + Math.random()
+                },
+                {
+                    type: "city",
+                    src: "https://picsum.photos/640?random=" + Math.random()
+                },
+                {
+                    type: "city",
+                    src: "https://picsum.photos/640?random=" + Math.random()
+                },
+                {
+                    type: "city",
+                    src: "https://picsum.photos/640?random=" + Math.random()
+                },
+                {
+                    type: "city",
+                    src: "https://picsum.photos/640?random=" + Math.random()
+                }
+            ];
+
+            const types = imageSample.map(e => {
+                return {
+                    title: e.type.toUpperCase(),
+                    href: "?page=portfolio&type=" + e.type
+                }
+            }).filter((e, i, ary) => {
+                return i === ary.findIndex(t => t.title === e.title && t.href === e.href)
+            });
+
+            let timer;
+
+            document.addEventListener("DOMContentLoaded", _ => {
+                const page = (new URL(location.href)).searchParams.get("page") || "home";
+                const type = ((new URL(location.href)).searchParams.get("type") || "ALL").toUpperCase();
+                const isHome = page === "home";
+                const app = new QUI({
+                    id: "body",
+                    data: {
+                        isHome: isHome,
+                        nav: {
+                            title: page.toUpperCase(),
+                            tab: [
+                                {
+                                    class: isHome ? "sel" : "",
+                                    title: "Home",
+                                },
+                                {
+                                    class: isHome ? "" : "sel",
+                                    title: "Portfolio",
+                                }
+                            ]
+                        },
+                        types: types,
+                        type_index: types.findIndex(e => e.title === type.toUpperCase()) + 1,
+                        portfolio: type === "ALL" ? imageSample : imageSample.filter(e => e.type === type.toLowerCase())
+                    },
+                    event: {
+                        page: e => {
+                            const isHome = e.target.dataset.page === "Home";
+                            app.data.isHome = isHome;
+                            app.data.nav.tab = [
+                                {
+                                    class: isHome ? "sel" : null,
+                                    title: "Home"
+                                },
+                                {
+                                    class: isHome ? null : "sel",
+                                    title: "Portfolio"
+                                }
+                            ];
+                            setTimeout(() => {
+                                app.event.dynamicInput(isHome)
+                            }, 500);
+                        },
+                        show: e => {
+                            const dom = document.getElementById("mobile-tab");
+                            const isShow = dom.classList.contains("show");
+                            if (!isShow) {
+                                dom.classList.add("show");
+                            }
+                        },
+                        expand: e => {
+                            const href = e.target.dataset.href;
+                            const dom_ul = e.target.parentElement;
+                            const isExpand = dom_ul.classList.contains("expand")
+                            if (document.body.clientWidth < 800 && !isExpand) {
+                                dom_ul.classList.add("expand")
+                            }
+                            else {
+                                location.href = href;
+                            }
+                        },
+                        copy: e => {
+                            e.target.dataset.href.$copy();
+                            e.target.__child([
+                                "fa-solid fa-circle-check"._fa,
+                                "已複製"
+                            ]);
+                            setTimeout(_ => {
+                                e.target.__child([
+                                    "fa-solid fa-share-nodes"._fa,
+                                    "分享"
+                                ]);
+                            }, 500);
+                        },
+                        dynamicInput: (isHome) => {
+                            clearInterval(timer);
+                            
+                            if (!isHome) {
+                                return;
+                            };
+
+                            let start = 0;
+                            const ary = ["iOS工程師", "網站工程師", "程式設計師", "Pardn Chiu"];
+                            const dom = document.getElementById("typing-area");
+
+                            changeTitle();
+                            timer = setInterval(_ => changeTitle(), 8000);
+
+                            function changeTitle() {
+                                const now_text_len = dom.innerText.length;
+                                let now_index = now_text_len;
+                                let timer_delete_text = setInterval(_ => {
+                                    dom.innerText = dom.innerText.slice(0, now_index);
+                                    now_index -= 1;
+                                }, 1000 / now_text_len);
+
+                                let timer_next = setTimeout(() => {
+                                    clearInterval(timer_delete_text);
+                                    clearTimeout(timer_next);
+
+                                    if (dom.innerText.length) {
+                                        dom.innerText = "";
+                                    };
+
+                                    const txt = ary[start];
+                                    let index = 0;
+                                    let text_len = txt.length;
+                                    let timer_add_text = setInterval(() => {
+                                        dom.innerText += txt.charAt(index);
+                                        index += 1;
+                                    }, 3000 / text_len);
+
+                                    let timer_stop = setTimeout(() => {
+                                        clearInterval(timer_add_text);
+                                        clearTimeout(timer_stop);
+
+                                        start += 1;
+
+                                        if (start > ary.length - 1) {
+                                            start = 0;
+                                        };
+                                    }, 3000 / text_len * (text_len + 1));
+                                }, 1000 / now_text_len * (now_text_len + 2));
+                            };
+                        }
+                    },
+                    when: {
+                        rendered: _ => {
+                            app.event.dynamicInput(isHome);
+                        }
+                    }
+                })
+            });
+        </script>
     </body>
 
 </html>

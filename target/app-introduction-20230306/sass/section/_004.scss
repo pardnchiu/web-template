@@ -1,0 +1,71 @@
+>section[num="4"]>div {
+  @import "../comp/div-info";
+
+  >ul {
+    position: relative;
+    display: block;
+    margin-top: 4rem;
+    width: 100%;
+    height: initial;
+    font-size: 0;
+    text-align: center;
+
+    &:nth-child(1) {
+      margin-top: 0;
+    }
+
+    @import "../comp/li-r2";
+
+    >li {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 4rem;
+      width: 100%;
+      font-size: 0;
+      text-align: left;
+
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+
+      >i {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 2.5rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        font-size: 1rem;
+        text-align: center;
+        background-color: var(--col-system);
+        color: #fff;
+        border-radius: 50%;
+      }
+
+      >p {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 4rem;
+        width: calc(100% - 4rem - 1px);
+        text-align: inherit;
+
+        &:nth-child(2) {
+          line-height: var(--h-m);
+          font-size: var(--size-m);
+          color: #fff;
+        }
+
+        &:nth-child(3) {
+          margin-top: 0.25rem;
+          line-height: var(--h-s);
+          font-size: var(--size-s);
+          color: #aaa;
+        }
+
+        @import "../comp/innerText";
+      }
+    }
+  }
+}
