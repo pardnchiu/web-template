@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
             if (page == "article") {
                 const elm_viewer = new viewer({
-                    emptyContent: pre, 
+                    emptyContent: pre,
                     sync: {
                         delay: 0
                     },

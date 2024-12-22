@@ -28,7 +28,7 @@ var webConfig;
     document.addEventListener("DOMContentLoaded", function () {
         webConfig = {
             user: {
-                head: "https://pardn.io/image/head-s.jpg",
+                head: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
                 name: "邱敬幃",
                 title: "帕登數位科技負責人",
                 link: {
@@ -114,7 +114,7 @@ var webConfig;
                 return {
                     sn: 42,
                     href: "",
-                    src: "https://picsum.photos/256?random=" + i,
+                    src: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
                     title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
                     tag: (Math.random() > 0.5 ? 2 : 1)
                 }

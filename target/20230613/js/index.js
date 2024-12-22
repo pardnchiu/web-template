@@ -22,7 +22,7 @@
             return {
                 sn: i,
                 href: "",
-                src: "https://picsum.photos/256?random=" + i,
+                src: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
                 title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
                 tag: (Math.random() > 0.5 ? 2 : 1)
             }
@@ -78,7 +78,7 @@
                     h6._("About Me"),
                     p._("My introduction"),
                     section._([
-                        img._("https://pardn.io/image/head.jpg"),
+                        img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample"),
                         section._([
                             ul._([
                                 li._([
@@ -356,7 +356,7 @@
                             ])._go("mailto:dev@pardn.io")
                         ])
                     ]),
-                    p._("(c) Copyright Pardn Ltd 帕登國際有限公司")
+                    p._("© 2023 邱敬幃")
                 ])
             ])
         ]);

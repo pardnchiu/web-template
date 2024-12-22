@@ -18,7 +18,7 @@
             "section.left-bar"._([
                 "section.user"._([
                     "section.head"._([
-                        "img"._("https://pardn.io/image/head-s.jpg")
+                        "img"._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample")
                     ]),
                     "h6.name"._("Pardn Chiu"),
                     "section.button"._([

@@ -3,7 +3,7 @@
      * 假資料
      */
     var authSample = {
-        head: "./image/pardnchiu.jpg",
+        head: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
         uid: "pardnchiu",
         name: "Pardn Chiu",
         cv: "這是一個仿 Instagram 的模板<br>純靜態展示，歡迎下載使用",
@@ -14,15 +14,15 @@
             following: 0
         },
         storys: [
-            { cover: "https://picsum.photos/640?random=" + Math.random(), title: "動態1", isNew: true },
-            { cover: "https://picsum.photos/640?random=" + Math.random(), title: "動態2", isNew: true },
-            { cover: "https://picsum.photos/640?random=" + Math.random(), title: "動態3", isNew: false },
-            { cover: "https://picsum.photos/640?random=" + Math.random(), title: "動態4", isNew: false },
-            { cover: "https://picsum.photos/640?random=" + Math.random(), title: "動態5", isNew: false }
+            { cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample", title: "動態1", isNew: true },
+            { cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample", title: "動態2", isNew: true },
+            { cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample", title: "動態3", isNew: false },
+            { cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample", title: "動態4", isNew: false },
+            { cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample", title: "動態5", isNew: false }
         ]
     };
     var userSample1 = {
-        head: "https://picsum.photos/640?random=" + Math.random(),
+        head: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
         uid: "damin_wang",
         name: "王大明",
         cv: "個人簡介範例個人簡介範例個人簡介範例個人簡介範例",
@@ -35,7 +35,7 @@
         storys: []
     };
     var userSample2 = {
-        head: "https://picsum.photos/640?random=" + Math.random(),
+        head: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
         uid: "huahua.chen",
         name: "陳小華",
         cv: "個人簡介範例個人簡介範例個人簡介範例個人簡介範例",
@@ -48,7 +48,7 @@
         storys: []
     };
     var userSample3 = {
-        head: "https://picsum.photos/640?random=" + Math.random(),
+        head: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
         uid: "loyaltylin",
         name: "林中心",
         cv: "個人簡介範例個人簡介範例個人簡介範例個人簡介範例",
@@ -61,7 +61,7 @@
         storys: []
     };
     var userSample4 = {
-        head: "https://picsum.photos/640?random=" + Math.random(),
+        head: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
         uid: "rich_wu",
         name: "吳凱",
         cv: "個人簡介範例個人簡介範例個人簡介範例個人簡介範例",
@@ -74,7 +74,7 @@
         storys: []
     };
     var userSample5 = {
-        head: "https://picsum.photos/640?random=" + Math.random(),
+        head: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
         uid: "heart.chang",
         name: "張心",
         cv: "個人簡介範例個人簡介範例個人簡介範例個人簡介範例",
@@ -127,12 +127,12 @@
     var postsSample = [
         {
             auth: authSample,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
             photos: [
-                "https://picsum.photos/640?random=" + Math.random(),
-                "https://picsum.photos/640?random=" + Math.random(),
-                "https://picsum.photos/640?random=" + Math.random(),
-                "https://picsum.photos/640?random=" + Math.random()
+                "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
+                "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
+                "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
+                "https://fakeimg.pl/1024/282828/eae0d0/?text=sample"
             ],
             description: photoPostSample,
             total: { good: 2, comment: 0 },
@@ -142,8 +142,8 @@
         },
         {
             auth: authSample,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
-            photos: ["https://picsum.photos/640?random=" + Math.random()],
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
+            photos: ["https://fakeimg.pl/1024/282828/eae0d0/?text=sample"],
             description: photoPostSample,
             total: { good: 1, comment: 1 },
             comments: [commentSample5],
@@ -152,11 +152,11 @@
         },
         {
             auth: authSample,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
             photos: [
-                "https://picsum.photos/640?random=" + Math.random(),
-                "https://picsum.photos/640?random=" + Math.random(),
-                "https://picsum.photos/640?random=" + Math.random()
+                "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
+                "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
+                "https://fakeimg.pl/1024/282828/eae0d0/?text=sample"
             ],
             description: photoPostSample,
             total: { good: 0, comment: 0 },
@@ -166,8 +166,8 @@
         },
         {
             auth: authSample,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
-            photos: ["https://picsum.photos/640?random=" + Math.random(),],
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
+            photos: ["https://fakeimg.pl/1024/282828/eae0d0/?text=sample",],
             description: photoPostSample,
             total: { good: 1, comment: 3 },
             comments: [commentSample5, commentSample4, commentSample2],
@@ -176,12 +176,12 @@
         },
         {
             auth: authSample,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
             photos: [
-                "https://picsum.photos/640?random=" + Math.random(),
-                "https://picsum.photos/640?random=" + Math.random(),
-                "https://picsum.photos/640?random=" + Math.random(),
-                "https://picsum.photos/640?random=" + Math.random()
+                "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
+                "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
+                "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
+                "https://fakeimg.pl/1024/282828/eae0d0/?text=sample"
             ],
             description: photoPostSample,
             total: { good: 2, comment: 1 },
@@ -191,8 +191,8 @@
         },
         {
             auth: authSample,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
-            photos: ["https://picsum.photos/640?random=" + Math.random()],
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
+            photos: ["https://fakeimg.pl/1024/282828/eae0d0/?text=sample"],
             description: photoPostSample,
             total: { good: 0, comment: 1 },
             comments: [commentSample5],
@@ -201,8 +201,8 @@
         },
         {
             auth: authSample,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
-            photos: ["https://picsum.photos/640?random=" + Math.random()],
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
+            photos: ["https://fakeimg.pl/1024/282828/eae0d0/?text=sample"],
             description: photoPostSample,
             total: { good: 1, comment: 0 },
             comments: [],
@@ -211,8 +211,8 @@
         },
         {
             auth: authSample,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
-            photos: ["https://picsum.photos/640?random=" + Math.random()],
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
+            photos: ["https://fakeimg.pl/1024/282828/eae0d0/?text=sample"],
             description: photoPostSample,
             total: { good: 0, comment: 1 },
             comments: [commentSample2],
@@ -221,11 +221,11 @@
         },
         {
             auth: authSample,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
             photos: [
-                "https://picsum.photos/640?random=" + Math.random(),
-                "https://picsum.photos/640?random=" + Math.random(),
-                "https://picsum.photos/640?random=" + Math.random()
+                "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
+                "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
+                "https://fakeimg.pl/1024/282828/eae0d0/?text=sample"
             ],
             description: photoPostSample,
             total: { good: 1, comment: 0 },
@@ -235,12 +235,12 @@
         },
         {
             auth: userSample4,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
             photos: [
-                "https://picsum.photos/640?random=" + Math.random(),
-                "https://picsum.photos/640?random=" + Math.random(),
-                "https://picsum.photos/640?random=" + Math.random(),
-                "https://picsum.photos/640?random=" + Math.random()
+                "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
+                "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
+                "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
+                "https://fakeimg.pl/1024/282828/eae0d0/?text=sample"
             ],
             description: photoPostSample,
             total: { good: 2, comment: 0 },
@@ -250,8 +250,8 @@
         },
         {
             auth: userSample1,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
-            photos: ["https://picsum.photos/640?random=" + Math.random()],
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
+            photos: ["https://fakeimg.pl/1024/282828/eae0d0/?text=sample"],
             description: photoPostSample,
             total: { good: 1, comment: 1 },
             comments: [commentSample5],
@@ -260,10 +260,10 @@
         },
         {
             auth: userSample1,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
             photos: [
-                "https://picsum.photos/640?random=" + Math.random(),
-                "https://picsum.photos/640?random=" + Math.random()
+                "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
+                "https://fakeimg.pl/1024/282828/eae0d0/?text=sample"
             ],
             description: photoPostSample,
             total: { good: 0, comment: 0 },
@@ -273,8 +273,8 @@
         },
         {
             auth: userSample2,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
-            photos: ["https://picsum.photos/640?random=" + Math.random()],
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
+            photos: ["https://fakeimg.pl/1024/282828/eae0d0/?text=sample"],
             description: photoPostSample,
             total: { good: 1, comment: 3 },
             comments: [commentSample5, commentSample4, commentSample3],
@@ -283,12 +283,12 @@
         },
         {
             auth: userSample2,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
             photos: [
-                "https://picsum.photos/640?random=" + Math.random(),
-                "https://picsum.photos/640?random=" + Math.random(),
-                "https://picsum.photos/640?random=" + Math.random(),
-                "https://picsum.photos/640?random=" + Math.random()
+                "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
+                "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
+                "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
+                "https://fakeimg.pl/1024/282828/eae0d0/?text=sample"
             ],
             description: photoPostSample,
             total: { good: 2, comment: 1 },
@@ -298,8 +298,8 @@
         },
         {
             auth: userSample3,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
-            photos: ["https://picsum.photos/640?random=" + Math.random()],
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
+            photos: ["https://fakeimg.pl/1024/282828/eae0d0/?text=sample"],
             description: photoPostSample,
             total: { good: 0, comment: 1 },
             comments: [commentSample5],
@@ -308,8 +308,8 @@
         },
         {
             auth: userSample4,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
-            photos: ["https://picsum.photos/640?random=" + Math.random()],
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
+            photos: ["https://fakeimg.pl/1024/282828/eae0d0/?text=sample"],
             description: photoPostSample,
             total: { good: 1, comment: 0 },
             comments: [],
@@ -318,8 +318,8 @@
         },
         {
             auth: userSample5,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
-            photos: ["https://picsum.photos/640?random=" + Math.random()],
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
+            photos: ["https://fakeimg.pl/1024/282828/eae0d0/?text=sample"],
             description: photoPostSample,
             total: { good: 0, comment: 1 },
             comments: [commentSample2],
@@ -328,11 +328,11 @@
         },
         {
             auth: userSample5,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
             photos: [
-                "https://picsum.photos/640?random=" + Math.random(),
-                "https://picsum.photos/640?random=" + Math.random(),
-                "https://picsum.photos/640?random=" + Math.random(),
+                "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
+                "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
+                "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
             ],
             description: photoPostSample,
             total: { good: 1, comment: 0 },
@@ -347,31 +347,31 @@
             list: [
                 {
                     user: authSample,
-                    cover: "https://picsum.photos/640?random=" + Math.random(),
+                    cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
                     title: "動態1",
                     isNew: true
                 },
                 {
                     user: authSample,
-                    cover: "https://picsum.photos/640?random=" + Math.random(),
+                    cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
                     title: "動態2",
                     isNew: false
                 },
                 {
                     user: authSample,
-                    cover: "https://picsum.photos/640?random=" + Math.random(),
+                    cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
                     title: "動態3",
                     isNew: false
                 },
                 {
                     user: authSample,
-                    cover: "https://picsum.photos/640?random=" + Math.random(),
+                    cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
                     title: "動態4",
                     isNew: false
                 },
                 {
                     user: authSample,
-                    cover: "https://picsum.photos/640?random=" + Math.random(),
+                    cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
                     title: "動態1",
                     isNew: false
                 },
@@ -382,13 +382,13 @@
             list: [
                 {
                     user: userSample3,
-                    cover: "https://picsum.photos/640?random=" + Math.random(),
+                    cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
                     title: "USER 3 動態",
                     isNew: true
                 },
                 {
                     user: userSample3,
-                    cover: "https://picsum.photos/640?random=" + Math.random(),
+                    cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
                     title: "USER 3 動態",
                     isNew: true
                 }
@@ -399,13 +399,13 @@
             list: [
                 {
                     user: userSample5,
-                    cover: "https://picsum.photos/640?random=" + Math.random(),
+                    cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
                     title: "USER 5 動態",
                     isNew: true
                 },
                 {
                     user: userSample5,
-                    cover: "https://picsum.photos/640?random=" + Math.random(),
+                    cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
                     title: "USER 5 動態",
                     isNew: true
                 }
@@ -416,13 +416,13 @@
             list: [
                 {
                     user: userSample1,
-                    cover: "https://picsum.photos/640?random=" + Math.random(),
+                    cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
                     title: "USER 1 動態",
                     isNew: false
                 },
                 {
                     user: userSample1,
-                    cover: "https://picsum.photos/640?random=" + Math.random(),
+                    cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
                     title: "USER 1 動態",
                     isNew: false
                 }
@@ -432,133 +432,133 @@
     var storysSample = [
         {
             user: authSample,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
             title: "動態1",
             isNew: true
         },
         {
             user: authSample,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
             title: "動態2",
             isNew: false
         },
         {
             user: authSample,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
             title: "動態3",
             isNew: false
         },
         {
             user: authSample,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
             title: "動態4",
             isNew: false
         },
         {
             user: authSample,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
             title: "動態1",
             isNew: false
         },
         {
             user: userSample1,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
             title: "USER 1 動態",
             isNew: false
         },
         {
             user: userSample1,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
             title: "USER 1 動態",
             isNew: false
         },
         {
             user: userSample3,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
             title: "USER 3 動態",
             isNew: true
         },
         {
             user: userSample3,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
             title: "USER 3 動態",
             isNew: true
         },
         {
             user: userSample5,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
             title: "USER 5 動態",
             isNew: true
         },
         {
             user: userSample5,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
             title: "USER 5 動態",
             isNew: true
         },
         {
             user: authSample,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
             title: "動態1",
             isNew: true
         },
         {
             user: authSample,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
             title: "動態2",
             isNew: false
         },
         {
             user: authSample,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
             title: "動態3",
             isNew: false
         },
         {
             user: authSample,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
             title: "動態4",
             isNew: false
         },
         {
             user: authSample,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
             title: "動態1",
             isNew: false
         },
         {
             user: userSample1,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
             title: "USER 1 動態",
             isNew: false
         },
         {
             user: userSample1,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
             title: "USER 1 動態",
             isNew: false
         },
         {
             user: userSample3,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
             title: "USER 3 動態",
             isNew: true
         },
         {
             user: userSample3,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
             title: "USER 3 動態",
             isNew: true
         },
         {
             user: userSample5,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
             title: "USER 5 動態",
             isNew: true
         },
         {
             user: userSample5,
-            cover: "https://picsum.photos/640?random=" + Math.random(),
+            cover: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
             title: "USER 5 動態",
             isNew: true
         }
@@ -728,7 +728,7 @@
                     from: userSample1,
                     to: authSample,
                     isImage: true,
-                    content: "https://picsum.photos/640?random=" + Math.random(),
+                    content: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
                     updated: "2天前"
                 }
             ]
@@ -740,7 +740,7 @@
                     from: userSample2,
                     to: authSample,
                     isImage: true,
-                    content: "https://picsum.photos/640?random=" + Math.random(),
+                    content: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
                     updated: "2天前"
                 },
                 {
@@ -780,7 +780,7 @@
                     from: userSample3,
                     to: authSample,
                     isImage: true,
-                    content: "https://picsum.photos/640?random=" + Math.random(),
+                    content: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
                     updated: "2天前"
                 }
             ]
@@ -2069,7 +2069,6 @@
                             "i.far.fa-plus-square"._(),
                             "p"._('建立')
                         ])._click(function () {
-                            console.log(this.$parent(0).$previous(0).$child(0).$attr('on'))
                             var isNotify = Number(this.$parent(0).$previous(0).$child(0).$attr('on'));
                             if (isNotify) this.$parent(0).$previous(0).$child(0).click();
 

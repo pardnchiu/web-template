@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", _ => {
     let image_l = (_ => {
         let ary = [];
         for (let i = 0; i < 30; i++) {
-            ary.push("https://picsum.photos/1280.webp?random=" + i)
+            ary.push("https://fakeimg.pl/1024/282828/eae0d0/?text=sample")
         }
         return ary;
     })();
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", _ => {
     let image_m = (_ => {
         let ary = [];
         for (let i = 0; i < 30; i++) {
-            ary.push("https://picsum.photos/640.webp?random=" + i)
+            ary.push("https://fakeimg.pl/1024/282828/eae0d0/?text=sample")
         }
         return ary;
     })();
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", _ => {
     let image_s = (_ => {
         let ary = [];
         for (let i = 0; i < 30; i++) {
-            ary.push("https://picsum.photos/320.webp?random=" + i)
+            ary.push("https://fakeimg.pl/1024/282828/eae0d0/?text=sample")
         }
         return ary;
     })();

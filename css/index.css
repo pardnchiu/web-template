@@ -1,4 +1,3 @@
-@import"./fontawesome/css/all.min.css";
 * {
     position: relative;
     margin: 0;
@@ -22,28 +21,29 @@
     -khtml-user-select: inherit;
     -moz-user-select: inherit;
     -ms-user-select: inherit;
-    user-select:inherit
+    user-select: inherit
 }
 
 * ::-webkit-scrollbar {
-    display:none
+    display: none
 }
 
 * .rz::-webkit-scrollbar {
     display: block;
     width: .25rem;
-    background-color:hsl(223, 14%, 97%)
+    background-color: hsl(223, 14%, 97%)
 }
 
 * .rz::-webkit-scrollbar-thumb {
-    background-color:hsl(223, 11%, 81%)
+    background-color: hsl(223, 11%, 81%)
 }
 
 * .rz.vert {
     resize: vertical
 }
 
-* [user-select=false], * [user-select="0"] {
+* [user-select=false],
+* [user-select="0"] {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -52,17 +52,19 @@
     user-select: none
 }
 
-* [user-select=true], * [user-select="1"] {
+* [user-select=true],
+* [user-select="1"] {
     -webkit-touch-callout: initial;
     -webkit-user-select: initial;
     -khtml-user-select: initial;
     -moz-user-select: initial;
     -ms-user-select: initial;
-    user-select:initial
+    user-select: initial
 }
 
-* ::before, * ::after {
-    box-sizing:border-box
+* ::before,
+* ::after {
+    box-sizing: border-box
 }
 
 img {
@@ -71,44 +73,55 @@ img {
 }
 
 img[src]:not([src=""]) {
-    content:unset
+    content: unset
 }
 
 img[data-src] {
-    background:linear-gradient(to right, #EEF0F3, #E0E2E8, #EEF0F3)
+    background: linear-gradient(to right, #EEF0F3, #E0E2E8, #EEF0F3)
 }
 
 textarea {
-    resize:none
+    resize: none
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
     -webkit-appearance: none;
     -moz-appearance: none;
-    appearance:none
+    appearance: none
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
     color: hsl(223, 11%, 81%);
-    opacity:1
+    opacity: 1
 }
 
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-    color:hsl(223, 11%, 81%)
-}
-
-input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
     color: hsl(223, 11%, 81%)
 }
 
-a[href]:not([href=""]), button {
-    cursor:pointer
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+    color: hsl(223, 11%, 81%)
 }
 
-span, b, strong, i, em, time {
+a[href]:not([href=""]),
+button {
+    cursor: pointer
+}
+
+span,
+b,
+strong,
+i,
+em,
+time {
     line-height: inherit;
     font-size: inherit;
-    color:inherit
+    color: inherit
 }
 
 html {
@@ -116,7 +129,7 @@ html {
     display: block;
     width: 100%;
     height: 100%;
-    overflow:hidden
+    overflow: hidden
 }
 
 body {
@@ -131,11 +144,13 @@ body {
     overflow: hidden scroll
 }
 
-body[ready="0"] *, body[ready="0"] * ::before, body[ready="0"] * ::after {
-    transition:none !important
+body[ready="0"] *,
+body[ready="0"] * ::before,
+body[ready="0"] * ::after {
+    transition: none !important
 }
 
-body > nav {
+body>nav {
     position: sticky;
     z-index: 1000;
     display: flex;
@@ -147,48 +162,48 @@ body > nav {
     width: 100%;
     height: 6rem;
     background-color: #fff;
-    transition:.3s
+    transition: .3s
 }
 
-body > nav > section {
-    max-width:1024px
+body>nav>section {
+    max-width: 1024px
 }
 
-body > nav.min {
+body>nav.min {
     height: 4rem;
-    box-shadow:0 2px 4px rgba(0, 0, 0, .1019607843)
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1019607843)
 }
 
-body > nav.min img.head {
+body>nav.min img.head {
     padding: 0;
     width: 3rem;
     height: 3rem;
-    border:1px solid rgba(0, 0, 0, 0)
+    border: 1px solid rgba(0, 0, 0, 0)
 }
 
-body > nav img.head {
+body>nav img.head {
     padding: .25rem;
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, .2039215686);
     transition: .3s;
-    cursor:pointer
+    cursor: pointer
 }
 
-body > nav a {
-    font-size:1.5rem
+body>nav a {
+    font-size: 1.5rem
 }
 
 body.md {
-    background-color:#e0e2e8
+    background-color: #e0e2e8
 }
 
-body.md > nav {
-    max-width:640px
+body.md>nav {
+    max-width: 640px
 }
 
-body.md > section#PDMDViewer {
+body.md>section#PDMDViewer {
     position: relative;
     padding: 0 1rem 10rem;
     width: 100%;

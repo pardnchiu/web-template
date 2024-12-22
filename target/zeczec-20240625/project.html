@@ -10,11 +10,13 @@
         <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" as="style">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
 
-        <link rel="preload" href="https://cdn.jsdelivr.net/npm/pdrenderkit@1.5.2/dist/PDRenderKit.js" as="script">
-        <script src="https://cdn.jsdelivr.net/npm/pdrenderkit@1.5.2/dist/PDRenderKit.js" copyright="Pardn Ltd"></script>
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/@pardnchiu/quickui@0.6.2/dist/QuickUI.js" as="script">
+        <script src="https://cdn.jsdelivr.net/npm/@pardnchiu/quickui@0.6.2/dist/QuickUI.js" copyright="Pardn Ltd"></script>
+
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/@pardnchiu/nanomd@1.8.5/dist/NanoMD.js" as="script">
+        <script src="https://cdn.jsdelivr.net/npm/@pardnchiu/nanomd@1.8.5/dist/NanoMD.js"></script>
 
         <link rel="stylesheet" href="./css/index.css">
-        <script type="module" src="./js/project.js"></script>
     </head>
 
     <body id="app" style="background-color: #fff;">
@@ -316,6 +318,43 @@
                 <p>© 帕登國際有限公司</p>
             </section>
         </footer>
+        <script>
+            let pre;
+
+            document.addEventListener("DOMContentLoaded", async function () {
+
+                await fetch('https://cdn.jsdelivr.net/npm/@pardnchiu/nanomd@1.8.5/README.md')
+                    .then(response => response.text())
+                    .then(data => {
+                        pre = data;
+                    })
+                    .catch(error => {
+                        console.error(error);
+                    });
+
+                let app = new QUI({
+                    id: "app",
+                    when: {
+                        rendered: _ => {
+                            const dom_viewer = new MDViewer({
+                                emptyContent: pre,
+                                sync: {
+                                    delay: 0
+                                },
+                                style: {
+                                    fill: 0
+                                }
+                            });
+
+                            document.querySelector("section.markdown").appendChild(dom_viewer.body)
+
+                            dom_viewer.init();
+                        }
+                    }
+                })
+
+            });
+        </script>
     </body>
 
 </html>

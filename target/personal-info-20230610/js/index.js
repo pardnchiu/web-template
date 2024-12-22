@@ -18,11 +18,11 @@
                 return {
                     sn: i,
                     href: "",
-                    src: "https://picsum.photos/256?random=" + i,
+                    src: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
                     title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
                     tag: (Math.random() > 0.5 ? 2 : 1)
                 }
-            });;
+            });
             ary.forEach(e => {
                 body.$._child([
                     "a"._({ "tag-key": e.tag }, [

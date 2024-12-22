@@ -11,7 +11,7 @@ var chats = [
     {
         name: "Ethan Sullivan",
         id: "ethan_sullivan",
-        head: "image/head0.jpg",
+        head: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
         title: "UI/UX設計師",
         contact: [
             "email",
@@ -23,7 +23,7 @@ var chats = [
     {
         name: "Lily Bennett",
         id: "bennett",
-        head: "image/head1.jpg",
+        head: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
         title: "iOS工程師",
         contact: [
             "email",
@@ -35,7 +35,7 @@ var chats = [
     {
         name: "Caleb Foster",
         id: "calebfoster",
-        head: "image/head2.jpg",
+        head: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
         title: "網站工程師",
         contact: [
             "email",
@@ -46,7 +46,7 @@ var chats = [
     {
         name: "Sophia Myers",
         id: "sophia_m",
-        head: "image/head3.jpg",
+        head: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
         title: "平面設計師",
         contact: [
             "email",
@@ -57,7 +57,7 @@ var chats = [
     {
         name: "Jackson Cooper",
         id: "j_cooper",
-        head: "image/head4.jpg",
+        head: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
         title: "室內設計師",
         contact: [
             "email",
@@ -78,7 +78,7 @@ var albums = (function () {
                 var ary = [];
                 for (let j = index1; j <= i + index1; j++) {
                     var index2 = (j + 1) % 5;
-                    ary.push("https://picsum.photos/640?random=" + j)
+                    ary.push("https://fakeimg.pl/1024/282828/eae0d0/?text=sample")
                 };
                 return ary;
             }()),
@@ -133,7 +133,7 @@ var posts = (function () {
                 var ary = [];
                 for (let j = index1; j <= i + index1; j++) {
                     var index2 = (j + 1) % 5;
-                    ary.push("https://picsum.photos/640?random=" + j)
+                    ary.push("https://fakeimg.pl/1024/282828/eae0d0/?text=sample")
                 };
                 return ary;
             }()),
@@ -225,7 +225,7 @@ var posts = (function () {
                                 "張貼"
                             ]),
                             button._([
-                                (img + ".round")._("image/head.jpg")
+                                (img + ".round")._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample")
                             ])
                         ])
                     ])
@@ -233,7 +233,7 @@ var posts = (function () {
                 (section + "#body")._([
                     (section + "#" + BODY_LEFT + ".left")._([
                         (button + ".head")._([
-                            img._("image/head.jpg"),
+                            img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample"),
                             section._([
                                 h6._("Pardn Chiu"),
                                 p._("@pardnchiu")
@@ -393,7 +393,7 @@ var posts = (function () {
                             section._([
                                 h6._("收件匣"),
                                 button._([
-                                    img._("image/head.jpg")
+                                    img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample")
                                 ])
                             ]),
                             label._([

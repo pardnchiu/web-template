@@ -21,7 +21,7 @@
 
         _SECTION_LEFT = function (index) {
             return (section + "#section-left")._([
-                strong._("PARDN.LTD"),
+                strong._("PARDN CHIU"),
                 _p._("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis tortor tellus, ac venenatis sem aliquama. Proin sed justo diam. Vestibulum ut sodales nisl, eu bibendum neque."),
                 ul._({ index: index }, [
                     li._("HOME")._click(_CLICK_HOME),
@@ -45,7 +45,7 @@
                         "fa-regular fa-envelope"._fa
                     ])._open("https://linkedin.com/in/pardnchiu")
                 ]),
-                em._("© Copyright 2023 帕登數位科技有限公司")
+                em._("© 2023 邱敬幃")
             ])
         };
 
@@ -53,7 +53,7 @@
             Array.from({ length: 10 }, () => 1)._$((e, i) =>
                 article._([
                     figure._([
-                        img._("https://picsum.photos/800?random=" + i)
+                        img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample")
                     ]),
                     section._([
                         h6._("Lorem ipsum dolor sit amet, consectetur adipiscing elit"),
@@ -83,9 +83,8 @@
 
         _SECTION_ARTICLE = function (target) {
             return (section + ".article")._([
-                figure._([
-                    img._(target),
-                    img._(target)
+                (figure + ".fill")._([
+                    img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample")
                 ]),
                 h1._("Lorem ipsum dolor sit amet, consectetur adipiscing elit."),
                 ul._([
@@ -120,7 +119,7 @@
 
         _SECTION_ABOUT = (section + ".article")._([
             (figure + ".fill")._([
-                img._("https://pardn.io/image/cover.jpg")
+                img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample")
             ]),
             h1._("關於我"),
             section._(`<p>我是<a href="https://linkedin.com/in/pardnchiu" target="_blank">邱敬幃 (Pardn

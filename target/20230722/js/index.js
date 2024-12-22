@@ -82,17 +82,17 @@
                             "fa-solid fa-angle-down"._fa,
                             ul._({ row: 5 }, [
                                 li._([
-                                    _a._("Magazine")._open("https://pardnchiu.github.io/web-template/target/20230719")
+                                    _a._("Magazine")._open("https://pardn.io/web-template/target/20230719")
                                 ]),
                                 li._([
-                                    _a._("Personal")._open("https://pardnchiu.github.io/web-template/target/20230720")
+                                    _a._("Personal")._open("https://pardn.io/web-template/target/20230720")
                                 ]),
                                 li._([
-                                    _a._("Personal Alt")._open("https://pardnchiu.github.io/web-template/target/20230721")
+                                    _a._("Personal Alt")._open("https://pardn.io/web-template/target/20230721")
                                 ]),
                                 li._("Classic")._click(setHome),
                                 li._([
-                                    _a._("Minimal")._open("https://pardnchiu.github.io/web-template/target/20230723")
+                                    _a._("Minimal")._open("https://pardn.io/web-template/target/20230723")
                                 ])
                             ])
                         ]),
@@ -149,17 +149,17 @@
                                 "fa-solid fa-angle-down"._fa,
                                 ul._({ row: 5 }, [
                                     li._([
-                                        _a._("Magazine")._open("https://pardnchiu.github.io/web-template/target/20230719")
+                                        _a._("Magazine")._open("https://pardn.io/web-template/target/20230719")
                                     ]),
                                     li._([
-                                        _a._("Personal")._open("https://pardnchiu.github.io/web-template/target/20230720")
+                                        _a._("Personal")._open("https://pardn.io/web-template/target/20230720")
                                     ]),
                                     li._([
-                                        _a._("Personal Alt")._open("https://pardnchiu.github.io/web-template/target/20230721")
+                                        _a._("Personal Alt")._open("https://pardn.io/web-template/target/20230721")
                                     ]),
                                     li._("Classic")._click(setHome),
                                     li._([
-                                        _a._("Minimal")._open("https://pardnchiu.github.io/web-template/target/20230723")
+                                        _a._("Minimal")._open("https://pardn.io/web-template/target/20230723")
                                     ])
                                 ])
                             ])._click(function () {
@@ -234,7 +234,7 @@
                         Array.from({ length: 4 }, () => 1)._$((e, i) =>
                             div._([
                                 figure._([
-                                    img._("https://picsum.photos/64?random=" + i)
+                                    img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample")
                                 ]),
                                 section._([
                                     (h6 + ".line.r2")._($title),
@@ -286,7 +286,7 @@
                         Array.from({ length: 3 }, () => 1)._$((e, i) =>
                             div._([
                                 figure._([
-                                    img._("https://picsum.photos/64?random=" + i)
+                                    img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample")
                                 ]),
                                 section._([
                                     h6._($title),
@@ -341,12 +341,12 @@
             _a._({ instagram: "pardnio" },
                 Array.from({ length: 6 }, () => 1)._$((e, i) =>
                     figure._([
-                        img._("https://picsum.photos/256?random=" + i)
+                        img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample")
                     ])
                 )
             )._open("https://instagram.com/pardnchiu"),
             section._([
-                _p._("© Copyright 2023 帕登國際有限公司"),
+                _p._("© 2023 邱敬幃"),
                 (ul + ".contact.dark.large")._([
                     li._([
                         _a._([
@@ -394,7 +394,7 @@
                             section._(
                                 Array.from({ length: 5 }, () => 1)._$((e, i) =>
                                     figure._([
-                                        img._("https://picsum.photos/1280?random=" + i),
+                                        img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample"),
                                         section._([
                                             span._("Website"),
                                             (h4 + ".line.r2")._($title),
@@ -442,7 +442,7 @@
                                     section._([
                                         article._([
                                             figure._([
-                                                img._("https://picsum.photos/360?random=" + Date.now()),
+                                                img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample"),
                                                 span._($heading)
                                             ])._click(function () {
                                             }),
@@ -450,7 +450,7 @@
                                                 "fa-solid fa-up-right-and-down-left-from-center"._fa
                                             ]),
                                             section._([
-                                                img._("https://pardn.io/image/head.jpg"),
+                                                img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample"),
                                                 ul._([
                                                     li._([
                                                         _a._("Pardn Ltd")._open("https://linkedin.com/company/pardnltd")
@@ -469,7 +469,7 @@
                                         Array.from({ length: 4 }, () => 1)._$((e, i) =>
                                             _a._([
                                                 figure._([
-                                                    img._("https://picsum.photos/128?random=" + i)
+                                                    img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample")
                                                 ]),
                                                 section._([
                                                     (h6 + ".line.r2")._($title),
@@ -486,7 +486,7 @@
                                 (section + ".grid-1")._(
                                     Array.from({ length: 4 }, () => 1)._$((e, i) =>
                                         figure._([
-                                            img._("https://picsum.photos/480?random=" + i),
+                                            img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample"),
                                             section._([
                                                 span._("Website"),
                                                 (h4 + ".line.r2")._($title),
@@ -517,11 +517,11 @@
                                     Array.from({ length: 3 }, () => 1)._$((e, i) =>
                                         article._([
                                             figure._([
-                                                img._("https://picsum.photos/256?random=" + i)
+                                                img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample")
                                             ]),
                                             section._([
                                                 section._([
-                                                    img._("https://pardn.io/image/head.jpg"),
+                                                    img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample"),
                                                     (ul + ".path")._([
                                                         li._([
                                                             _a._($user)._open("https://linkedin.com/company/pardnltd")
@@ -593,12 +593,12 @@
                                     Array.from({ length: 8 }, () => 1)._$((e, i) =>
                                         article._([
                                             figure._([
-                                                img._("https://picsum.photos/256?random=" + i)
+                                                img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample")
                                             ])._click(function () {
                                             }),
                                             section._([
                                                 section._([
-                                                    img._("https://pardn.io/image/head.jpg"),
+                                                    img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample"),
                                                     (ul + ".path")._([
                                                         li._([
                                                             _a._($user)._open("https://linkedin.com/company/pardnltd")
@@ -671,12 +671,12 @@
                                     Array.from({ length: 4 }, () => 1)._$((e, i) =>
                                         article._([
                                             figure._([
-                                                img._("https://picsum.photos/1024?random=" + i)
+                                                img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample")
                                             ])._click(function () {
                                             }),
                                             section._([
                                                 section._([
-                                                    img._("https://pardn.io/image/head.jpg"),
+                                                    img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample"),
                                                     (ul + ".path")._([
                                                         li._([
                                                             _a._($user)._open("https://linkedin.com/company/pardnltd")
@@ -768,7 +768,7 @@
                                 (section + ".grid-1")._(
                                     Array.from({ length: 12 }, () => 1)._$((e, i) =>
                                         figure._([
-                                            img._("https://picsum.photos/480?random=" + i),
+                                            img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample"),
                                             section._([
                                                 span._("Website"),
                                                 (h4 + ".line.r2")._($title),
@@ -829,11 +829,11 @@
                                     Array.from({ length: 6 }, () => 1)._$((e, i) =>
                                         article._([
                                             figure._({ tag: "Website" }, [
-                                                img._("https://picsum.photos/480?random=" + i)
+                                                img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample")
                                             ]),
                                             section._([
                                                 section._([
-                                                    img._("https://pardn.io/image/head.jpg"),
+                                                    img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample"),
                                                     (ul + ".path")._([
                                                         li._($user),
                                                         li._([
@@ -911,7 +911,7 @@
                         ])
                     ]) : (header + "#post-2-header")._([
                         figure._([
-                            img._("https://picsum.photos/480?random=" + Date.now())
+                            img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample")
                         ]),
                         section._([
                             (ul + ".path.light.slash")._([
@@ -921,7 +921,7 @@
                             ]),
                             h1._($title),
                             section._([
-                                img._("https://pardn.io/image/head.jpg"),
+                                img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample"),
                                 (ul + ".path.light")._([
                                     li._([
                                         _a._($user)._open("https://linkedin.com/company/pardnltd")
@@ -947,7 +947,7 @@
                                     isPost1 ? (section + ".about")._([
                                         h1._($title),
                                         section._([
-                                            img._("https://pardn.io/image/head.jpg"),
+                                            img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample"),
                                             (ul + ".path")._([
                                                 li._([
                                                     _a._($user)._open("https://linkedin.com/company/pardnltd")
@@ -967,17 +967,17 @@
                                     ]) : null,
                                     (section + ".body")._([
                                         isPost1 ? figure._([
-                                            img._("https://picsum.photos/480?random=" + Date.now())
+                                            img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample")
                                         ]) : null,
                                         _p._(`Curabitur efficitur lectus suscipit dignissim hendrerit. Pellentesque quis consequat metus. Donec vel ante et dolor mollis commodo. Phasellus lectus sapien, accumsan ut diam eget, sagittis feugiat ipsum. Cras tristique commodo tellus scelerisque congue. <a href="">Suspendisse potenti</a>. Fusce eu nisl in felis tincidunt placerat. Nullam eu interdum ligula. Morbi sapien magna, iaculis eget velit et, iaculis suscipit ligula. Maecenas laoreet eleifend justo, nec interdum augue convallis id.`),
                                         _p._(`Duis ornare, eros a sollicitudin pulvinar, magna purus suscipit quam, id condimentum tellus arcu sit amet nisl. Fusce rhoncus nisi eu lacinia placerat. Sed aliquam orci a eros viverra, ac egestas lectus pellentesque. Morbi sed fermentum mi, <mark>molestie fringilla erat</mark>. Sed ut tellus gravida, fermentum ex ultricies, condimentum libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed feugiat nulla sed sem auctor ullamcorper.`),
                                         figure._([
-                                            img._("https://picsum.photos/480?random=" + Date.now()),
+                                            img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample"),
                                             figcaption._($title)
                                         ]),
                                         _p._("Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi dictum massa ex, ac feugiat augue gravida vel. Nullam ullamcorper iaculis mauris nec dictum. Nam ac eros metus. Sed quam ligula, mattis et neque at, varius malesuada sapien."),
                                         (figure + ".x2")._([
-                                            img._("https://pardn.io/image/head0.jpg")
+                                            img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample")
                                         ]),
                                         _p._("Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla sollicitudin enim luctus sem dapibus ullamcorper. Etiam vitae dui id nunc congue tincidunt. Fusce facilisis a est ut fermentum. Quisque pharetra risus blandit ex ullamcorper imperdiet. Nullam porttitor arcu nulla, vel pulvinar lorem hendrerit id. Donec in magna in nisl bibendum accumsan ornare eu diam. Morbi eu mi consequat, accumsan mauris in, semper neque."),
                                         _p._("Proin viverra purus lectus, vitae congue nunc sagittis vitae. Integer maximus neque non turpis dictum, quis pellentesque augue feugiat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur ut tortor id odio mattis interdum."),
@@ -987,10 +987,10 @@
                                         _p._("Lectus odio luctus sem, in maximus eros nunc ut arcu. Morbi eu neque accumsan, vestibulum lacus a, imperdiet sapien. Pellentesque a tortor at nisl eleifend faucibus. Duis tortor nisl, consectetur eu mi a, porta dictum ipsum. Aliquam a dignissim diam. Vestibulum id cursus nisi."),
                                         _p._("Donec pulvinar libero vel mi maximus placerat. Duis condimentum est purus, in feugiat felis iaculis nec. Maecenas neque lorem, facilisis id semper eu, efficitur ut orci. Integer scelerisque mattis tellus sed sagittis. Cras vel eros sed nibh dignissim tincidunt et eget felis. Praesent et vestibulum nibh."),
                                         (figure + ".x2")._([
-                                            img._("https://pardn.io/image/head1.jpg")
+                                            img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample")
                                         ]),
                                         (figure + ".x2")._([
-                                            img._("https://pardn.io/image/head2.jpg")
+                                            img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample")
                                         ]),
                                         h3._("Pellentesque eget nulla sem"),
                                         ul._([
@@ -1033,7 +1033,7 @@
                                         ])
                                     ]),
                                     (section + ".user")._([
-                                        img._("https://pardn.io/image/head.jpg"),
+                                        img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample"),
                                         section._([
                                             h4._($user),
                                             _p._("我是 邱敬幃 (Pardn Chiu)。一位具備iOS和網站全端開發技能的開發者，目前在 帕登國際有限公司 (Pardn Ltd) 擔任全端工程師。"),
@@ -1083,7 +1083,7 @@
                                 (span + ".svg")._({ src: "image/wave.svg" }),
                                 (section + ".comment")._([
                                     div._([
-                                        img._("https://pardn.io/image/head0.jpg"),
+                                        img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample"),
                                         section._([
                                             _p._($content),
                                             strong._([
@@ -1139,7 +1139,7 @@
                 (section + "#body")._([
                     (header + "#user-header")._([
                         section._([
-                            img._("https://pardn.io/image/head.jpg"),
+                            img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample"),
                             section._([
                                 h4._($user),
                                 _p._("我是 邱敬幃 (Pardn Chiu)。一位具備iOS和網站全端開發技能的開發者，目前在 帕登國際有限公司 (Pardn Ltd) 擔任全端工程師。"),
@@ -1180,11 +1180,11 @@
                                     Array.from({ length: 6 }, () => 1)._$((e, i) =>
                                         article._([
                                             figure._({ tag: "Website" }, [
-                                                img._("https://picsum.photos/480?random=" + i)
+                                                img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample")
                                             ]),
                                             section._([
                                                 section._([
-                                                    img._("https://pardn.io/image/head.jpg"),
+                                                    img._("https://fakeimg.pl/1024/282828/eae0d0/?text=sample"),
                                                     (ul + ".path")._([
                                                         li._($user),
                                                         li._([
@@ -1363,7 +1363,6 @@
             _document.body.addEventListener("scroll", function () {
                 var maxY = this.scrollHeight - this.clientHeight;
                 var offsetY = this.scrollTop;
-                console.log(this)
                 offsetY > "top-header".$.clientHeight ? "top-nav".$._class("show") : "top-nav".$.class_("show");
                 "top-nav".$._attr({
                     percent: Math.round(offsetY / maxY * 1000)

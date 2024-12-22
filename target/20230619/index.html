@@ -1,10 +1,10 @@
 <!-- 
 
-	Copyright 2023 Pardn Ltd 帕登國際有限公司.
-	Created by Pardn Chiu 邱敬幃.
-	Email: dev@pardn.io
-	
- -->
+    Copyright 2024 Pardn Ltd 帕登國際有限公司.
+    Created by Pardn Chiu 邱敬幃.
+    Email: dev@pardn.io
+
+-->
 <!DOCTYPE html>
 <html lang="zh-Hans-TW">
 
@@ -12,46 +12,41 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-        <meta name="mobile-web-app-capable" content="no">
-        <meta name="apple-mobile-web-app-capable" content="no">
-        <meta name="apple-mobile-web-app-status-bar-style" content="default">
         <meta name="theme-color" content="#ffffff">
         <meta name="robots" content="index, follow">
 
-        <title>Gym Introducing Page - 邱敬幃 Pardn Chiu</title>
-        <meta name="title" content="Gym Introducing Page - 邱敬幃 Pardn Chiu">
-        <meta name="description" content="Gym Introducing Page | 帕登數位科技有限公司 Pardn Ltd">
+        <!-- SEO 標題與描述 -->
+        <title>網站前端範例 23-06-19 - 邱敬幃 Pardn Chiu</title>
+        <meta name="title" content="網站前端範例 23-06-19 - 邱敬幃 Pardn Chiu">
+        <meta name="description" content="網站前端範例 23-06-19 - 邱敬幃 Pardn Chiu">
+        <meta name="keywords" content="Website範例, 邱敬幃, Pardn Chiu">
         <meta name="author" content="邱敬幃 Pardn Chiu">
         <link rel="author" href="https://pardn.io">
-        <link rel="canonical" href="https://pardnchiu.github.io/web-gym-introduction/">
-        <meta name="referrer" content="no-referrer-when-downgrade">
-        <meta name="copyright" content="© 2023 帕登數位科技有限公司 Pardn Ltd">
+        <link rel="canonical" href="https://pardn.io/web-template/target/20230619">
 
-        <!-- Open Graph / Facebook -->
-        <meta property="og:title" content="Gym Introducing Page - 邱敬幃 Pardn Chiu">
-        <meta property="og:description" content="Gym Introducing Page | 帕登數位科技有限公司 Pardn Ltd">
-        <meta property="og:image" content="https://repository-images.githubusercontent.com/655600193/13709724-a1de-415d-a5cb-86f2cda576a1">
-        <meta property="og:url" content="https://pardnchiu.github.io/web-gym-introduction/">
-        <meta property="og:site_name" content="Pardn Chiu 的 Github Page">
+        <!-- Favicon -->
+        <link rel="icon" href="https://pardn.io/image/head.png" type="image/x-icon">
+
+        <!-- Open Graph -->
+        <meta property="og:title" content="網站前端範例 23-06-19 - 邱敬幃 Pardn Chiu">
+        <meta property="og:description" content="網站前端範例 23-06-19 - 邱敬幃 Pardn Chiu">
+        <meta property="og:image" content="https://pardn.io/web-template/image/20230619.jpg">
+        <meta property="og:url" content="https://pardn.io/web-template/target/20230619">
+        <meta property="og:site_name" content="Pardn Chiu">
         <meta property="og:type" content="website">
         <meta property="og:locale" content="zh_TW">
 
         <!-- Twitter -->
-        <meta property="twitter:card" content="summary_large_image">
-        <meta property="twitter:title" content="Gym Introducing Page - 邱敬幃 Pardn Chiu">
-        <meta property="twitter:description" content="Gym Introducing Page | 帕登數位科技有限公司 Pardn Ltd">
-        <meta property="twitter:image" content="https://repository-images.githubusercontent.com/655600193/13709724-a1de-415d-a5cb-86f2cda576a1">
-        <meta property="twitter:url" content="https://pardnchiu.github.io/web-gym-introduction/">
-        <meta property="twitter:creator" content="@PardnChiu">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="twitter:title" content="網站前端範例 23-06-19 - 邱敬幃 Pardn Chiu">
+        <meta property="og:description" content="網站前端範例 23-06-19 - 邱敬幃 Pardn Chiu">
+        <meta property="twitter:image" content="https://pardn.io/web-template/image/20230619.jpg">
+        <meta property="twitter:url" content="https://pardn.io/web-template/target/20230619">
 
-        <!-- Google -->
+        <!-- Google Verification -->
         <meta name="google-site-verification" content="YQQ2f6AchR8dcb55Az2BYd_mw4TrP0J1RApD-v2v65Y">
 
-        <!-- Preconnects for CDN -->
-        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-        <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
-
-        <!-- Google tag (gtag.js) -->
+        <!-- Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-L5VYEZPVXX"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -60,36 +55,65 @@
             gtag('config', 'G-L5VYEZPVXX');
         </script>
 
-        <!-- Preloads for CDN -->
-        <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" as="style">
-        <link rel="preload" href="https://cdn.jsdelivr.net/npm/pdrenderkit@1.5.2/dist/PDRenderKit.js" as="script">
+        <!-- Preload and Preconnect -->
+        <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
-        <!-- CDN -->
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" as="style">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/pdrenderkit@1.5.2/dist/PDRenderKit.js" as="script">
         <script src="https://cdn.jsdelivr.net/npm/pdrenderkit@1.5.2/dist/PDRenderKit.js" copyright="Pardn Ltd"></script>
 
-        <!-- Local -->
+        <!-- Local Resources -->
         <link rel="stylesheet" href="./css/index.css">
         <script type="module" src="./js/index.js"></script>
 
-        <!--  -->
-        <style>
-            :root {
-                --width-max: 1280px;
-
-                --col-brand-1: #F5F5F5;
-                --col-brand-2: #C7C7C7;
-                --col-brand-3: #999999;
-                --col-brand-4: #6B6B6B;
-                --col-brand-5: #f1c50e;
-                --col-brand-6: #303030;
-                --col-brand-7: #242424;
-                --col-brand-8: #171717;
-                --col-brand-9: #0A0A0A;
-
-                --gradient-col: linear-gradient(to right bottom, rgb(70, 180, 105), rgb(70, 130, 180), rgb(250, 75, 75));
-            }
-        </style>
+        <!-- JSON-LD Schema -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "datePublished": "2023-06-19",
+            "dateModified": "2024-12-22",
+            "inLanguage": "zh-TW",
+            "name": {
+                "@language": "zh-TW",
+                "@value": "網站前端範例 23-06-19 - 邱敬幃 Pardn Chiu"
+            },
+            "alternateName": {
+                "@language": "en",
+                "@value": "Web Example 23-06-19 - 邱敬幃 Pardn Chiu"
+            },
+            "description": {
+                "@language": "zh-TW",
+                "@value": "網站前端範例 23-06-19 - 邱敬幃 Pardn Chiu"
+            },
+            "alternateDescription": {
+                "@language": "en",
+                "@value": "Web Example 23-06-19 - 邱敬幃 Pardn Chiu"
+            },
+            "url": "https://pardn.io/web-template/target/20230619",
+            "creator": {
+                "@type": "Person",
+                "name": [
+                    {
+                        "@language": "zh-TW",
+                        "@value": "邱敬幃"
+                    },
+                    {
+                        "@language": "en",
+                        "@value": "Pardn Chiu"
+                    }
+                ],
+                "url": "https://pardn.io/",
+                "sameAs": [
+                    "https://github.com/pardnchiu"
+                ],
+                "email": "dev@pardn.io"
+            },
+            "image": "https://pardn.io/web-template/image/20230619.jpg",
+        }
+        </script>
     </head>
 
     <body id="app">
@@ -115,7 +139,7 @@
         <section :path="./view/child9.html"></section>
         <footer>
             <section>
-                <p>(c) Copyright Pardn Ltd 帕登國際有限公司</p>
+                <p>© 2023 邱敬幃</p>
                 <ul>
                     <li :for="item in footerTarget">
                         <a :href="item.href" target="_blank">

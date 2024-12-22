@@ -4,13 +4,13 @@ let pre;
 document.addEventListener("DOMContentLoaded", async function () {
 
     await fetch('https://cdn.jsdelivr.net/npm/pdmarkdownkit@1.6.0/README.md')
-    .then(response => response.text())
-    .then(data => {
-        pre = data;
-    })
-    .catch(error => {
-        console.error(error);
-    });
+        .then(response => response.text())
+        .then(data => {
+            pre = data;
+        })
+        .catch(error => {
+            console.error(error);
+        });
 
     const page = location.href.$query("page") || "home";
     const app = new PD({
@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
                 if ("section.md".$) {
                     const elm_viewer = new viewer({
-                        emptyContent: pre, 
+                        emptyContent: pre,
                         sync: {
                             delay: 0
                         },

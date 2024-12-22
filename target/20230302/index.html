@@ -1,59 +1,52 @@
+<!-- 
+
+    Copyright 2024 Pardn Ltd 帕登國際有限公司.
+    Created by Pardn Chiu 邱敬幃.
+    Email: dev@pardn.io
+
+-->
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
 
     <head>
-
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>App Introduction (2023/03/02) - 邱敬幃 Pardn Chiu</title>
-        <meta name="description" content="App Introduction (2023/03/02) - 邱敬幃 Pardn Chiu">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="robots" content="index, follow">
+
+        <!-- SEO 標題與描述 -->
+        <title>網站前端範例 23-03-02 - 邱敬幃 Pardn Chiu</title>
+        <meta name="title" content="網站前端範例 23-03-02 - 邱敬幃 Pardn Chiu">
+        <meta name="description" content="網站前端範例 23-03-02 - 邱敬幃 Pardn Chiu">
         <meta name="keywords" content="Website範例, 邱敬幃, Pardn Chiu">
-        <meta name="theme-color" content="#000000">
         <meta name="author" content="邱敬幃 Pardn Chiu">
-        <meta name="copyright" content="邱敬幃 Pardn Chiu">
-        <!-- Open Graph Metadata -->
-        <meta property="og:title" content="App Introduction (2023/03/02) - 邱敬幃 Pardn Chiu">
-        <meta property="og:description" content="App Introduction (2023/03/02) - 邱敬幃 Pardn Chiu">
-        <meta property="og:image" content="https://pardnchiu.github.io/web-template/image/app-introduction-20230302.jpg">
-        <meta property="og:site_name" content="邱敬幃 Pardn Chiu">
-        <meta property="og:url" content="https://pardnchiu.github.io/web-template/target/app-introduction-20230302">
+        <link rel="author" href="https://pardn.io">
+        <link rel="canonical" href="https://pardn.io/web-template/target/20230302">
+
+        <!-- Favicon -->
+        <link rel="icon" href="https://pardn.io/image/head.png" type="image/x-icon">
+
+        <!-- Open Graph -->
+        <meta property="og:title" content="網站前端範例 23-03-02 - 邱敬幃 Pardn Chiu">
+        <meta property="og:description" content="網站前端範例 23-03-02 - 邱敬幃 Pardn Chiu">
+        <meta property="og:image" content="https://pardn.io/web-template/image/20230302.jpg">
+        <meta property="og:url" content="https://pardn.io/web-template/target/20230302">
+        <meta property="og:site_name" content="Pardn Chiu">
         <meta property="og:type" content="website">
         <meta property="og:locale" content="zh_TW">
-        <!-- Twitter Metadata -->
-        <meta property="twitter:title" content="App Introduction (2023/03/02) - 邱敬幃 Pardn Chiu">
-        <meta property="twitter:description" content="App Introduction (2023/03/02) - 邱敬幃 Pardn Chiu">
-        <meta property="twitter:image" content="https://pardnchiu.github.io/web-template/image/app-introduction-20230302.jpg">
-        <meta property="twitter:site" content="">
-        <meta property="twitter:card" content="summary_large_image">
-        <!-- Mobile Settings -->
-        <meta name="mobile-web-app-capable" content="no">
-        <meta name="apple-mobile-web-app-capable" content="no">
-        <meta name="apple-mobile-web-app-status-bar-style" content="default">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
-        <!-- Canonical URL (SEO) -->
-        <link rel="canonical" href="https://pardnchiu.github.io/web-template/target/app-introduction-20230302">
-        <!-- Robots Tag (SEO) -->
-        <meta name="robots" content="index, follow">
-        <!-- Icons -->
-        <link rel="apple-touch-icon" href="">
-        <link rel="apple-touch-icon-precomposed" href="">
-        <link rel="icon" href="" type="image/x-icon">
-        <!-- Structured Data for Rich Snippets (SEO) -->
-        <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "App Introduction (2023/03/02) - 邱敬幃 Pardn Chiu",
-        "description": "App Introduction (2023/03/02) - 邱敬幃 Pardn Chiu",
-        "url": "https://pardnchiu.github.io/web-template/target/app-introduction-20230302",
-        "image": "https://pardnchiu.github.io/web-template/image/app-introduction-20230302.jpg",
-        "author": {
-            "@type": "Person",
-            "name": "邱敬幃 Pardn Chiu"
-        }
-    }
-    </script>
-        <!-- Google tag (gtag.js) -->
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="twitter:title" content="網站前端範例 23-03-02 - 邱敬幃 Pardn Chiu">
+        <meta property="og:description" content="網站前端範例 23-03-02 - 邱敬幃 Pardn Chiu">
+        <meta property="twitter:image" content="https://pardn.io/web-template/image/20230302.jpg">
+        <meta property="twitter:url" content="https://pardn.io/web-template/target/20230302">
+
+        <!-- Google Verification -->
+        <meta name="google-site-verification" content="YQQ2f6AchR8dcb55Az2BYd_mw4TrP0J1RApD-v2v65Y">
+
+        <!-- Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-L5VYEZPVXX"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -61,20 +54,67 @@
             gtag('js', new Date());
             gtag('config', 'G-L5VYEZPVXX');
         </script>
-        <!-- Preconnect -->
+
+        <!-- Preload and Preconnect -->
         <link rel="preconnect" href="https://cdn.jsdelivr.net">
-        <!-- Preloads for CDN -->
+
         <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" as="style">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
 
         <link rel="preload" href="https://cdn.jsdelivr.net/npm/pdrenderkit@1.0.0/dist/PDRenderKit.js" as="script">
         <script src="https://cdn.jsdelivr.net/npm/pdrenderkit@1.0.0/dist/PDRenderKit.js" copyright="Pardn Ltd"></script>
-        <!--  -->
-        <link rel="stylesheet" href="./css/index.css">
-        <!--  -->
-        <script src="./js/index.js" defer></script>
-    </head>
 
+        <!-- Local Resources -->
+        <link rel="stylesheet" href="./css/index.css">
+        <script src="./js/index.js" defer></script>
+
+        <!-- JSON-LD Schema -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "datePublished": "2023-03-02",
+            "dateModified": "2024-12-22",
+            "inLanguage": "zh-TW",
+            "name": {
+                "@language": "zh-TW",
+                "@value": "網站前端範例 23-03-02 - 邱敬幃 Pardn Chiu"
+            },
+            "alternateName": {
+                "@language": "en",
+                "@value": "Web Example 23-03-02 - 邱敬幃 Pardn Chiu"
+            },
+            "description": {
+                "@language": "zh-TW",
+                "@value": "網站前端範例 23-03-02 - 邱敬幃 Pardn Chiu"
+            },
+            "alternateDescription": {
+                "@language": "en",
+                "@value": "Web Example 23-03-02 - 邱敬幃 Pardn Chiu"
+            },
+            "url": "https://pardn.io/web-template/target/20230302",
+            "creator": {
+                "@type": "Person",
+                "name": [
+                    {
+                        "@language": "zh-TW",
+                        "@value": "邱敬幃"
+                    },
+                    {
+                        "@language": "en",
+                        "@value": "Pardn Chiu"
+                    }
+                ],
+                "url": "https://pardn.io/",
+                "sameAs": [
+                    "https://github.com/pardnchiu"
+                ],
+                "email": "dev@pardn.io"
+            },
+            "image": "https://pardn.io/web-template/image/20230302.jpg",
+        }
+        </script>
+    </head>
 
     <style>
         :root {
@@ -108,28 +148,28 @@
         <nav id="nav-002">
             <div>
                 <div class="left">
-                    <a href="">
-                        <b>PARDN LTD</b>
+                    <a href="https://pardn.io/">
+                        <b>PARDNCHIU</b>
                     </a>
                 </div>
                 <div class="right">
                     <ul style="color: #6f6f6f;">
                         <li>
-                            <button>首頁</button>
+                            <button>ITEM</button>
                         </li>
                         <li>
-                            <button>列表<i class="fas fa-angle-right right"></i></button>
+                            <button>ITEM<i class="fas fa-angle-right right"></i></button>
                         </li>
                         <li>
-                            <button>列表<i class="fas fa-angle-right right"></i></button>
+                            <button>ITEM<i class="fas fa-angle-right right"></i></button>
                         </li>
                         <li>
-                            <button>列表<i class="fas fa-angle-right right"></i>
+                            <button>ITEM<i class="fas fa-angle-right right"></i>
                             </button>
                         </li>
                     </ul>
-                    <a href="https://pardnchiu.github.io/">
-                        <b>我的頁面</b>
+                    <a href="https://github.com/pardnchiu/" target="_blanl">
+                        <b>GitHub</b>
                         <i class="fa-brands fa-github right"></i>
                     </a>
                 </div>
@@ -144,27 +184,23 @@
                 <ul>
                     <li style="top: 6rem;">
                         <a>
-                            <img src=" image/header.png" alt="">
+                            <img src="image/header.png" alt="">
                         </a>
                     </li>
                     <li class="align-left">
-                        <h1 col="#fff">Website Template 8</h1>
+                        <h1 col="#fff">Lorem ipsum dolor sit amet.</h1>
                         <p col="#ddd">
-                            名稱: 網站模板 8<br>
-                            公司: Pardn Ltd 帕登國際有限公司<br>
-                            開發: Pardn Chiu 邱敬幃<br>
-                            工具: Html, Css/Sass, Javascript<br>
-                            圖示: Font Awesome 6
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum aut dignissimos quibusdam optio. Deserunt provident tenetur iure tempora dolore ipsum. Deserunt, aut? Dolores accusamus, provident quia adipisci expedita ex quae?
                         </p>
                         <ul class="align-left">
                             <li>
                                 <a class="bg" bg-col="rgba(0, 0, 0, 0.5)" col="#fff" href="https://github.com/pardnchiu/web-template/" target="_blank">
-                                    查看原碼<i class="fa-solid fa-code right"></i>
+                                    GitHub<i class="fa-brands fa-github right"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://pardnchiu.github.io/" col="#fff">
-                                    我的頁面<i class="fa-brands fa-github right"></i>
+                                <a href="https://pardn.io/" col="#fff">
+                                    My Page<i class="fa-solid fa-user right"></i>
                                 </a>
                             </li>
                         </ul>
@@ -180,29 +216,29 @@
                     <li>
                         <div>
                             <i class="fa-brands fa-apple linear-bg-2" col="#fff"></i>
-                            <h6>iOS 開發</h6>
-                            <p>使用Swift 開發</p>
+                            <h6>Lorem, ipsum dolor.</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </li>
                     <li>
                         <div>
                             <i class="fas fa-desktop linear-bg-2" col="#fff"></i>
-                            <h6>前端開發</h6>
-                            <p>不使用框架<br>專注於Css / Sass / JS</p>
+                            <h6>Lorem, ipsum dolor.</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </li>
                     <li>
                         <div>
                             <i class="fa-solid fa-database linear-bg-2" col="#fff"></i>
-                            <h6>後端開發</h6>
-                            <p>使用Node.JS / PHP</p>
+                            <h6>Lorem, ipsum dolor.</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </li>
                     <li>
                         <div>
                             <i class="fa-solid fa-server linear-bg-2" col="#fff"></i>
-                            <h6>網站代管</h6>
-                            <p>提供VPS 與協助代管</p>
+                            <h6>Lorem, ipsum dolor.</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </li>
                 </ul>
@@ -213,39 +249,31 @@
             <div>
                 <ul class="r2">
                     <li>
-                        <img src="https://picsum.photos/256?random=1" alt="">
-                        <p><b>帕登國際有限公司</b>軟體公司</p>
+                        <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                        <p><b>Lorem, ipsum.</b>Lorem, ipsum dolor.</p>
                         <p>
-                            統一編號 24924502，一律開發票<br><br>
-                            提供「iOS 開發」、「網站開發／代管」<br>
-                            iOS 使用Swift、後端使用PHP、Node.JS
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi cupiditate libero animi nam odio ullam corporis ipsum quia magni minima aut nulla distinctio, voluptatibus repudiandae, amet maxime doloremque debitis quis?
                         </p>
                     </li>
                     <li>
-                        <img src="https://picsum.photos/256?random=2" alt="">
-                        <p><b>JOBALL找專家</b>人才媒合平台</p>
+                        <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                        <p><b>Lorem, ipsum.</b>Lorem, ipsum dolor.</p>
                         <p>
-                            擁有專業技術的您<br>
-                            只需透過「JOBALL找專家」<br>
-                            就可以展示自己的專業技能和作品<br>
-                            吸引更多在網路上搜尋專業服務的案主<br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi cupiditate libero animi nam odio ullam corporis ipsum quia magni minima aut nulla distinctio, voluptatibus repudiandae, amet maxime doloremque debitis quis?
                         </p>
                     </li>
                     <li>
-                        <img src="https://picsum.photos/256?random=3" alt="">
-                        <p><b>Pardn Chiu</b>iOS 工程師</p>
+                        <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                        <p><b>Lorem, ipsum.</b>Lorem, ipsum dolor.</p>
                         <p>
-                            提供「iOS 開發」、「網站開發／代管」<br>
-                            iOS 使用Swift、後端使用PHP、Node.JS<br><br>
-                            可加洽單次案件，或加入團隊負責開發</p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi cupiditate libero animi nam odio ullam corporis ipsum quia magni minima aut nulla distinctio, voluptatibus repudiandae, amet maxime doloremque debitis quis?
+                        </p>
                     </li>
                     <li>
-                        <img src="https://picsum.photos/256?random=4" alt="">
-                        <p><b>邱敬幃</b>全端工程師</p>
+                        <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                        <p><b>Lorem, ipsum.</b>Lorem, ipsum dolor.</p>
                         <p>
-                            提供「iOS 開發」、「網站開發／代管」<br>
-                            iOS 使用Swift、後端使用PHP、Node.JS<br><br>
-                            可加洽單次案件，或加入團隊負責開發
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi cupiditate libero animi nam odio ullam corporis ipsum quia magni minima aut nulla distinctio, voluptatibus repudiandae, amet maxime doloremque debitis quis?
                         </p>
                     </li>
                 </ul>
@@ -259,37 +287,36 @@
                     <li class="shadow">
                         <div>
                             <i class="fa-brands fa-apple"></i>
-                            <h6>iOS 開發</h6>
-                            <p>使用Swift 開發</p>
+                            <h6>Lorem, ipsum.</h6>
+                            <p>Lorem, ipsum dolor.</p>
                         </div>
                     </li>
                     <li class="shadow">
                         <div>
                             <i class="fas fa-desktop"></i>
-                            <h6>前端開發</h6>
-                            <p>不使用框架<br>專注於Css / Sass / JS</p>
+                            <h6>Lorem, ipsum.</h6>
+                            <p>Lorem, ipsum dolor.</p>
                         </div>
                     </li>
                     <li class="shadow">
                         <div>
                             <i class="fa-solid fa-database"></i>
-                            <h6>後端開發</h6>
-                            <p>使用Node.JS / PHP</p>
+                            <h6>Lorem, ipsum.</h6>
+                            <p>Lorem, ipsum dolor.</p>
                         </div>
                     </li>
                     <li class="shadow">
                         <div>
                             <i class="fa-solid fa-server"></i>
-                            <h6>網站代管</h6>
-                            <p>提供VPS 與協助代管</p>
+                            <h6>Lorem, ipsum.</h6>
+                            <p>Lorem, ipsum dolor.</p>
                         </div>
                     </li>
                 </ul>
             </div>
         </section>
 
-        <section top="30rem" bg-img="./image/joball.jpg" style="background-size: 75% auto;">
-            <a bg-col="rgba(0, 100, 255, 0.25)" href="https://joball.tw"></a>
+        <section top="30rem" bg-img="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" style="background-size: 100% auto;">
         </section>
 
         <section num="19" top="4rem" bottom="">
@@ -297,12 +324,12 @@
             <div>
                 <ul>
                     <li class="show">
-                        <button onclick="showContent(this)">還在找人才協助自己嗎？<i class="fas fa-chevron-right"></i></button>
-                        <p>已有上千位專家、團隊在平台提供服務<br>立即前往平台與上千位專家取得聯繫</p>
+                        <button onclick="showContent(this)">Lorem ipsum dolor sit amet.<i class="fas fa-chevron-right"></i></button>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi esse doloremque officia, cupiditate qui deleniti perspiciatis aut consequatur totam eius iste nisi neque minima dolores tenetur repellendus soluta odio officiis!</p>
                     </li>
                     <li class="">
-                        <button onclick="showContent(this)">還在找更多地方曝光自己嗎？<i class="fas fa-chevron-right"></i></button>
-                        <p>只需註冊即可刊登服務、上傳作品<br>透過平台在網路上曝光你自己，讓有需求的用戶們直接與你聯繫</p>
+                        <button onclick="showContent(this)">Lorem ipsum dolor sit amet.<i class="fas fa-chevron-right"></i></button>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, adipisci iure? Perferendis neque voluptatibus iure nobis, quia autem voluptas omnis veniam repellat nam ab adipisci repellendus minus laboriosam non dolorum.</p>
                     </li>
                 </ul>
             </div>
@@ -319,13 +346,13 @@
             <div>
                 <ul>
                     <li>
-                        <h6>想瞭解更多JOBALL資訊？</h6>
-                        <p>立即前往平台了解資訊</p>
+                        <h6>Lorem ipsum dolor sit amet.</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </li>
                     <li>
                         <ul class="button align-right">
                             <li>
-                                <a href="" bg-col="--col-system" col="#fff">前往平台<i class="fas fa-angle-right right"></i></a>
+                                <a href="" bg-col="--col-system" col="#fff">READ MORE<i class="fas fa-angle-right right"></i></a>
                             </li>
                         </ul>
                     </li>
@@ -337,8 +364,8 @@
             <span mask="wave" colBg="rgba(0, 0, 0, 0.25)" col="#212831"></span>
             <div>
                 <div>
-                    <h6>Website Template 8</h6>
-                    <p>Created by Pardn Chiu</p>
+                    <h6>網站前端範例 23-03-02</h6>
+                    <p>Created by 邱敬幃</p>
                     <ul>
                         <li>
                             <a href="https://instagram.com/pardnchiu" target="_blank">
@@ -419,7 +446,7 @@
                     </li>
                 </ul>
                 <div>
-                    <p class="left">Copyright © Pardn Ltd 2023</p>
+                    <p class="left">© 2023 邱敬幃</p>
                     <p class="right">
                         <a href="">Privacy Policy</a>
                         ·

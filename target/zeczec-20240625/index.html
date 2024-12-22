@@ -10,8 +10,8 @@
         <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" as="style">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
 
-        <link rel="preload" href="https://cdn.jsdelivr.net/npm/pdrenderkit@1.5.2/dist/PDRenderKit.js" as="script">
-        <script src="https://cdn.jsdelivr.net/npm/pdrenderkit@1.5.2/dist/PDRenderKit.js" copyright="Pardn Ltd"></script>
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/@pardnchiu/quickui@0.6.2/dist/QuickUI.js" as="script">
+        <script src="https://cdn.jsdelivr.net/npm/@pardnchiu/quickui@0.6.2/dist/QuickUI.js" copyright="Pardn Ltd"></script>
 
         <link rel="stylesheet" href="./css/index.css">
     </head>
@@ -48,7 +48,7 @@
         <header class="home">
             <a href="./project.html">
                 <figcaption>
-                    <img src="https://picsum.photos/1024?random=1" alt="">
+                    <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
                 </figcaption>
                 <section data-text="群眾募資 ｜ 剩下24天" style="justify-content: space-between;">
                     <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong>
@@ -62,7 +62,7 @@
         <section class="home-1">
             <section>
                 <a href="./project.html" :for="(e, i) in list_4">
-                    <img :src="https://picsum.photos/256?random={{ i }}" alt="">
+                    <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
                     <section>
                         <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong>
                         <section>
@@ -94,9 +94,9 @@
                         <i class="fa-solid fa-angle-right"></i>
                     </a>
                 </section>
-                <a href="./project.html"  :for="(e, i) in list_6">
+                <a href="./project.html" :for="(e, i) in list_6">
                     <figcaption>
-                        <img :src="https://picsum.photos/256?random={{ CALC(i + 4) }}" alt="">
+                        <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
                     </figcaption>
                     <strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. </strong>
                     <section class="bar">
@@ -138,9 +138,9 @@
                         <i class="fa-solid fa-angle-right"></i>
                     </a>
                 </section>
-                <a href="./project.html"  :for="(e, i) in list_6">
+                <a href="./project.html" :for="(e, i) in list_6">
                     <figcaption>
-                        <img :src="https://picsum.photos/256?random={{ CALC(i + 10) }}" alt="">
+                        <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
                     </figcaption>
                     <strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. </strong>
                     <section class="bar">
@@ -221,15 +221,15 @@
 
         document.addEventListener("DOMContentLoaded", _ => {
 
-            let app = new PD({
+            let app = new QUI({
                 id: "app",
                 data: {
                     list_4: Array.from({ length: 4 }, () => 1),
                     list_6: Array.from({ length: 6 }, () => 1)
-                },
-                next: _ => {}
+                }
             })
 
         });
     </script>
+
 </html>
