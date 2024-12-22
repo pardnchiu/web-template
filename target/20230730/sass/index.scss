@@ -93,18 +93,6 @@ body {
 	background-color: var(--col-brand-1);
 	overflow: hidden scroll;
 
-	// &::after {
-	// 	content: "帕登國際有限公司・邱敬幃" !important;
-	// 	position: fixed !important;
-	// 	z-index: 10000 !important;
-	// 	left: 50% !important;
-	// 	bottom: 0 !important;
-	// 	transform: translateX(-50%) !important;
-	// 	margin-right: -50%;
-	// 	text-align: center;
-	// 	color: #0000001a;
-	// }
-
 	&[ready="0"] *,
 	&[ready="0"] *::before,
 	&[ready="0"] *::after {

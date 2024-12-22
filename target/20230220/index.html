@@ -1,0 +1,437 @@
+<!-- 
+
+    Copyright 2024 Pardn Ltd 帕登國際有限公司.
+    Created by 邱敬幃 Pardn Chiu.
+    Email: dev@pardn.io
+
+-->
+<!DOCTYPE html>
+<html lang="zh-Hans-TW">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="robots" content="index, follow">
+
+        <!-- SEO 標題與描述 -->
+        <title>網站前端範例 23-02-20 - 邱敬幃 Pardn Chiu</title>
+        <meta name="title" content="網站前端範例 23-02-20 - 邱敬幃 Pardn Chiu">
+        <meta name="description" content="網站前端範例 23-02-20 - 邱敬幃 Pardn Chiu">
+        <meta name="keywords" content="Website範例, 邱敬幃, Pardn Chiu">
+        <meta name="author" content="邱敬幃 Pardn Chiu">
+        <link rel="author" href="https://pardn.io">
+        <link rel="canonical" href="https://pardn.io/web-template/target/20230320">
+
+        <!-- Favicon -->
+        <link rel="icon" href="https://pardn.io/image/head.png" type="image/x-icon">
+
+        <!-- Open Graph -->
+        <meta property="og:title" content="網站前端範例 23-02-20 - 邱敬幃 Pardn Chiu">
+        <meta property="og:description" content="網站前端範例 23-02-20 - 邱敬幃 Pardn Chiu">
+        <meta property="og:image" content="https://pardn.io/web-template/image/20230320.jpg">
+        <meta property="og:url" content="https://pardn.io/web-template/target/20230320">
+        <meta property="og:site_name" content="Pardn Chiu">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="zh_TW">
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="twitter:title" content="網站前端範例 23-02-20 - 邱敬幃 Pardn Chiu">
+        <meta property="og:description" content="網站前端範例 23-02-20 - 邱敬幃 Pardn Chiu">
+        <meta property="twitter:image" content="https://pardn.io/web-template/image/20230320.jpg">
+        <meta property="twitter:url" content="https://pardn.io/web-template/target/20230320">
+
+        <!-- Google Verification -->
+        <meta name="google-site-verification" content="YQQ2f6AchR8dcb55Az2BYd_mw4TrP0J1RApD-v2v65Y">
+
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-L5VYEZPVXX"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-L5VYEZPVXX');
+        </script>
+
+        <!-- Preload and Preconnect -->
+        <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" as="style">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/@pardnchiu/quickui@0.6.2/dist/QuickUI.js" as="script">
+        <script src="https://cdn.jsdelivr.net/npm/@pardnchiu/quickui@0.6.2/dist/QuickUI.js" copyright="Pardn Ltd"></script>
+
+        <!-- Local Resources -->
+        <link rel="stylesheet" href="./css/index.css">
+
+        <!-- JSON-LD Schema -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "datePublished": "2023-02-20",
+            "dateModified": "2024-12-22",
+            "inLanguage": "zh-TW",
+            "name": {
+                "@language": "zh-TW",
+                "@value": "網站前端範例 23-02-20 - 邱敬幃 Pardn Chiu"
+            },
+            "alternateName": {
+                "@language": "en",
+                "@value": "Web Example 23-02-20 - 邱敬幃 Pardn Chiu"
+            },
+            "description": {
+                "@language": "zh-TW",
+                "@value": "網站前端範例 23-02-20 - 邱敬幃 Pardn Chiu"
+            },
+            "alternateDescription": {
+                "@language": "en",
+                "@value": "Web Example 23-02-20 - 邱敬幃 Pardn Chiu"
+            },
+            "url": "https://pardn.io/web-template/target/20230320",
+            "creator": {
+                "@type": "Person",
+                "name": [
+                    {
+                        "@language": "zh-TW",
+                        "@value": "邱敬幃"
+                    },
+                    {
+                        "@language": "en",
+                        "@value": "Pardn Chiu"
+                    }
+                ],
+                "url": "https://pardn.io/",
+                "sameAs": [
+                    "https://github.com/pardnchiu"
+                ],
+                "email": "dev@pardn.io"
+            },
+            "image": "https://pardn.io/web-template/image/20230320.jpg"
+        }
+        </script>
+
+        <style>
+            * {
+                --clr-txt: #37475a;
+                --clr-grad-start: steelblue;
+                --clr-grad-end: red;
+                --clr-main: red;
+                --clr-bg: #f9fafe;
+
+                --size-heading: 4rem;
+
+                --grid-interval: 1rem;
+                --grid-radius: 2rem;
+                --grid-radio: 1 / 1;
+            }
+        </style>
+    </head>
+
+    <body id="body">
+        <section>
+            <nav>
+                <a href="">{{ nav.title }}<b>.</b></a>
+                <ul class="page">
+                    <li :class="e.class" :for="e in nav.tab">
+                        <button @click="page" :data-page="e.title">{{ e.title }}</button>
+                    </li>
+                </ul>
+                <ul class="contact">
+                    <li>
+                        <a href="https://github.com/pardnchiu" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://linkedin.com/in/pardnchiu" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="mobile">
+                        <button @click="show">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            <ul id="mobile-tab">
+                <li :class="e.class" :for="e in nav.tab">
+                    <a :href="e.href">{{ e.title }}</a>
+                </li>
+                <ul>
+                    <li>
+                        <a href="https://github.com/pardnchiu" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://linkedin.com/in/pardnchiu" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </ul>
+            <div :if="isHome">
+                <div class="home">
+                    <p>Hello</p>
+                    <h1>I'm <b id="typing-area">Pardn Chiu</b></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nostrum consequuntur iste optio beatae ipsam ea, nesciunt excepturi officia quas necessitatibus non modi magni ab quaerat, rem sed dicta numquam?</p>
+                    <div>
+                        <a href="https://github.com/pardnchiu/web-template/" target="_blank">
+                            <i class="fa-solid fa-code"></i>
+                            Code
+                        </a>
+                        <a href="https://github.com/pardnchiu/" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+                <span :path="image/home.svg"></span>
+                <img src="image/temp1.png" alt="">
+            </div>
+            <div :else>
+                <div class="portfolio">
+                    <ul id="portfolio-tab" :data-target="type_index">
+                        <li data-href="?page=portfolio&type=all" @click="expand">ALL</li>
+                        <li :for="e in types" :data-href="e.href" @click="expand">{{ e.title }}</li>
+                    </ul>
+                    <div id="portfolio-list">
+                        <div :for="e in portfolio">
+                            <img :lazyload="e.src" alt="">
+                            <ul>
+                                <li>
+                                    <a :href="e.src" target="_blank">
+                                        <i class="fa-solid fa-globe"></i>
+                                        開啟
+                                    </a>
+                                </li>
+                                <li>
+                                    <button @click="copy" :data-href="e.src">
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                        分享
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+
+            const imageSample = [
+                {
+                    type: "laptop",
+                    src: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample"
+                },
+                {
+                    type: "laptop",
+                    src: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample"
+                },
+                {
+                    type: "laptop",
+                    src: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample"
+                },
+                {
+                    type: "laptop",
+                    src: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample"
+                },
+                {
+                    type: "laptop",
+                    src: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample"
+                },
+                {
+                    type: "landscape",
+                    src: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample"
+                },
+                {
+                    type: "landscape",
+                    src: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample"
+                },
+                {
+                    type: "landscape",
+                    src: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample"
+                },
+                {
+                    type: "landscape",
+                    src: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample"
+                },
+                {
+                    type: "landscape",
+                    src: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample"
+                },
+                {
+                    type: "city",
+                    src: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample"
+                },
+                {
+                    type: "city",
+                    src: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample"
+                },
+                {
+                    type: "city",
+                    src: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample"
+                },
+                {
+                    type: "city",
+                    src: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample"
+                },
+                {
+                    type: "city",
+                    src: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample"
+                }
+            ];
+
+            const types = imageSample.map(e => {
+                return {
+                    title: e.type.toUpperCase(),
+                    href: "?page=portfolio&type=" + e.type
+                }
+            }).filter((e, i, ary) => {
+                return i === ary.findIndex(t => t.title === e.title && t.href === e.href)
+            });
+
+            let timer;
+
+            document.addEventListener("DOMContentLoaded", _ => {
+                const page = (new URL(location.href)).searchParams.get("page") || "home";
+                const type = ((new URL(location.href)).searchParams.get("type") || "ALL").toUpperCase();
+                const isHome = page === "home";
+                const app = new QUI({
+                    id: "body",
+                    data: {
+                        isHome: isHome,
+                        nav: {
+                            title: page.toUpperCase(),
+                            tab: [
+                                {
+                                    class: isHome ? "sel" : "",
+                                    title: "Home",
+                                },
+                                {
+                                    class: isHome ? "" : "sel",
+                                    title: "Portfolio",
+                                }
+                            ]
+                        },
+                        types: types,
+                        type_index: types.findIndex(e => e.title === type.toUpperCase()) + 1,
+                        portfolio: type === "ALL" ? imageSample : imageSample.filter(e => e.type === type.toLowerCase())
+                    },
+                    event: {
+                        page: e => {
+                            const isHome = e.target.dataset.page === "Home";
+                            app.data.isHome = isHome;
+                            app.data.nav.tab = [
+                                {
+                                    class: isHome ? "sel" : null,
+                                    title: "Home"
+                                },
+                                {
+                                    class: isHome ? null : "sel",
+                                    title: "Portfolio"
+                                }
+                            ];
+                            setTimeout(() => {
+                                app.event.dynamicInput(isHome)
+                            }, 500);
+                        },
+                        show: e => {
+                            const dom = document.getElementById("mobile-tab");
+                            const isShow = dom.classList.contains("show");
+                            if (!isShow) {
+                                dom.classList.add("show");
+                            }
+                        },
+                        expand: e => {
+                            const href = e.target.dataset.href;
+                            const dom_ul = e.target.parentElement;
+                            const isExpand = dom_ul.classList.contains("expand")
+                            if (document.body.clientWidth < 800 && !isExpand) {
+                                dom_ul.classList.add("expand")
+                            }
+                            else {
+                                location.href = href;
+                            }
+                        },
+                        copy: e => {
+                            e.target.dataset.href.$copy();
+                            e.target.__child([
+                                "fa-solid fa-circle-check"._fa,
+                                "已複製"
+                            ]);
+                            setTimeout(_ => {
+                                e.target.__child([
+                                    "fa-solid fa-share-nodes"._fa,
+                                    "分享"
+                                ]);
+                            }, 500);
+                        },
+                        dynamicInput: (isHome) => {
+                            clearInterval(timer);
+
+                            if (!isHome) {
+                                return;
+                            };
+
+                            let start = 0;
+                            const ary = ["iOS工程師", "網站工程師", "程式設計師", "Pardn Chiu"];
+                            const dom = document.getElementById("typing-area");
+
+                            changeTitle();
+                            timer = setInterval(_ => changeTitle(), 8000);
+
+                            function changeTitle() {
+                                const now_text_len = dom.innerText.length;
+                                let now_index = now_text_len;
+                                let timer_delete_text = setInterval(_ => {
+                                    dom.innerText = dom.innerText.slice(0, now_index);
+                                    now_index -= 1;
+                                }, 1000 / now_text_len);
+
+                                let timer_next = setTimeout(() => {
+                                    clearInterval(timer_delete_text);
+                                    clearTimeout(timer_next);
+
+                                    if (dom.innerText.length) {
+                                        dom.innerText = "";
+                                    };
+
+                                    const txt = ary[start];
+                                    let index = 0;
+                                    let text_len = txt.length;
+                                    let timer_add_text = setInterval(() => {
+                                        dom.innerText += txt.charAt(index);
+                                        index += 1;
+                                    }, 3000 / text_len);
+
+                                    let timer_stop = setTimeout(() => {
+                                        clearInterval(timer_add_text);
+                                        clearTimeout(timer_stop);
+
+                                        start += 1;
+
+                                        if (start > ary.length - 1) {
+                                            start = 0;
+                                        };
+                                    }, 3000 / text_len * (text_len + 1));
+                                }, 1000 / now_text_len * (now_text_len + 2));
+                            };
+                        }
+                    },
+                    when: {
+                        rendered: _ => {
+                            app.event.dynamicInput(isHome);
+                        }
+                    }
+                })
+            });
+        </script>
+    </body>
+
+</html>

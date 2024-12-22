@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 indicator: [0, 1, 2, 3]
             },
             section_blog: Array.from({ length: 5 }, (_, i) => i),
-            comments: ["Emma Johnson", "William Davis", "Ava Thompson", "Daniel Brown"],
+            comments: ["Emma Johnson", "William Davis", "Ava Thompson", "Daniel Brown"]
         },
         event: {
             tabShow: function () {

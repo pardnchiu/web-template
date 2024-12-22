@@ -59,7 +59,7 @@
                         "i.fa-regular.fa-copyright"._(),
                         "Copyright 2023",
                         "br"._(),
-                        "Created By Pardn Chiu."
+                        "Created by 邱敬幃 Pardn Chiu."
                     ])
                 ])
             ]),

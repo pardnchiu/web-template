@@ -1,0 +1,356 @@
+<!-- 
+
+    Copyright 2024 Pardn Ltd 帕登國際有限公司.
+    Created by 邱敬幃 Pardn Chiu.
+    Email: dev@pardn.io
+
+-->
+<!DOCTYPE html>
+<html lang="zh-Hans-TW">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="robots" content="index, follow">
+
+        <!-- SEO 標題與描述 -->
+        <title>網站前端範例 23-06-07 - 邱敬幃 Pardn Chiu</title>
+        <meta name="title" content="網站前端範例 23-06-07 - 邱敬幃 Pardn Chiu">
+        <meta name="description" content="網站前端範例 23-06-07 - 邱敬幃 Pardn Chiu">
+        <meta name="keywords" content="Website範例, 邱敬幃, Pardn Chiu">
+        <meta name="author" content="邱敬幃 Pardn Chiu">
+        <link rel="author" href="https://pardn.io">
+        <link rel="canonical" href="https://pardn.io/web-template/target/20230607">
+
+        <!-- Favicon -->
+        <link rel="icon" href="https://pardn.io/image/head.png" type="image/x-icon">
+
+        <!-- Open Graph -->
+        <meta property="og:title" content="網站前端範例 23-06-07 - 邱敬幃 Pardn Chiu">
+        <meta property="og:description" content="網站前端範例 23-06-07 - 邱敬幃 Pardn Chiu">
+        <meta property="og:image" content="https://pardn.io/web-template/image/20230607.jpg">
+        <meta property="og:url" content="https://pardn.io/web-template/target/20230607">
+        <meta property="og:site_name" content="Pardn Chiu">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="zh_TW">
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="twitter:title" content="網站前端範例 23-06-07 - 邱敬幃 Pardn Chiu">
+        <meta property="og:description" content="網站前端範例 23-06-07 - 邱敬幃 Pardn Chiu">
+        <meta property="twitter:image" content="https://pardn.io/web-template/image/20230607.jpg">
+        <meta property="twitter:url" content="https://pardn.io/web-template/target/20230607">
+
+        <!-- Google Verification -->
+        <meta name="google-site-verification" content="YQQ2f6AchR8dcb55Az2BYd_mw4TrP0J1RApD-v2v65Y">
+
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-L5VYEZPVXX"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-L5VYEZPVXX');
+        </script>
+
+        <!-- Preload and Preconnect -->
+        <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" as="style">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/pdrenderkit@1.0.0/dist/PDRenderKit.js" as="script">
+        <script src="https://cdn.jsdelivr.net/npm/pdrenderkit@1.0.0/dist/PDRenderKit.js" copyright="Pardn Ltd"></script>
+
+        <!-- Local Resources -->
+        <link rel="stylesheet" href="./css/index.css">
+
+        <!-- JSON-LD Schema -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "datePublished": "2023-06-07",
+            "dateModified": "2024-12-22",
+            "inLanguage": "zh-TW",
+            "name": {
+                "@language": "zh-TW",
+                "@value": "網站前端範例 23-06-07 - 邱敬幃 Pardn Chiu"
+            },
+            "alternateName": {
+                "@language": "en",
+                "@value": "Web Example 23-06-07 - 邱敬幃 Pardn Chiu"
+            },
+            "description": {
+                "@language": "zh-TW",
+                "@value": "網站前端範例 23-06-07 - 邱敬幃 Pardn Chiu"
+            },
+            "alternateDescription": {
+                "@language": "en",
+                "@value": "Web Example 23-06-07 - 邱敬幃 Pardn Chiu"
+            },
+            "url": "https://pardn.io/web-template/target/20230607",
+            "creator": {
+                "@type": "Person",
+                "name": [
+                    {
+                        "@language": "zh-TW",
+                        "@value": "邱敬幃"
+                    },
+                    {
+                        "@language": "en",
+                        "@value": "Pardn Chiu"
+                    }
+                ],
+                "url": "https://pardn.io/",
+                "sameAs": [
+                    "https://github.com/pardnchiu"
+                ],
+                "email": "dev@pardn.io"
+            },
+            "image": "https://pardn.io/web-template/image/20230607.jpg"
+        }
+        </script>
+
+        <style>
+            :root {
+                --width-max: 1280px;
+
+                --col-brand-lightest: hsl(271, 100%, 98%);
+                --col-brand-lighter-more: hsl(271, 90%, 82%);
+                --col-brand-lighter: hsl(271, 80%, 66%);
+                --col-brand: hsl(271, 70%, 50%);
+                --col-brand-darker: hsl(271, 78%, 37%);
+                --col-brand-darker-more: hsl(271, 86%, 24%);
+                --col-brand-darkest: hsl(271, 94%, 11%);
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <nav>
+            <section>
+                <h6>Pardn<b>Ltd</b></h6>
+                <ul>
+                    <li class="sel">HOME</li>
+                    <li>ABOUT</li>
+                    <li>SERVICE</li>
+                    <li>PORTFOLIO</li>
+                    <li>CLIENT</li>
+                    <li>CONTACT</li>
+                </ul>
+                <button id="button-tab">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </section>
+        </nav>
+
+        <header>
+            <section>
+                <section>
+                    <h6>Hey <b>————————————</b></h6>
+                    <h1>I AM <b>PARDN CHIU</b></h1>
+                    <h2>SENIOR FULL-STACK DEVELOPER</h2>
+                    <a class="col" href="https://github.com/pardnchiu/web-template" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                        GitHub
+                    </a>
+                    <a href="mailto:dev@pardn.io">
+                        <i class="fa-solid fa-envelope"></i>
+                        CONTACT
+                    </a>
+                </section>
+                <img src="./image/header.png" alt="">
+            </section>
+        </header>
+
+        <section>
+            <section num="0">
+                <img src="./image/section-0.jpg" alt="">
+                <section>
+                    <h6>LET ME<br>INTRODUCE<br>MYSELF</h6>
+                    <p>Proficient in iOS native development, frontend design, and backend development.<br><br>
+                        Whether it's developing iOS apps or building websites, I can easily handle them.<br><br>
+                        I have also created multiple website templates and iOS examples that are available for download
+                        on GitHub.</p>
+                    <a class="col" href="https://linkedin.com/in/pardnchiu" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        Linkedin
+                    </a>
+                </section>
+            </section>
+        </section>
+
+        <section>
+            <section num="1">
+                <section>
+                    <h6>SERVICES OFFERS</h6>
+                    <p>Provide end-to-end solutions for native iOS development and full-stack website
+                        development.<br>This can significantly reduce communication overhead within the team.</p>
+                </section>
+                <div>
+                    <i class="fa-brands fa-apple"></i>
+                    <h6>iOS<br>DEVELOPMENT</h6>
+                    <p>Proficient in using Swift for pure code native development without using Storyboard.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h6>FRONT-END<br>DEVELOPMENT</h6>
+                    <p>Proficient in utilizing HTML, CSS/Sass, and pure JavaScript to build Single Page Applications
+                        (SPA).</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-server"></i>
+                    <h6>BACK-END<br>DEVELOPMENT</h6>
+                    <p>Knowledgeable in PHP and Python, but primarily specialized in using Node.js with TypeScript.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h6>FULL-STACK<br>DEVELOPMENT</h6>
+                    <p>Capable of handling iOS, website frontend, and backend development on one's own.</p>
+                </div>
+            </section>
+        </section>
+
+        <section>
+            <section num="2">
+                <section>
+                    <h6>RECENTLY DONE PROJECT<br>QUALITY WORK</h6>
+                    <p>Created multiple website templates and iOS examples that are available for download on GitHub.
+                    </p>
+                </section>
+                <ul>
+                    <li class="sel">ALL</li>
+                    <li>WEB</li>
+                    <li>IOS</li>
+                </ul>
+                <section id="portfolio"></section>
+                <ul>
+                    <li class="sel"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>
+        </section>
+
+        <section>
+            <section num="3">
+                <section>
+                    <h6>CLIENT SAY ABOUT ME</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent leo tellus, aliquet ac
+                        tristique non, congue nec elit. Nullam ex felis, finibus in consectetur sed, laoreet nec ligula.
+                    </p>
+                </section>
+                <section>
+                    <div>
+                        <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                        <section>
+                            <h6>JOHN MARTIN</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent leo tellus, aliquet ac
+                                tristique non, congue nec elit. Nullam ex felis, finibus in consectetur sed, laoreet nec
+                                ligula.</p>
+                        </section>
+                    </div>
+                    <div>
+                        <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                        <section>
+                            <h6>MARTIN MAC</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent leo tellus, aliquet ac
+                                tristique non, congue nec elit. Nullam ex felis, finibus in consectetur sed, laoreet nec
+                                ligula.</p>
+                        </section>
+                    </div>
+                    <div>
+                        <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                        <section>
+                            <h6>MAC HILL</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent leo tellus, aliquet ac
+                                tristique non, congue nec elit. Nullam ex felis, finibus in consectetur sed, laoreet nec
+                                ligula.</p>
+                        </section>
+                    </div>
+                    <div>
+                        <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                        <section>
+                            <h6>HILL JOHN</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent leo tellus, aliquet ac
+                                tristique non, congue nec elit. Nullam ex felis, finibus in consectetur sed, laoreet nec
+                                ligula.</p>
+                        </section>
+                    </div>
+                </section>
+                <ul>
+                    <li class="sel"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>
+        </section>
+
+        <section>
+            <section num="4">
+                <section>
+                    <h6>GET UPDATE FROM ANYWHERE</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent leo tellus, aliquet ac
+                        tristique non, congue nec elit. </p>
+                    <label for="">
+                        <input type="text" placeholder="Email">
+                        <button>Subscribe</button>
+                    </label>
+                </section>
+            </section>
+        </section>
+
+        <footer>
+            <p>© 2023 邱敬幃</p>
+            <ul>
+                <li>
+                    <a href="mailto:dev@pardn.io">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/pardnchiu" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com/in/pardnchiu" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                _LazyListener();
+
+                const fragment = document.createDocumentFragment();
+
+
+                const albums = Array.from({ length: 20 }, (v, i) => {
+                    return {
+                        sn: i,
+                        href: "",
+                        src: "https://fakeimg.pl/1024/282828/eae0d0/?text=sample",
+                        title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                        tag: (Math.random() > 0.5 ? 2 : 1)
+                    }
+                }).forEach(e => {
+                    fragment.appendChild(
+                        "a"._([
+                            "img"._({ src: e.src })
+                        ])
+                    );
+                });
+
+                portfolio._child(fragment)
+            });
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,433 @@
+<!-- 
+
+    Copyright 2024 Pardn Ltd 帕登國際有限公司.
+    Created by 邱敬幃 Pardn Chiu.
+    Email: dev@pardn.io
+
+-->
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="robots" content="index, follow">
+
+        <!-- SEO 標題與描述 -->
+        <title>網站前端範例 23-03-09 - 邱敬幃 Pardn Chiu</title>
+        <meta name="title" content="網站前端範例 23-03-09 - 邱敬幃 Pardn Chiu">
+        <meta name="description" content="網站前端範例 23-03-09 - 邱敬幃 Pardn Chiu">
+        <meta name="keywords" content="Website範例, 邱敬幃, Pardn Chiu">
+        <meta name="author" content="邱敬幃 Pardn Chiu">
+        <link rel="author" href="https://pardn.io">
+        <link rel="canonical" href="https://pardn.io/web-template/target/20230309">
+
+        <!-- Favicon -->
+        <link rel="icon" href="https://pardn.io/image/head.png" type="image/x-icon">
+
+        <!-- Open Graph -->
+        <meta property="og:title" content="網站前端範例 23-03-09 - 邱敬幃 Pardn Chiu">
+        <meta property="og:description" content="網站前端範例 23-03-09 - 邱敬幃 Pardn Chiu">
+        <meta property="og:image" content="https://pardn.io/web-template/image/20230309.jpg">
+        <meta property="og:url" content="https://pardn.io/web-template/target/20230309">
+        <meta property="og:site_name" content="Pardn Chiu">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="zh_TW">
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="twitter:title" content="網站前端範例 23-03-09 - 邱敬幃 Pardn Chiu">
+        <meta property="og:description" content="網站前端範例 23-03-09 - 邱敬幃 Pardn Chiu">
+        <meta property="twitter:image" content="https://pardn.io/web-template/image/20230309.jpg">
+        <meta property="twitter:url" content="https://pardn.io/web-template/target/20230309">
+
+        <!-- Google Verification -->
+        <meta name="google-site-verification" content="YQQ2f6AchR8dcb55Az2BYd_mw4TrP0J1RApD-v2v65Y">
+
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-L5VYEZPVXX"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-L5VYEZPVXX');
+        </script>
+
+        <!-- Preload and Preconnect -->
+        <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" as="style">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/pdrenderkit@1.0.0/dist/PDRenderKit.js" as="script">
+        <script src="https://cdn.jsdelivr.net/npm/pdrenderkit@1.0.0/dist/PDRenderKit.js" copyright="Pardn Ltd"></script>
+
+        <!-- Local Resources -->
+        <link rel="stylesheet" href="./css/index.css">
+        <script src="./js/index.js" defer></script>
+
+        <!-- JSON-LD Schema -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "datePublished": "2023-03-09",
+            "dateModified": "2024-12-22",
+            "inLanguage": "zh-TW",
+            "name": {
+                "@language": "zh-TW",
+                "@value": "網站前端範例 23-03-09 - 邱敬幃 Pardn Chiu"
+            },
+            "alternateName": {
+                "@language": "en",
+                "@value": "Web Example 23-03-09 - 邱敬幃 Pardn Chiu"
+            },
+            "description": {
+                "@language": "zh-TW",
+                "@value": "網站前端範例 23-03-09 - 邱敬幃 Pardn Chiu"
+            },
+            "alternateDescription": {
+                "@language": "en",
+                "@value": "Web Example 23-03-09 - 邱敬幃 Pardn Chiu"
+            },
+            "url": "https://pardn.io/web-template/target/20230309",
+            "creator": {
+                "@type": "Person",
+                "name": [
+                    {
+                        "@language": "zh-TW",
+                        "@value": "邱敬幃"
+                    },
+                    {
+                        "@language": "en",
+                        "@value": "Pardn Chiu"
+                    }
+                ],
+                "url": "https://pardn.io/",
+                "sameAs": [
+                    "https://github.com/pardnchiu"
+                ],
+                "email": "dev@pardn.io"
+            },
+            "image": "https://pardn.io/web-template/image/20230309.jpg"
+        }
+        </script>
+
+        <style>
+            :root {
+                /* 頂部導覽列顏色 */
+                --col-nav: #212831;
+                /* 主色調 */
+                --col-system: #5a00d0;
+
+                --col-bg: #F2F6FC;
+                --col-bg1: #F0F5FB;
+                --col-bg2: #dae7fb;
+                --col-txt: #0053EA;
+                --col-text-light: #bfbfbf;
+                --col-border: #e0e0e0;
+
+                --max-width: 1100px;
+            }
+
+            .linear-bg-1 {
+                background: -webkit-linear-gradient(bottom right, #5a00d0, #a200c7);
+                background: -o-linear-gradient(bottom right, #5a00d0, #a200c7);
+                background: -moz-linear-gradient(bottom right, #5a00d0, #a200c7);
+                background: linear-gradient(to bottom right, #5a00d0, #a200c7);
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav id="top-nav" num="1">
+            <div>
+                <div class="left">
+                    <a href="" style="color: #fff;">
+                        <b>PARDN CHIU</b>
+                    </a>
+                </div>
+                <div class="right">
+                    <ul style="color: #ddd;">
+                        <li>
+                            <button>ITEM</button>
+                        </li>
+                        <li>
+                            <button>ITEM<i class="fas fa-angle-right right"></i></button>
+                        </li>
+                        <li>
+                            <button>ITEM<i class="fas fa-angle-right right"></i></button>
+                        </li>
+                        <li>
+                            <button>ITEM<i class="fas fa-angle-right right"></i>
+                            </button>
+                        </li>
+                    </ul>
+                    <a href="https://pardn.io/">
+                        <b>My Page</b>
+                        <i class="fa-brands fa-github right"></i>
+                    </a>
+                </div>
+                <button class="right">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <section header="1" top="14rem" bottom="14rem" bg-img="https://fakeimg.pl/1024/282828/000000/?text=sample">
+            <div>
+                <ul>
+                    <li>
+                        <h1 col="#fff">網站前端範例 23-03-09</h1>
+                        <p col="#aaa">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ducimus facere suscipit magnam necessitatibus nesciunt nobis quis perspiciatis accusantium, assumenda, voluptatibus laboriosam veniam obcaecati tempora error laborum impedit natus odit.
+                        </p>
+                        <ul>
+                            <li>
+                                <a class="bg" bg-col="--col-system" col="#fff" href="https://github.com/pardnchiu/web-template/" target="_blank">
+                                    Code<i class="fa-solid fa-code right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a col="#fff" href="https://pardn.io/">
+                                    GitHub<i class="fa-brands fa-github right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section num="10" top="2rem">
+            <span mask="arc-up"></span>
+            <div>
+                <ul>
+                    <li class="left" unhover="1">
+                        <a href="">
+                            <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                        </a>
+                    </li>
+                    <li class="right" unhover="1">
+                        <a href="">
+                            <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                        </a>
+                    </li>
+                    <li class="center" unhover="1">
+                        <a href="">
+                            <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section num="1" top="4rem" bottom="4rem">
+            <div body="1">
+                <ul class="r4">
+                    <li>
+                        <div>
+                            <i class="fa-brands fa-apple linear-bg-1" col="#fff"></i>
+                            <h6>Lorem ipsum dolor sit amet.</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <i class="fas fa-desktop linear-bg-1" col="#fff"></i>
+                            <h6>Lorem ipsum dolor sit amet.</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <i class="fa-solid fa-database linear-bg-1" col="#fff"></i>
+                            <h6>Lorem ipsum dolor sit amet.</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <i class="fa-solid fa-server linear-bg-1" col="#fff"></i>
+                            <h6>Lorem ipsum dolor sit amet.</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section num="11" top="14rem" bottom="14rem" bg-img="https://fakeimg.pl/1024/282828/eae0d0/?text=sample">
+            <div>
+                <div>
+                    <h2 col="#fff">Lorem ipsum dolor sit amet consectetur.</h2>
+                </div>
+            </div>
+            <a style="position: absolute; top: 0; left: 0; bottom: 0; right: 0; background-color: rgba(0, 0, 0, 0.8)" href="https://joball.tw" target="_blank"></a>
+        </section>
+
+        <section num="12" top="6rem" bottom="2rem">
+            <span mask="arc-down"></span>
+            <div>
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                        </a>
+                        <div>
+                            <div>
+                                <h6>Lorem ipsum dolor sit amet consectetur.</h6>
+                                <p>Lorem ipsum dolor sit.</p>
+                                <a href="">
+                                    MORE<i class="fa-brands fa-github right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                        </a>
+                        <div>
+                            <div>
+                                <h6>Lorem ipsum dolor sit amet consectetur.</h6>
+                                <p>Lorem ipsum dolor sit.</p>
+                                <a href="">
+                                    MORE<i class="fa-brands fa-github right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                        </a>
+                        <div>
+                            <div>
+                                <h6>Lorem ipsum dolor sit amet consectetur.</h6>
+                                <p>Lorem ipsum dolor sit.</p>
+                                <a href="https://pardn.io/">
+                                    MORE<i class="fa-brands fa-github right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section num="8" top="2rem" bottom="4rem" style="border-bottom: 1px solid var(--col-border);">
+            <div>
+                <div>
+                    <h6>Lorem ipsum dolor sit amet.</h6>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil cupiditate eaque perspiciatis, culpa vel iure ipsum.</p>
+                    <ul class="button">
+                        <li>
+                            <a class="bg" bg-col="--col-system" col="#fff" href="https://pardn.io/">
+                                My Page<i class="fa-solid fa-user right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer num="1" top="4rem" bg-col="#15181b">
+            <div>
+                <div>
+                    <h6>網站前端範例 23-03-09</h6>
+                    <p>Created by 邱敬幃 Pardn Chiu</p>
+                    <ul>
+                        <li>
+                            <a href="https://instagram.com/pardnchiu" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/chiuchingwei" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/pardnchiu" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul>
+                    <li>
+                        <h6>ABOUT</h6>
+                        <ul>
+                            <li>
+                                <a href="https://github.com/pardnchiu" target="_blank">Github</a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/chiuchingwei" target="_blank">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/pardnchiu" target="_blank">Instagram</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6>PRODUCTS</h6>
+                        <ul>
+                            <li>
+                                <a href="">Landing Pages</a>
+                            </li>
+                            <li>
+                                <a href="">Inner Pages</a>
+                            </li>
+                            <li>
+                                <a href="">Header Examples</a>
+                            </li>
+                            <li>
+                                <a href="">Documentation</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6>TECHNICAL</h6>
+                        <ul>
+                            <li>
+                                <a href="">Changelog</a>
+                            </li>
+                            <li>
+                                <a href="">Theme Customizer</a>
+                            </li>
+                            <li>
+                                <a href="">Documentation</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6>LEGAL</h6>
+                        <ul>
+                            <li>
+                                <a href="">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="">Terms and Conditions</a>
+                            </li>
+                            <li>
+                                <a href="">License</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div>
+                    <p class="left">© 2023 邱敬幃</p>
+                    <p class="right">
+                        <a href="">Privacy Policy</a>
+                        ·
+                        <a href="">Contact</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>

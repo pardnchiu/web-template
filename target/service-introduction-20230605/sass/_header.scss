@@ -1,69 +1,68 @@
 >header {
-  position: relative;
-  padding: 5rem 0 0;
-  background-size: cover;
-  background-position: top;
-  background-image: url(https://pardnchiu.github.io/image/cover.jpg);
-
-  &::after {
-    content: "";
-    position: absolute;
-    z-index: 0;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-
-  >section {
     position: relative;
-    z-index: 1;
-    margin: 0 auto;
-    padding: 8rem 1rem;
-    width: 100%;
-    max-width: var(--width-max);
-    
-    >section {
-      margin: 0 auto;
-      padding: 3rem 1.5rem;
-      width: 100%;
-      max-width: 560px;
-      background-color: #ffffff;
-      border-radius: 2rem;
-      box-shadow: 0.125rem 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
-      transition: 0.5s;
+    padding: 5rem 0 0;
+    background-size: cover;
+    background-position: top;
 
-      @media screen and (min-width: 800px) {
-        margin: 0;
-        width: 50%;
-      }
-
-      h1 {
-        font-size: 2.5rem;
-      }
-
-      p {
-        margin: 1.5rem 0 0;
-        letter-spacing: 1px;
-      }
-
-      >a {
-        display: inline-block;
-        vertical-align: top;
-        margin: 2rem 0 0;
-        padding: 0 2rem;
-        line-height: 3rem;
-        letter-spacing: 1px;
-        background-color: var(--col-brand);
-        color: #fff;
-        border-radius: 1.5rem;
-  
-        i {
-          margin-right: 0.5rem;
-          color: #fff;
-        }
-      }
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.2);
     }
-  }
+
+    >section {
+        position: relative;
+        z-index: 1;
+        margin: 0 auto;
+        padding: 8rem 1rem;
+        width: 100%;
+        max-width: var(--width-max);
+
+        >section {
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+            width: 100%;
+            max-width: 560px;
+            background-color: #ffffff;
+            border-radius: 2rem;
+            box-shadow: 0.125rem 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+            transition: 0.5s;
+
+            @media screen and (min-width: 800px) {
+                margin: 0;
+                width: 50%;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                margin: 1.5rem 0 0;
+                letter-spacing: 1px;
+            }
+
+            >a {
+                display: inline-block;
+                vertical-align: top;
+                margin: 2rem 0 0;
+                padding: 0 2rem;
+                line-height: 3rem;
+                letter-spacing: 1px;
+                background-color: var(--col-brand);
+                color: #fff;
+                border-radius: 1.5rem;
+
+                i {
+                    margin-right: 0.5rem;
+                    color: #fff;
+                }
+            }
+        }
+    }
 }
