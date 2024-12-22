@@ -1,59 +1,52 @@
+<!-- 
+
+    Copyright 2024 Pardn Ltd 帕登國際有限公司.
+    Created by 邱敬幃 Pardn Chiu.
+    Email: dev@pardn.io
+
+-->
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
 
     <head>
-
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Store Page (2023/03/14) - 邱敬幃 Pardn Chiu</title>
-        <meta name="description" content="Store Page (2023/03/14) - 邱敬幃 Pardn Chiu">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="robots" content="index, follow">
+
+        <!-- SEO 標題與描述 -->
+        <title>網站前端範例 23-03-14 - 邱敬幃 Pardn Chiu</title>
+        <meta name="title" content="網站前端範例 23-03-14 - 邱敬幃 Pardn Chiu">
+        <meta name="description" content="網站前端範例 23-03-14 - 邱敬幃 Pardn Chiu">
         <meta name="keywords" content="Website範例, 邱敬幃, Pardn Chiu">
-        <meta name="theme-color" content="#000000">
         <meta name="author" content="邱敬幃 Pardn Chiu">
-        <meta name="copyright" content="邱敬幃 Pardn Chiu">
-        <!-- Open Graph Metadata -->
-        <meta property="og:title" content="Store Page (2023/03/14) - 邱敬幃 Pardn Chiu">
-        <meta property="og:description" content="Store Page (2023/03/14) - 邱敬幃 Pardn Chiu">
-        <meta property="og:image" content="https://pardn.io/web-template/image/store-page-20230314.jpg">
-        <meta property="og:site_name" content="邱敬幃 Pardn Chiu">
-        <meta property="og:url" content="https://pardn.io/web-template/target/store-page-20230314">
+        <link rel="author" href="https://pardn.io">
+        <link rel="canonical" href="https://pardn.io/web-template/target/20230314">
+
+        <!-- Favicon -->
+        <link rel="icon" href="https://pardn.io/image/head.png" type="image/x-icon">
+
+        <!-- Open Graph -->
+        <meta property="og:title" content="網站前端範例 23-03-14 - 邱敬幃 Pardn Chiu">
+        <meta property="og:description" content="網站前端範例 23-03-14 - 邱敬幃 Pardn Chiu">
+        <meta property="og:image" content="https://pardn.io/web-template/image/20230314.jpg">
+        <meta property="og:url" content="https://pardn.io/web-template/target/20230314">
+        <meta property="og:site_name" content="Pardn Chiu">
         <meta property="og:type" content="website">
         <meta property="og:locale" content="zh_TW">
-        <!-- Twitter Metadata -->
-        <meta property="twitter:title" content="Store Page (2023/03/14) - 邱敬幃 Pardn Chiu">
-        <meta property="twitter:description" content="Store Page (2023/03/14) - 邱敬幃 Pardn Chiu">
-        <meta property="twitter:image" content="https://pardn.io/web-template/image/store-page-20230314.jpg">
-        <meta property="twitter:site" content="">
-        <meta property="twitter:card" content="summary_large_image">
-        <!-- Mobile Settings -->
-        <meta name="mobile-web-app-capable" content="no">
-        <meta name="apple-mobile-web-app-capable" content="no">
-        <meta name="apple-mobile-web-app-status-bar-style" content="default">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
-        <!-- Canonical URL (SEO) -->
-        <link rel="canonical" href="https://pardn.io/web-template/target/store-page-20230314">
-        <!-- Robots Tag (SEO) -->
-        <meta name="robots" content="index, follow">
-        <!-- Icons -->
-        <link rel="apple-touch-icon" href="">
-        <link rel="apple-touch-icon-precomposed" href="">
-        <link rel="icon" href="" type="image/x-icon">
-        <!-- Structured Data for Rich Snippets (SEO) -->
-        <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "Store Page (2023/03/14) - 邱敬幃 Pardn Chiu",
-            "description": "Store Page (2023/03/14) - 邱敬幃 Pardn Chiu",
-            "url": "https://pardn.io/web-template/target/store-page-20230314",
-            "image": "https://pardn.io/web-template/image/store-page-20230314.jpg",
-            "author": {
-                "@type": "Person",
-                "name": "邱敬幃 Pardn Chiu"
-            }
-        }
-        </script>
-        <!-- Google tag (gtag.js) -->
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="twitter:title" content="網站前端範例 23-03-14 - 邱敬幃 Pardn Chiu">
+        <meta property="og:description" content="網站前端範例 23-03-14 - 邱敬幃 Pardn Chiu">
+        <meta property="twitter:image" content="https://pardn.io/web-template/image/20230314.jpg">
+        <meta property="twitter:url" content="https://pardn.io/web-template/target/20230314">
+
+        <!-- Google Verification -->
+        <meta name="google-site-verification" content="YQQ2f6AchR8dcb55Az2BYd_mw4TrP0J1RApD-v2v65Y">
+
+        <!-- Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-L5VYEZPVXX"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -61,16 +54,67 @@
             gtag('js', new Date());
             gtag('config', 'G-L5VYEZPVXX');
         </script>
-        <!-- Preconnect -->
+
+        <!-- Preload and Preconnect -->
         <link rel="preconnect" href="https://cdn.jsdelivr.net">
-        <!-- Preloads for CDN -->
+
         <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" as="style">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
 
         <link rel="preload" href="https://cdn.jsdelivr.net/npm/pdrenderkit@1.0.0/dist/PDRenderKit.js" as="script">
         <script src="https://cdn.jsdelivr.net/npm/pdrenderkit@1.0.0/dist/PDRenderKit.js" copyright="Pardn Ltd"></script>
-        <!--  -->
+
+        <!-- Local Resources -->
         <link rel="stylesheet" href="./css/index.css">
+        <script src="./js/index.js" defer></script>
+
+        <!-- JSON-LD Schema -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "datePublished": "2023-03-14",
+            "dateModified": "2024-12-22",
+            "inLanguage": "zh-TW",
+            "name": {
+                "@language": "zh-TW",
+                "@value": "網站前端範例 23-03-14 - 邱敬幃 Pardn Chiu"
+            },
+            "alternateName": {
+                "@language": "en",
+                "@value": "Web Example 23-03-14 - 邱敬幃 Pardn Chiu"
+            },
+            "description": {
+                "@language": "zh-TW",
+                "@value": "網站前端範例 23-03-14 - 邱敬幃 Pardn Chiu"
+            },
+            "alternateDescription": {
+                "@language": "en",
+                "@value": "Web Example 23-03-14 - 邱敬幃 Pardn Chiu"
+            },
+            "url": "https://pardn.io/web-template/target/20230314",
+            "creator": {
+                "@type": "Person",
+                "name": [
+                    {
+                        "@language": "zh-TW",
+                        "@value": "邱敬幃"
+                    },
+                    {
+                        "@language": "en",
+                        "@value": "Pardn Chiu"
+                    }
+                ],
+                "url": "https://pardn.io/",
+                "sameAs": [
+                    "https://github.com/pardnchiu"
+                ],
+                "email": "dev@pardn.io"
+            },
+            "image": "https://pardn.io/web-template/image/20230314.jpg"
+        }
+        </script>
+
         <style>
             :root {
                 /* 頂部導覽列顏色 */
@@ -84,14 +128,11 @@
                 --max-width: 1024px;
             }
         </style>
-        <!--  -->
-        <script src="./js/index.js" defer></script>
     </head>
-
 
     <body>
 
-        <nav num="2">
+        <nav id="top-nav" num="2">
             <div>
                 <div class="left">
                     <a href="">
@@ -101,22 +142,22 @@
                 <div class="right">
                     <ul col="#6f6f6f">
                         <li>
-                            <button>首頁</button>
+                            <button>ITEM</button>
                         </li>
                         <li>
-                            <button>項目<i class="fas fa-angle-right right"></i></button>
+                            <button>ITEM<i class="fas fa-angle-right right"></i></button>
                         </li>
                         <li>
-                            <button>項目<i class="fas fa-angle-right right"></i></button>
+                            <button>ITEM<i class="fas fa-angle-right right"></i></button>
                         </li>
                         <li>
-                            <button>項目<i class="fas fa-angle-right right"></i>
+                            <button>ITEM<i class="fas fa-angle-right right"></i>
                             </button>
                         </li>
                     </ul>
                     <a href="https://pardn.io/">
-                        <b>我的頁面</b>
-                        <i class="fa-brands fa-github right"></i>
+                        <b>My Page</b>
+                        <i class="fa-solid fa-user right"></i>
                     </a>
                 </div>
                 <button class="right">
@@ -217,7 +258,7 @@
                     <h2>精選內容</h2>
                     <ul>
                         <li bg-col="--col-system" col="#fff">
-                            <button>查看更多<i class="fas fa-arrow-right right"></i></button>
+                            <button>MORE<i class="fas fa-arrow-right right"></i></button>
                         </li>
                     </ul>
                 </nav>
@@ -235,7 +276,7 @@
                             </div>
                             <div>
                                 <div>
-                                    查看更多
+                                    MORE
                                     <i class="fas fa-arrow-right right"></i>
                                 </div>
                             </div>
@@ -254,7 +295,7 @@
                             </div>
                             <div>
                                 <div>
-                                    查看更多
+                                    MORE
                                     <i class="fas fa-arrow-right right"></i>
                                 </div>
                             </div>
@@ -273,7 +314,7 @@
                             </div>
                             <div>
                                 <div>
-                                    查看更多
+                                    MORE
                                     <i class="fas fa-arrow-right right"></i>
                                 </div>
                             </div>
@@ -289,7 +330,7 @@
                     <h2 col="#fff">最新內容</h2>
                     <ul>
                         <li bg-col="--col-system" col="#fff">
-                            <button>查看更多<i class="fas fa-arrow-right right"></i></button>
+                            <button>MORE<i class="fas fa-arrow-right right"></i></button>
                         </li>
                     </ul>
                 </nav>
@@ -307,7 +348,7 @@
                             </div>
                             <div>
                                 <div>
-                                    查看更多
+                                    MORE
                                     <i class="fas fa-arrow-right right"></i>
                                 </div>
                             </div>
@@ -326,7 +367,7 @@
                             </div>
                             <div>
                                 <div>
-                                    查看更多
+                                    MORE
                                     <i class="fas fa-arrow-right right"></i>
                                 </div>
                             </div>
@@ -345,7 +386,7 @@
                             </div>
                             <div>
                                 <div>
-                                    查看更多
+                                    MORE
                                     <i class="fas fa-arrow-right right"></i>
                                 </div>
                             </div>
@@ -364,7 +405,7 @@
                             </div>
                             <div>
                                 <div>
-                                    查看更多
+                                    MORE
                                     <i class="fas fa-arrow-right right"></i>
                                 </div>
                             </div>
@@ -380,17 +421,13 @@
                 <ul class="r2">
                     <li>
                         <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
-                        <p><b>王大明</b>平面設計師</p>
-                        <p>還在找人才協助自己嗎？<br>
-                            已有上千位專家、團隊在平台提供服務<br>
-                            立即前往平台與上千位專家取得聯繫</p>
+                        <p><b>Lorem, ipsum.</b>Lorem, ipsum dolor.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quis dolore necessitatibus exercitationem molestiae nihil alias! Corporis et recusandae ad fugiat ratione consequuntur officiis unde veniam perspiciatis! Soluta, dicta sed!/p>
                     </li>
                     <li>
                         <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
-                        <p><b>陳老闆</b>攝影公司負責人</p>
-                        <p>還在找更多地方曝光自己嗎？<br>
-                            透過平台在網路上曝光你自己<br>
-                            讓有需求的用戶們直接與你聯繫</p>
+                        <p><b>Lorem, ipsum.</b>Lorem, ipsum dolor.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quis dolore necessitatibus exercitationem molestiae nihil alias! Corporis et recusandae ad fugiat ratione consequuntur officiis unde veniam perspiciatis! Soluta, dicta sed!/p>
                     </li>
                 </ul>
             </div>
@@ -402,13 +439,13 @@
                 <ul class="r2">
                     <li class="shadow dark">
                         <i class="fas fa-signature" col="#fff"></i>
-                        <p><b>還在找人才協助自己嗎？</b>已有上千位專家、團隊在平台提供服務<br>
-                            立即前往平台與上千位專家取得聯繫</p>
+                        <p><b>Lorem, ipsum dolor.</b>Lorem ipsum dolor sit amet.<br>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                     </li>
                     <li class="shadow dark">
                         <i class="fas fa-code" col="#fff"></i>
-                        <p><b>還在找更多地方曝光自己嗎？</b>只需註冊即可刊登服務、上傳作品<br>
-                            透過平台在網路上曝光你自己，讓有需求的用戶們直接與你聯繫</p>
+                        <p><b>Lorem, ipsum dolor.</b>Lorem ipsum dolor sit amet.<br>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                     </li>
                 </ul>
             </div>

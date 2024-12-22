@@ -1,65 +1,52 @@
-<!--
-  Copyright 2023 Pardn Ltd 帕登國際有限公司.
-  Created by 邱敬幃 Pardn Chiu.
-  Email: dev@pardn.io
+<!-- 
+
+    Copyright 2024 Pardn Ltd 帕登國際有限公司.
+    Created by 邱敬幃 Pardn Chiu.
+    Email: dev@pardn.io
 
 -->
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
 
     <head>
-
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Service Info (2023/03/01) - 邱敬幃 Pardn Chiu</title>
-        <meta name="description" content="Service Info (2023/03/01) - 邱敬幃 Pardn Chiu">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="robots" content="index, follow">
+
+        <!-- SEO 標題與描述 -->
+        <title>網站前端範例 23-03-01 - 邱敬幃 Pardn Chiu</title>
+        <meta name="title" content="網站前端範例 23-03-01 - 邱敬幃 Pardn Chiu">
+        <meta name="description" content="網站前端範例 23-03-01 - 邱敬幃 Pardn Chiu">
         <meta name="keywords" content="Website範例, 邱敬幃, Pardn Chiu">
-        <meta name="theme-color" content="#000000">
         <meta name="author" content="邱敬幃 Pardn Chiu">
-        <meta name="copyright" content="邱敬幃 Pardn Chiu">
-        <!-- Open Graph Metadata -->
-        <meta property="og:title" content="Service Info (2023/03/01) - 邱敬幃 Pardn Chiu">
-        <meta property="og:description" content="Service Info (2023/03/01) - 邱敬幃 Pardn Chiu">
-        <meta property="og:image" content="https://pardn.io/web-template/image/service-info-20230301.jpg">
-        <meta property="og:site_name" content="邱敬幃 Pardn Chiu">
-        <meta property="og:url" content="https://pardn.io/web-template/target/service-info-20230301">
+        <link rel="author" href="https://pardn.io">
+        <link rel="canonical" href="https://pardn.io/web-template/target/20230301">
+
+        <!-- Favicon -->
+        <link rel="icon" href="https://pardn.io/image/head.png" type="image/x-icon">
+
+        <!-- Open Graph -->
+        <meta property="og:title" content="網站前端範例 23-03-01 - 邱敬幃 Pardn Chiu">
+        <meta property="og:description" content="網站前端範例 23-03-01 - 邱敬幃 Pardn Chiu">
+        <meta property="og:image" content="https://pardn.io/web-template/image/20230301.jpg">
+        <meta property="og:url" content="https://pardn.io/web-template/target/20230301">
+        <meta property="og:site_name" content="Pardn Chiu">
         <meta property="og:type" content="website">
         <meta property="og:locale" content="zh_TW">
-        <!-- Twitter Metadata -->
-        <meta property="twitter:title" content="Service Info (2023/03/01) - 邱敬幃 Pardn Chiu">
-        <meta property="twitter:description" content="Service Info (2023/03/01) - 邱敬幃 Pardn Chiu">
-        <meta property="twitter:image" content="https://pardn.io/web-template/image/service-info-20230301.jpg">
-        <meta property="twitter:site" content="">
-        <meta property="twitter:card" content="summary_large_image">
-        <!-- Mobile Settings -->
-        <meta name="mobile-web-app-capable" content="no">
-        <meta name="apple-mobile-web-app-capable" content="no">
-        <meta name="apple-mobile-web-app-status-bar-style" content="default">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
-        <!-- Canonical URL (SEO) -->
-        <link rel="canonical" href="https://pardn.io/web-template/target/service-info-20230301">
-        <!-- Robots Tag (SEO) -->
-        <meta name="robots" content="index, follow">
-        <!-- Icons -->
-        <link rel="apple-touch-icon" href="">
-        <link rel="apple-touch-icon-precomposed" href="">
-        <link rel="icon" href="" type="image/x-icon">
-        <!-- Structured Data for Rich Snippets (SEO) -->
-        <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "Service Info (2023/03/01) - 邱敬幃 Pardn Chiu",
-            "description": "Service Info (2023/03/01) - 邱敬幃 Pardn Chiu",
-            "url": "https://pardn.io/web-template/target/service-info-20230301",
-            "image": "https://pardn.io/web-template/image/service-info-20230301.jpg",
-            "author": {
-                "@type": "Person",
-                "name": "邱敬幃 Pardn Chiu"
-            }
-        }
-        </script>
-        <!-- Google tag (gtag.js) -->
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="twitter:title" content="網站前端範例 23-03-01 - 邱敬幃 Pardn Chiu">
+        <meta property="og:description" content="網站前端範例 23-03-01 - 邱敬幃 Pardn Chiu">
+        <meta property="twitter:image" content="https://pardn.io/web-template/image/20230301.jpg">
+        <meta property="twitter:url" content="https://pardn.io/web-template/target/20230301">
+
+        <!-- Google Verification -->
+        <meta name="google-site-verification" content="YQQ2f6AchR8dcb55Az2BYd_mw4TrP0J1RApD-v2v65Y">
+
+        <!-- Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-L5VYEZPVXX"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -67,18 +54,66 @@
             gtag('js', new Date());
             gtag('config', 'G-L5VYEZPVXX');
         </script>
-        <!-- Preconnect -->
+
+        <!-- Preload and Preconnect -->
         <link rel="preconnect" href="https://cdn.jsdelivr.net">
-        <!-- Preloads for CDN -->
+
         <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" as="style">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
 
         <link rel="preload" href="https://cdn.jsdelivr.net/npm/pdrenderkit@1.0.0/dist/PDRenderKit.js" as="script">
         <script src="https://cdn.jsdelivr.net/npm/pdrenderkit@1.0.0/dist/PDRenderKit.js" copyright="Pardn Ltd"></script>
-        <!--  -->
+
+        <!-- Local Resources -->
         <link rel="stylesheet" href="./css/index.css">
-        <!--  -->
         <script src="./js/index.js" defer></script>
+
+        <!-- JSON-LD Schema -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "datePublished": "2023-03-01",
+            "dateModified": "2024-12-22",
+            "inLanguage": "zh-TW",
+            "name": {
+                "@language": "zh-TW",
+                "@value": "網站前端範例 23-03-01 - 邱敬幃 Pardn Chiu"
+            },
+            "alternateName": {
+                "@language": "en",
+                "@value": "Web Example 23-03-01 - 邱敬幃 Pardn Chiu"
+            },
+            "description": {
+                "@language": "zh-TW",
+                "@value": "網站前端範例 23-03-01 - 邱敬幃 Pardn Chiu"
+            },
+            "alternateDescription": {
+                "@language": "en",
+                "@value": "Web Example 23-03-01 - 邱敬幃 Pardn Chiu"
+            },
+            "url": "https://pardn.io/web-template/target/20230301",
+            "creator": {
+                "@type": "Person",
+                "name": [
+                    {
+                        "@language": "zh-TW",
+                        "@value": "邱敬幃"
+                    },
+                    {
+                        "@language": "en",
+                        "@value": "Pardn Chiu"
+                    }
+                ],
+                "url": "https://pardn.io/",
+                "sameAs": [
+                    "https://github.com/pardnchiu"
+                ],
+                "email": "dev@pardn.io"
+            },
+            "image": "https://pardn.io/web-template/image/20230301.jpg"
+        }
+        </script>
         <style>
             :root {
                 /* 頂部導覽列顏色 */
@@ -112,21 +147,21 @@
                 <div class="right">
                     <ul col="#ddd">
                         <li>
-                            <button>首頁</button>
+                            <button>ITEM</button>
                         </li>
                         <li>
-                            <button>列表<i class="fas fa-angle-right right"></i></button>
+                            <button>ITEM<i class="fas fa-angle-right right"></i></button>
                         </li>
                         <li>
-                            <button>列表<i class="fas fa-angle-right right"></i></button>
+                            <button>ITEM<i class="fas fa-angle-right right"></i></button>
                         </li>
                         <li>
-                            <button>列表<i class="fas fa-angle-right right"></i></button>
+                            <button>ITEM<i class="fas fa-angle-right right"></i></button>
                         </li>
                     </ul>
                     <a href="https://pardn.io/">
-                        <b>我的頁面</b>
-                        <i class="fa-brands fa-github right"></i>
+                        <b>My Page</b>
+                        <i class="fa-solid fa-user right"></i>
                     </a>
                 </div>
                 <button class="right">
@@ -146,12 +181,12 @@
                         <ul class="align-left">
                             <li>
                                 <a class="bg" bg-col="--col-system" col="#fff" href="https://github.com/pardnchiu/web-template/" target="_blank">
-                                    查看原碼<i class="fa-solid fa-code right"></i>
+                                    Code<i class="fa-solid fa-code right"></i>
                                 </a>
                             </li>
                             <li>
                                 <a col="#fff" href="https://pardn.io/">
-                                    我的頁面<i class="fa-brands fa-github right"></i>
+                                    GitHub<i class="fa-brands fa-github right"></i>
                                 </a>
                             </li>
                         </ul>
@@ -172,29 +207,29 @@
                     <li>
                         <div>
                             <i class="fa-brands fa-apple"></i>
-                            <h6>iOS 開發</h6>
-                            <p>使用Swift 開發</p>
+                            <h6>Lorem, ipsum dolor.</h6>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </li>
                     <li>
                         <div>
                             <i class="fas fa-desktop"></i>
-                            <h6>前端開發</h6>
-                            <p>不使用框架<br>專注於Css / Sass / JS</p>
+                            <h6>Lorem, ipsum dolor.</h6>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </li>
                     <li>
                         <div>
                             <i class="fa-solid fa-database"></i>
-                            <h6>後端開發</h6>
-                            <p>使用Node.JS / PHP</p>
+                            <h6>Lorem, ipsum dolor.</h6>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </li>
                     <li>
                         <div>
                             <i class="fa-solid fa-server"></i>
-                            <h6>網站代管</h6>
-                            <p>提供VPS 與協助代管</p>
+                            <h6>Lorem, ipsum dolor.</h6>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </li>
                 </ul>
@@ -212,29 +247,29 @@
                     </li>
                     <li>
                         <div class="align-left">
-                            <h6>JOBALL找專家</h6>
-                            <p>開始累積您的SOHO、接案客戶！<br><br>擁有專業技術的您<br>只需透過「JOBALL找專家」<br>就可以展示自己的專業技能和作品<br>吸引更多在網路上搜尋專業服務的案主</p>
+                            <h6>Lorem ipsum dolor sit amet.</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam facere doloremque adipisci quod consequatur a aliquam quia commodi? At assumenda consectetur repellat ullam accusantium facilis, sint voluptatum magnam quod voluptatibus.</p>
                         </div>
                         <ul class="align-left">
                             <li>
-                                <h6>提供服務</h6>
-                                <p>與數千位的專家一起，在JOBALL平台上提供您的服務</p>
-                                <a href="https://joball.tw/" target="_blank">查看更多<i class="fas fa-arrow-right"></i></a>
+                                <h6>Lorem, ipsum dolor.</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <a href="">MORE<i class="fas fa-arrow-right"></i></a>
                             </li>
                             <li>
-                                <h6>曝光作品</h6>
-                                <p>展示您的個人成果，讓更多有需求的案主發現您的才華</p>
-                                <a href="https://joball.tw/album" target="_blank">查看更多<i class="fas fa-arrow-right"></i></a>
+                                <h6>Lorem, ipsum dolor.</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <a href="">MORE<i class="fas fa-arrow-right"></i></a>
                             </li>
                             <li>
-                                <h6>刊登需求</h6>
-                                <p>描述您的需求，讓平台專家看見您的需求並與您聯繫</p>
-                                <a href="https://joball.tw/case" target="_blank">查看更多<i class="fas fa-arrow-right"></i></a>
+                                <h6>Lorem, ipsum dolor.</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <a href="">MORE<i class="fas fa-arrow-right"></i></a>
                             </li>
                             <li>
-                                <h6>張貼貼文</h6>
-                                <p>2023/02 新功能，讓您可以詢問、分享、曝光自己</p>
-                                <a href="https://joball.tw/post" target="_blank">查看更多<i class="fas fa-arrow-right"></i></a>
+                                <h6>Lorem, ipsum dolor.</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <a href="">MORE<i class="fas fa-arrow-right"></i></a>
                             </li>
                         </ul>
                     </li>
@@ -373,32 +408,32 @@
                 <ul class="r2">
                     <li>
                         <i class="fa-solid fa-1"></i>
-                        <p>提供服務</p>
-                        <p>與數千位的專家一起，在JOBALL平台上提供您的服務</p>
+                        <p>Lorem, ipsum dolor.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </li>
                     <li>
                         <i class="fa-solid fa-2"></i>
-                        <p>曝光作品</p>
-                        <p>展示您的個人成果，讓更多有需求的案主發現您的才華</p>
+                        <p>Lorem, ipsum dolor.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </li>
                     <li>
                         <i class="fa-solid fa-3"></i>
-                        <p>刊登需求</p>
-                        <p>描述您的需求，讓平台專家看見您的需求並與您聯繫</p>
+                        <p>Lorem, ipsum dolor.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </li>
                     <li>
                         <i class="fa-solid fa-4"></i>
-                        <p>張貼貼文</p>
-                        <p>2023/02 新功能，讓您可以詢問、分享、曝光自己</p>
+                        <p>Lorem, ipsum dolor.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </li>
                 </ul>
                 <div>
-                    <b>外包. 接案. 作品展示</b>
-                    <h6 col="#fff">還在找地方曝光自己嗎？</h6>
-                    <p col="#aaa">已有數千位專家在JOBALL 平台上曝光自己，趕緊去看看如何使用</p>
+                    <b>Lorem ipsum dolor sit amet.</b>
+                    <h6 col="#fff">Lorem ipsum dolor sit amet.</h6>
+                    <p col="#aaa">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <ul class="button">
                         <li>
-                            <a class="bg" bg-col="--col-system" col="#fff" href="https://joball.tw">前往平台<i class="fas fa-arrow-right right"></i></a>
+                            <a class="bg" bg-col="--col-system" col="#fff">MORE<i class="fas fa-arrow-right right"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -411,30 +446,23 @@
                 <ul class="r3">
                     <li>
                         <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
-                        <p><b>帕登國際有限公司</b>軟體公司</p>
+                        <p><b>Lorem, ipsum.</b>Lorem, ipsum dolor.</p>
                         <p>
-                            統一編號 24924502，一律開發票<br><br>
-                            提供「iOS 開發」、「網站開發／代管」<br>
-                            iOS 使用Swift、後端使用PHP、Node.JS
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique vero, doloremque officia pariatur inventore repellendus ad maiores laborum quaerat suscipit! Quis optio reiciendis rem id. Mollitia accusamus voluptate atque explicabo?
                         </p>
                     </li>
                     <li>
                         <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
-                        <p><b>Pardn Chiu 邱敬幃</b>iOS / 全端工程師</p>
+                        <p><b>Lorem, ipsum.</b>Lorem, ipsum dolor.</p>
                         <p>
-                            提供「iOS 開發」、「網站開發／代管」<br>
-                            iOS 使用Swift、後端使用PHP、Node.JS<br><br>
-                            可加洽單次案件，或加入團隊負責開發
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique vero, doloremque officia pariatur inventore repellendus ad maiores laborum quaerat suscipit! Quis optio reiciendis rem id. Mollitia accusamus voluptate atque explicabo?
                         </p>
                     </li>
                     <li>
                         <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
-                        <p><b>JOBALL找專家</b>人才媒合平台</p>
+                        <p><b>Lorem, ipsum.</b>Lorem, ipsum dolor.</p>
                         <p>
-                            擁有專業技術的您<br>
-                            只需透過「JOBALL找專家」<br>
-                            就可以展示自己的專業技能和作品<br>
-                            吸引更多在網路上搜尋專業服務的案主
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique vero, doloremque officia pariatur inventore repellendus ad maiores laborum quaerat suscipit! Quis optio reiciendis rem id. Mollitia accusamus voluptate atque explicabo?
                         </p>
                     </li>
                 </ul>
@@ -447,11 +475,11 @@
                 <ul>
                     <li class="shadow">
                         <i class="fa-solid fa-magnifying-glass linear-bg-1"></i>
-                        <p><b>還在找人才協助自己嗎？</b>已有上千位專家、團隊在平台提供服務<br>立即前往平台與上千位專家取得聯繫</p>
+                        <p><b>Lorem, ipsum dolor.</b>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi assumenda, pariatur unde deleniti labore hic laborum dignissimos corrupti ut quam veritatis non velit praesentium, provident sint fugit sunt maiores optio!</p>
                     </li>
                     <li class="shadow">
                         <i class="fa-solid fa-fire linear-bg-1"></i>
-                        <p><b>還在找更多地方曝光自己嗎？</b>只需註冊即可刊登服務、上傳作品<br>透過平台在網路上曝光你自己，讓有需求的用戶們直接與你聯繫</p>
+                        <p><b>Lorem, ipsum dolor.</b>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi assumenda, pariatur unde deleniti labore hic laborum dignissimos corrupti ut quam veritatis non velit praesentium, provident sint fugit sunt maiores optio!</p>
                     </li>
                 </ul>
             </div>
@@ -461,14 +489,14 @@
             <div>
                 <ul>
                     <li>
-                        <h6>想瞭解更多JOBALL資訊？</h6>
-                        <p>立即前往平台了解資訊</p>
+                        <h6>Lorem ipsum dolor sit amet.</h6>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, animi?</p>
                     </li>
                     <li>
                         <ul class="button align-right">
                             <li class="shadow">
                                 <a class="bg" href="" bg-col="--col-system" col="#fff">
-                                    前往平台<i class="fas fa-arrow-right"></i>
+                                    MORE<i class="fas fa-arrow-right"></i>
                                 </a>
                             </li>
                         </ul>
