@@ -3,13 +3,7 @@
 *.js linguist-language=JavaScript
 *.js linguist-generated=false
 
-# 排除 css
-*.css linguist-language=CSS
-*.css linguist-documentation=false
-
-# 排除 SCSS
-*.scss linguist-language=SCSS
-*.scss linguist-documentation=false
-
-# 視文件為文檔類型，忽略語言統計
-*.md linguist-documentation
+# 排除 .md .css .scss 文件的語言統計
+*.md linguist-documentation=true
+*.scss linguist-documentation=true
+*.css linguist-documentation=true
