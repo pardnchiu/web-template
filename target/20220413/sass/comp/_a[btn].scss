@@ -1,0 +1,83 @@
+a[df^="btn"] {
+  padding: 0.5rem 1rem;
+  width: initial;
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border-radius: var(--default-radius);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  &[df*="l"] {
+    padding: 0.5rem 1.5rem;
+  }
+  &[df*="xl"] {
+    padding: 0.5rem 2rem;
+  }
+  &[df*="xxl"] {
+    padding: 0.5rem 3rem;
+  }
+  color: #505050;
+  background-color: transparent;
+  border: 1px solid #505050;
+  > i {
+    margin-right: 0.5rem;
+    color: #505050;
+  }
+  &[df*="fff"] {
+    color: #fff;
+    border: 1px solid #fff;
+    > i {
+      color: #fff;
+    }
+  }
+  @media (hover: hover) and (pointer: fine) {
+    &.unhover {
+      animation: btn-hover 0.3s;
+      -webkit-animation: btn-hover 0.3s;
+      &[df*="fff"] {
+        animation: btn-hover-fff 0.3s;
+        -webkit-animation: btn-hover-fff 0.3s;
+      }
+    }
+    &:hover {
+      color: #fff;
+      background-color: var(--col-sys-light);
+      border: 1px solid var(--col-sys-light);
+      animation: btn-unhover 0.3s;
+      -webkit-animation: btn-unhover 0.3s;
+      &[df*="fff"] {
+        animation: btn-unhover-fff 0.3s;
+        -webkit-animation: btn-unhover-fff 0.3s;
+      }
+    }
+  }
+  &[df*="col"] {
+    color: #fff;
+    background-color: var(--col-sys-light);
+    border: 1px solid var(--col-sys-light);
+    @media (hover: hover) and (pointer: fine) {
+      &.unhover {
+        animation: btn-unhover 0.3s;
+        -webkit-animation: btn-unhover 0.3s;
+        &[df*="fff"] {
+          animation: btn-unhover-fff 0.3s;
+          -webkit-animation: btn-unhover-fff 0.3s;
+        }
+      }
+      &:hover {
+        color: #505050;
+        background-color: transparent;
+        border: 1px solid #505050;
+        animation: btn-hover 0.3s;
+        -webkit-animation: btn-hover 0.3s;
+        &[df*="fff"] {
+          color: #fff;
+          border: 1px solid #fff;
+          animation: btn-hover-fff 0.3s;
+          -webkit-animation: btn-hover-fff 0.3s;
+        }
+      }
+    }
+  }
+}

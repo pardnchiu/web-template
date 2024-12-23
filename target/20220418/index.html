@@ -1,0 +1,562 @@
+<!--
+
+    Copyright 2023 Pardn Ltd 帕登國際有限公司.
+    Created by 邱敬幃 Pardn Chiu.
+    Email: dev@pardn.io
+
+-->
+<!DOCTYPE html>
+<html lang="zh-Hans-TW">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="robots" content="index, follow">
+
+        <!-- SEO 標題與描述 -->
+        <title>網站前端範例 22-04-18 - 邱敬幃 Pardn Chiu</title>
+        <meta name="title" content="網站前端範例 22-04-18 - 邱敬幃 Pardn Chiu">
+        <meta name="description" content="網站前端範例 22-04-18 - 邱敬幃 Pardn Chiu">
+        <meta name="keywords" content="Website範例, 邱敬幃, Pardn Chiu">
+        <meta name="author" content="邱敬幃 Pardn Chiu">
+        <link rel="author" href="https://pardn.io">
+        <link rel="canonical" href="https://pardn.io/web-template/target/20220418">
+
+        <!-- Favicon -->
+        <link rel="icon" href="https://pardn.io/image/head.png" type="image/x-icon">
+
+        <!-- Open Graph -->
+        <meta property="og:title" content="網站前端範例 22-04-18 - 邱敬幃 Pardn Chiu">
+        <meta property="og:description" content="網站前端範例 22-04-18 - 邱敬幃 Pardn Chiu">
+        <meta property="og:image" content="https://pardn.io/web-template/image/20220418.jpg">
+        <meta property="og:url" content="https://pardn.io/web-template/target/20220418">
+        <meta property="og:site_name" content="Pardn Chiu">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="zh_TW">
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="twitter:title" content="網站前端範例 22-04-18 - 邱敬幃 Pardn Chiu">
+        <meta property="og:description" content="網站前端範例 22-04-18 - 邱敬幃 Pardn Chiu">
+        <meta property="twitter:image" content="https://pardn.io/web-template/image/20220418.jpg">
+        <meta property="twitter:url" content="https://pardn.io/web-template/target/20220418">
+
+        <!-- Google Verification -->
+        <meta name="google-site-verification" content="YQQ2f6AchR8dcb55Az2BYd_mw4TrP0J1RApD-v2v65Y">
+
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-L5VYEZPVXX"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-L5VYEZPVXX');
+        </script>
+
+        <!-- Preload and Preconnect -->
+        <link rel="preconnect" href="https://cdn.jsdelivr.net">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" as="style">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" as="style">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap">
+
+        <!-- Local Resources -->
+        <link rel="stylesheet" href="./css/PDWebsitemplate.min.css">
+
+        <!-- JSON-LD Schema -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "datePublished": "2022-04-18",
+            "dateModified": "2024-12-22",
+            "inLanguage": "zh-TW",
+            "name": {
+                "@language": "zh-TW",
+                "@value": "網站前端範例 22-04-18 - 邱敬幃 Pardn Chiu"
+            },
+            "alternateName": {
+                "@language": "en",
+                "@value": "Web Example 22-04-18 - 邱敬幃 Pardn Chiu"
+            },
+            "description": {
+                "@language": "zh-TW",
+                "@value": "網站前端範例 22-04-18 - 邱敬幃 Pardn Chiu"
+            },
+            "alternateDescription": {
+                "@language": "en",
+                "@value": "Web Example 22-04-18 - 邱敬幃 Pardn Chiu"
+            },
+            "url": "https://pardn.io/web-template/target/20220418",
+            "creator": {
+                "@type": "Person",
+                "name": [
+                    {
+                        "@language": "zh-TW",
+                        "@value": "邱敬幃"
+                    },
+                    {
+                        "@language": "en",
+                        "@value": "Pardn Chiu"
+                    }
+                ],
+                "url": "https://pardn.io/",
+                "sameAs": [
+                    "https://github.com/pardnchiu"
+                ],
+                "email": "dev@pardn.io"
+            },
+            "image": "https://pardn.io/web-template/image/20220418.jpg"
+        }
+        </script>
+        <style>
+            * {
+                --module-hint: 1;
+                --max-width: 1140px;
+                --col-sys: rgba(255, 150, 60, 0.9);
+                --col-sys-light: rgb(255, 200, 110, 0.9);
+                --col-sys-hint: rgb(255, 200, 110, 0.1);
+                --col-sys-dark: rgb(195, 90, 0, 0.9);
+                --col-border: rgb(215, 215, 215);
+                --col-hint: rgb(230, 230, 230);
+                --col-bg-lightgray: rgb(245, 245, 245);
+                --default-radius: 0.5rem;
+            }
+        </style>
+    </head>
+
+
+    <body class="no-select">
+        <nav id="nav-top"></nav>
+        <!-- T014 -->
+        <div sn="T005" df="bg" style="background-image: url(https://fakeimg.pl/1024/282828/eae0d0/?text=sample);">
+            <header>
+                <ul df="left icon">
+                    <li>
+                        <a href="">
+                            <i class="fas fa-home"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-blogger-b"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-store"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul df="right">
+                    <li>
+                        <a href="https://github.com/pardnchiu" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <p>邱敬幃</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:dev@pardn.io" target="_blank">
+                            <i class="fa-regular fa-envelope"></i>
+                            <p>dev@pardn.io</p>
+                        </a>
+                    </li>
+                </ul>
+            </header>
+            <nav id="nav">
+                <div>
+                    <div style="padding: 0 1rem">
+                        <h1>PARDN CHIU</h1>
+                    </div>
+                    <ul>
+                        <li id="btn-nav-show">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </li>
+                        <li>
+                            <a href="">ITEM</a>
+                        </li>
+                        <li>
+                            LIST
+                            <ul>
+                                <li>
+                                    <a href="">ITEM</a>
+                                </li>
+                                <li>
+                                    <a href="">ITEM</a>
+                                </li>
+                                <li>
+                                    <a href="">ITEM</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">ITEM</a>
+                        </li>
+                        <li>
+                            <a href="">ITEM</a>
+                        </li>
+                    </ul>
+                    <p id="btn-nav-collaspe">
+                        <i class="fas fa-angle-up"></i>
+                        HIDE
+                    </p>
+                </div>
+                <script>
+                    document.getElementById('btn-nav-show').onclick = function () {
+                        console.log(this.parentElement.parentElement.parentElement.parentElement.previousElementSibling)
+                        let elm = this.parentElement.parentElement.parentElement.parentElement.previousElementSibling;
+                        elm.classList.add('show');
+                        document.body.style['overflow'] = 'hidden';
+                    };
+                    document.getElementById('btn-nav-collaspe').onclick = function () {
+                        let elm = this.parentElement.parentElement;
+                        elm.classList.add('collaspe');
+                        let timer = setTimeout(function () {
+                            clearTimeout(timer);
+                            elm.classList.remove('collaspe');
+                            elm.parentElement.classList.remove('show');
+                            document.body.style['overflow'] = 'scroll';
+                        }, 300);
+                    };
+                </script>
+            </nav>
+            <article>
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>
+                    Lorem ipsum dolor sit amet<br>
+                    consectetur adipisicing elit. Animi accusantium voluptas<br>
+                    hic optio molestiae, aliquam voluptate<br>
+                    nobis unde necessitatibus dolorum dicta soluta,<br>
+                    veniam blanditiis laudantium sed. Dolor maiores vero dolorum?
+                </p>
+                <div>
+                    <a href="https://github.com/pardnchiu/web-template" df="btn fff col xl" mi="1" target="_blank">
+                        <i class="fas fa-code"></i>
+                        Code
+                    </a>
+                    <a href="https://github.com/pardnchiu" df="btn fff xl" mi="1">
+                        <i class="fab fa-github"></i>
+                        Github
+                    </a>
+                </div>
+            </article>
+        </div>
+        <!-- C026 -->
+        <div sn="C026">
+            <section>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <h6>Lorem, ipsum</h6>
+                <ul class="resize _3" _768="2" _640="1">
+                    <!-- item -->
+                    <li mi="1">
+                        <i class="fas fa-diagnoses"></i>
+                        <h6>Lorem ipsum dolor sit amet.</h6>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. A porro inventore similique blanditiis obcaecati dolor deleniti?
+                        </p>
+                        <a href="">MORE →</a>
+                    </li>
+                    <!-- item -->
+                    <li mi="1">
+                        <i class="fas fa-dna"></i>
+                        <h6>Lorem ipsum dolor sit amet.</h6>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. A porro inventore similique blanditiis obcaecati dolor deleniti?
+                        </p>
+                        <a href="">MORE →</a>
+                    </li>
+                    <!-- item -->
+                    <li mi="1">
+                        <i class="fas fa-address-book"></i>
+                        <h6>Lorem ipsum dolor sit amet.</h6>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. A porro inventore similique blanditiis obcaecati dolor deleniti?
+                        </p>
+                        <a href="">MORE →</a>
+                    </li>
+                    <!-- item -->
+                    <li mi="1">
+                        <i class="fas fa-coffee"></i>
+                        <h6>Lorem ipsum dolor sit amet.</h6>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. A porro inventore similique blanditiis obcaecati dolor deleniti?
+                        </p>
+                        <a href="">MORE →</a>
+                    </li>
+                    <!-- item -->
+                    <li mi="1">
+                        <i class="fas fa-cogs"></i>
+                        <h6>Lorem ipsum dolor sit amet.</h6>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. A porro inventore similique blanditiis obcaecati dolor deleniti?
+                        </p>
+                        <a href="">MORE →</a>
+                    </li>
+                    <!-- item -->
+                    <li mi="1">
+                        <i class="fas fa-couch"></i>
+                        <h6>Lorem ipsum dolor sit amet.</h6>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. A porro inventore similique blanditiis obcaecati dolor deleniti?
+                        </p>
+                        <a href="">MORE →</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <!-- C027 -->
+        <div sn="C027" style="background-image: url(https://fakeimg.pl/1024/282828/eae0d0/?text=sample); background-size: cover; background-position: center;">
+            <a style="position: absolute; top: 0; left: 0; bottom: 0; right: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.75);"></a>
+            <!-- body -->
+            <section>
+                <!-- child-body -->
+                <p>Lorem, ipsum dolor.</p>
+                <h6>Lorem, ipsum.</h6>
+                <div>
+                    <!-- block -->
+                    <div>
+                        <h6>Lorem, ipsum dolor.</h6>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae deserunt doloribus, minus illum reiciendis sapiente aliquid! Impedit adipisci minima quia expedita culpa voluptas velit, dicta repellendus, aliquid amet numquam laudantium.
+                        </p>
+                        <ul class="resize _2" _480="1">
+                            <li mi="1"><b>1</b><a href="">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></li>
+                            <li mi="1"><b>2</b><a href="">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></li>
+                            <li mi="1"><b>3</b><a href="">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></li>
+                            <li mi="1"><b>4</b><a href="">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></li>
+                        </ul>
+                    </div>
+                    <!-- block -->
+                    <div wh="1">
+                        <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- C028 -->
+        <div sn="C028">
+            <!-- body -->
+            <section>
+                <!-- child-body -->
+                <p>Lorem, ipsum dolor.</p>
+                <h6>Lorem, ipsum.</h6>
+                <!-- block -->
+                <div>
+                    <h6>Lorem, ipsum dolor.</h6>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque delectus velit vitae! Autem vero nesciunt necessitatibus!
+                    </p>
+                </div>
+                <!-- block -->
+                <div>
+                    <div wh="1">
+                        <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                    </div>
+                    <div wh="1">
+                        <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                    </div>
+                    <div wh="1">
+                        <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                    </div>
+                    <div wh="1">
+                        <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                    </div>
+                    <div wh="1">
+                        <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                    </div>
+                    <div wh="1">
+                        <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- C028 -->
+        <div sn="C029" style="background-image: url(https://fakeimg.pl/1024/282828/eae0d0/?text=sample); background-size: cover; background-position: center;">
+            <a style="position: absolute; top: 0; left: 0; bottom: 0; right: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.75);"></a>
+            <!-- body -->
+            <section>
+                <!-- block -->
+                <div>
+                    <ul>
+                        <li>
+                            <figure>
+                                <a href="https://joball.tw" target="_blank">
+                                    <i class="fas fa-address-card"></i>
+                                </a>
+                                <figcaption>
+                                    <h6>Lorem ipsum dolor sit.</h6>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae a autem quia aut vitae provident illum!</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <a href="https://joball.tw/album" target="_blank">
+                                    <i class="fas fa-balance-scale"></i>
+                                </a>
+                                <figcaption>
+                                    <h6>Lorem ipsum dolor sit.</h6>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae a autem quia aut vitae provident illum!</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <a href="https://joball.tw/case" target="_blank">
+                                    <i class="fas fa-comments"></i>
+                                </a>
+                                <figcaption>
+                                    <h6>Lorem ipsum dolor sit.</h6>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae a autem quia aut vitae provident illum!</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <a href="https://joball.tw/post" target="_blank">
+                                    <i class="fas fa-comments"></i>
+                                </a>
+                                <figcaption>
+                                    <h6>Lorem ipsum dolor sit.</h6>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae a autem quia aut vitae provident illum!</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <!-- C025 -->
+        <div sn="C025" style="background-color: var(--col-sys-dark);">
+            <section>
+                <ul class="resize _3" _768="2" _480="1">
+                    <li mi="1">
+                        <a href="https://instagram.com/pardnchiu" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <p>
+                            <strong>Instagram</strong>
+                            pardnchiu
+                        </p>
+                    </li>
+                    <li mi="1">
+                        <a href="https://github.com/pardnchiu" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <p>
+                            <strong>GitHub</strong>
+                            pardnchiu
+                        </p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <!-- B-001 -->
+        <div sn="B001" style="background-color: rgb(32, 32, 32);">
+            <!-- center -->
+            <div>
+                <!-- block -->
+                <ul class="resize _3" _768="2">
+                    <!-- child-block -->
+                    <li sn="BC001">
+                        <h6>Lorem, ipsum.</h6>
+                        <div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid inventore quos nobis adipisci, laborum veniam minus provident molestiae sequi dicta. Tempora illum modi veniam. Soluta esse ad quos eligendi! Iste?
+                            </p>
+                        </div>
+                    </li>
+                    <!-- child-block -->
+                    <li sn="BC005">
+                        <h6>About</h6>
+                        <div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a href=""><i class="fas fa-home"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Contact</a>
+                                    </li>
+                                    <li>
+                                        <a href="">License</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Private</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul df="ic">
+                                    <li>
+                                        <a href="">
+                                            <i class="fab fa-tumblr-square"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fab fa-youtube-square"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://instagram.com/pardnchiu" target="_blank">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/pardnchiu" target="_blank">
+                                            <i class="fab fa-facebook-square"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/pardnchiu" target="_blank">
+                                            <i class="fab fa-facebook-messenger"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fab fa-whatsapp-square"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">
+                                            <i class="fab fa-line"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- child-block -->
+                    <li sn="BC002">
+                        <h6>Github</h6>
+                        <div>
+                            <a href="">Lorem ipsum dolor sit.</a>
+                            <a href="">Lorem ipsum dolor sit.</a>
+                            <a href="">Lorem ipsum dolor sit.</a>
+                            <a href="">Lorem ipsum dolor sit.</a>
+                            <a href="">Lorem ipsum dolor sit.</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 置中 -->
+            <footer style="background-color: rgba(0, 0, 0, 0.75);">
+                <div>
+                    <p class="l">© 2022 邱敬幃</p>
+                    <p class="r">Created by 邱敬幃</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+
+</html>

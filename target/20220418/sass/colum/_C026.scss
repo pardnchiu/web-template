@@ -1,0 +1,214 @@
+div[sn=C026]{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: initial;
+  background-color: #fff;
+  /* 標籤 */
+  &::after {
+    content: "C026";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    background-color: var(--col-sys-dark);
+    color: #fff;
+    opacity: var(--module-hint);
+  }
+  > section {
+    position: relative;
+    display: block;
+    left: 50%;
+    right: -50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: var(--max-width);
+    height: initial;
+    /* 自訂義 */
+    padding: 5rem 0 4rem;
+    > h6 {
+      position: relative;
+      padding: 0 1rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-align: center;
+      @media screen and (max-width: 639px) {
+        font-size: 1.25rem;
+      }
+    }
+    > p {
+      position: relative;
+      padding: 0 1rem;
+      line-height: 2rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      text-align: center;
+    }
+    > ul {
+      position: relative;
+      display: block;
+      margin-top: 4rem;
+      text-align: center;
+      font-size: 0;
+      > li {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin: 2.5rem 1rem 1rem;
+        padding: 2rem 1.5rem;
+        border-radius: var(--default-radius);
+        border: 1px solid var(--col-sys-light);
+        @media (hover: hover) and (pointer: fine) {
+          &.unhover {
+            animation: C026-item-bg-unhover 0.5s;
+            -webkit-animation: C026-item-bg-unhover 0.5s;
+            > i {
+              animation: C026-icon-bg-unhover 0.5s;
+              -webkit-animation: C026-icon-bg-unhover 0.5s;
+            }
+            > h6,
+            > p {
+              animation: C026-font-unhover 0.5s;
+              -webkit-animation: C026-font-unhover 0.5s;
+            }
+            > a {
+              animation: C026-link-unhover 0.5s;
+              -webkit-animation: C026-link-unhover 0.5s;
+            }
+          }
+          &:hover {
+            background-color: var(--col-sys-dark);
+            border: 1px solid var(--col-sys-dark);
+            animation: C026-item-bg-hover 0.5s;
+            -webkit-animation: C026-item-bg-hover 0.5s;
+            > i {
+              background-color: var(--col-sys-light);
+              animation: C026-icon-bg-hover 0.5s;
+              -webkit-animation: C026-icon-bg-hover 0.5s;
+            }
+            > h6,
+            > p {
+              color: #fff;
+              animation: C026-font-hover 0.5s;
+              -webkit-animation: C026-font-hover 0.5s;
+            }
+            > a {
+              color: var(--col-sys-light);
+              animation: C026-link-hover 0.5s;
+              -webkit-animation: C026-link-hover 0.5s;
+            }
+          }
+        }
+        > i {
+          position: absolute;
+          top: -1.5rem;
+          right: 0.75rem;
+          width: 3rem;
+          height: 3rem;
+          line-height: 3rem;
+          font-size: 1.5rem;
+          text-align: center;
+          background-color: var(--col-sys-dark);
+          color: #fff;
+          border-radius: var(--default-radius);
+          -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+        }
+        > h6 {
+          position: relative;
+          display: block;
+          width: 100%;
+          font-size: 1.5rem;
+          text-align: left;
+        }
+        > p {
+          position: relative;
+          display: block;
+          margin-top: 1rem;
+          width: 100%;
+          line-height: 1.5rem;
+          font-size: 1rem;
+          text-align: left;
+        }
+        > a {
+          position: relative;
+          display: block;
+          margin-top: 1rem;
+          width: 100%;
+          line-height: 1.5rem;
+          font-size: 1rem;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+@keyframes C026-item-bg-hover {
+  from { background-color: #fff; }
+  to { background-color: var(--col-sys-dark); }
+}
+@keyframes C026-item-bg-unhover {
+  from { background-color: var(--col-sys-dark); }
+  to { background-color: #fff; }
+}
+@-webkit-keyframes C026-item-bg-hover {
+  from { background-color: #fff; }
+  to { background-color: var(--col-sys-dark); }
+}
+@-webkit-keyframes C026-item-bg-unhover {
+  from { background-color: var(--col-sys-dark); }
+  to { background-color: #fff; }
+}
+
+@keyframes C026-icon-bg-hover {
+  from { background-color: var(--col-sys-dark); }
+  to { background-color: var(--col-sys-light); }
+}
+@keyframes C026-icon-bg-unhover {
+  from { background-color: var(--col-sys-light); }
+  to { background-color: var(--col-sys-dark); }
+}
+@-webkit-keyframes C026-icon-bg-hover {
+  from { background-color: var(--col-sys-dark); }
+  to { background-color: var(--col-sys-light); }
+}
+@-webkit-keyframes C026-icon-bg-unhover {
+  from { background-color: var(--col-sys-light); }
+  to { background-color: var(--col-sys-dark); }
+}
+
+@keyframes C026-font-hover {
+  from { color: #505050; }
+  to {  color: #fff; }
+}
+@keyframes C026-font-unhover {
+  from { color: #fff; }
+  to { color: #505050; }
+}
+@-webkit-keyframes C026-font-hover {
+  from { color: #505050; }
+  to { color: #fff; }
+}
+@-webkit-keyframes C026-font-unhover {
+  from { color: #fff; }
+  to { color: #505050; }
+}
+
+@keyframes C026-link-hover {
+  from { color: #505050; }
+  to { color: var(--col-sys-light); }
+}
+@keyframes C026-link-unhover {
+  from { color: var(--col-sys-light); }
+  to { color: #505050; }
+}
+@-webkit-keyframes C026-link-hover {
+  from { color: #505050; }
+  to { color: var(--col-sys-light); }
+}
+@-webkit-keyframes C026-link-unhover {
+  from { color: var(--col-sys-light); }
+  to { color: #505050; }
+}

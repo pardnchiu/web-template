@@ -1,0 +1,256 @@
+div[sn=C019] {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: initial;
+  background-color: #fff;
+  /* module tag */
+  &::after {
+    content: "C019";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    background-color: var(--col-sys-dark);
+    color: #fff;
+    opacity: var(--module-hint);
+  }
+  > section {
+    position: relative;
+    display: block;
+    left: 50%;
+    width: 100%;
+    max-width: var(--max-width);
+    height: initial;
+    transform: translateX(-50%);
+    /* 
+     * customized 
+     */
+    padding: 5rem 0 4rem;
+    > h1,
+    > h2,
+    > h3, 
+    > h4,
+    > h5,
+    > h6 {
+      position: relative;
+      margin-top: 2.5rem;
+      padding: 0 1rem;
+      width: 100%;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+      clear: both;
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+    }
+    > img {
+      position: relative;
+      margin: 1rem;
+      padding: 0.25rem;
+      width: 12rem;
+      height: 12rem;
+      border: 1px solid var(--col-border);
+      &[df=fr] {
+        float: right;
+        clear: right;
+        @media screen and (max-width: 767px) {
+          float: none;
+        }
+      }
+      &[df=fl] {
+        float: left;
+        clear: left;
+        @media screen and (max-width: 767px) {
+          float: none;
+        }
+      }
+    }
+    > p {
+      position: relative;
+      margin-top: 1rem;
+      padding: 0 1rem;
+      line-height: 1.5rem;
+      font-size: 1rem;
+    }
+    > table {
+      position: relative;
+      margin-top: 1rem;
+      margin-left: 1rem;
+      padding: 0 1rem;
+      width: calc(100% - 2rem);
+      clear: both;
+      border-collapse: collapse;
+      > thead {
+        position: relative;
+        width: 100%;
+        height: initial;
+        > tr {
+          position: relative;
+          width: 100%;
+          height: initial;
+          background-color: var(--col-sys);
+          > th {
+            position: relative;
+            padding: 0.5rem;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 600;
+          }
+        }
+      }
+      > tbody {
+        position: relative;
+        width: 100%;
+        height: initial;
+        > tr {
+          position: relative;
+          width: 100%;
+          height: initial;
+          &:nth-child(2n) {
+            background-color: var(--col-bg-lightgray);
+          }
+          > td {
+            position: relative;
+            padding: 0.5rem;
+            font-size: 1rem;
+            text-align: center;
+          }
+        }
+      }
+    }
+    > ul {
+      position: relative;
+      margin-top: 1rem;
+      margin-left: 1rem;
+      width: calc(100% - 2rem);
+      > li {
+        position: relative;
+        display: block;
+        margin-top: 1rem;
+        width: 100%;
+        height: initial;
+        background-color: var(--col-bg-lightgray);
+        > article {
+          position: relative;
+          display: block;
+          padding: 1rem 1rem 1.5rem;
+          width: 100%;
+          height: initial;
+          > header {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 4rem;
+            font-size: 0;
+            > figure {
+              position: relative;
+              float: left;
+              margin-right: 1rem;
+              width: 4rem;
+              height: 4rem;
+              > img {
+                position: relative;
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                object-fit: cover;
+              }
+            }
+            > address,
+            > time {
+              position: relative;
+              display: block;
+              width: calc(100% - 80px);
+              line-height: 1.5rem;
+              font-size: 1rem;
+              font-style: normal;
+              &:nth-child(2) {
+                padding-top: 0.5rem;
+              }
+            }
+            > address {
+              > a {
+                font-size: 1.25rem;
+                font-weight: 600;
+                color: var(--col-sys);
+              }
+            }
+          }
+          > p {
+            position: relative;
+            margin-top: 1rem;
+            width: 100%;
+          }
+        }
+      }
+    }
+    > form {
+      position: relative;
+      display: block;
+      width: 100%;
+      font-size: 0;
+      > div {
+        position: relative;
+        display: block;
+        margin: 1rem 1rem 0;
+        width: calc(100% - 2rem);
+        font-size: 0;
+        &[df="x2"] {
+          display: inline-block;
+          vertical-align: top;
+          width: calc(100% / 2 - 2rem);
+
+        }
+        > label {
+          position: relative;
+          display: block;
+          line-height: 2rem;
+          font-size: 1rem;
+          &[df*=ned]::after {
+            content: "*";
+            color: red;
+            padding: 0 0.5rem;
+            font-size: 1.25rem;
+          }
+        }
+        > input {
+          position: relative;
+          display: block;
+          width: 100%;
+          line-height: 2rem;
+          font-size: 1rem;
+          color: #000;
+          border: 1px solid var(--col-border);
+          border-radius: 2px;
+          &[type=submit],
+          &[type=reset] {
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 1rem;
+            padding: 0.5rem 2rem;
+            line-height: 1rem;
+            width: initial;
+            background-color: var(--col-bg-lightgray);
+            &:nth-child(1) {
+              margin-left: 0;
+            }
+          }
+        }
+        > textarea {
+          position: relative;
+          display: block;
+          width: 100%;
+          line-height: 2rem;
+          font-size: 1rem;
+          color: #000;
+          border: 1px solid var(--col-border);
+          border-radius: 2px;
+          resize: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+li[sn=BC006] {
+  /* module tag */
+  &::after {
+    content: "BC006";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    background-color: var(--col-sys-dark);
+    color: #fff;
+    opacity: var(--module-hint);
+  }
+  > h6 {
+    position: relative;
+    width: 100%;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #fff;
+  }
+  > div {
+    position: relative;
+    display: block;
+    margin-top: 2rem;
+    width: 100%;
+    > div {
+      position: relative;
+      display: block;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      width: 100%;
+      border-top: 1px solid rgba(255, 255, 255, 0.25);
+      &:nth-child(1) {
+        margin-top: 0;
+        padding-top: 0;
+        border-top: none;
+      }
+      > a {
+        position: relative;
+        display: block;
+        width: 100%;
+        line-height: 1.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--col-sys-light);
+      }
+      > p {
+        position: relative;
+        display: block;
+        margin-top: 1.5rem;
+        font-size: 0.75rem;
+        color: #fff;
+      }
+    }
+  }
+}

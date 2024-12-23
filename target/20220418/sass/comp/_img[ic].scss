@@ -1,0 +1,198 @@
+img[ic*=bg] {
+  content: url(../image/bg-m.svg);
+}
+// img[ic*=icon-sample] {
+//   content: url("../icon/default/icon-sample/444.svg");
+//   &[ic*=fff] {
+//     content: url("../icon/default/icon-sample/fff.svg");
+//   }
+// }
+// img[ic*=img] {
+//   border-radius: inherit;
+//   object-fit: none;
+//   border: 1px dashed #444;
+//   content: url("../icon/default/image/444.svg");
+//   &[ic*=fff] {
+//     border-radius: inherit;
+//     object-fit: none;
+//     border: 1px dashed #fff;
+//     content: url("../icon/default/image/fff.svg");
+//   }
+// }
+// img[ic*=user-img] {
+//   border-radius: inherit;
+//   object-fit: none;
+//   border: 1px dashed #444;
+//   content: url("../icon/default/portrait/444.svg");
+//   &[ic*=fff] {
+//     border-radius: inherit;
+//     object-fit: none;
+//     border: 1px dashed #fff;
+//     content: url("../icon/default/portrait/fff.svg");
+//   }
+// }
+// img[ic*=home] {
+//   content: url("../icon/default/home/444.svg");
+//   &[ic*=fff] {
+//     content: url("../icon/default/home/fff.svg");
+//   }
+// }
+// img[ic*=list-bar] {
+//   content: url("../icon/default/list-bar/444.svg");
+//   &[ic*=fff] {
+//     content: url("../icon/default/list-bar/fff.svg");
+//   }
+// }
+// img[ic*=list-dot-bar] {
+//   content: url("../icon/default/list-dot-bar/444.svg");
+//   &[ic*=fff] {
+//     content: url("../icon/default/list-dot-bar/fff.svg");
+//   }
+// }
+// img[ic*=more-dot-vert] {
+//   content: url("../icon/default/more-dot-vert/444.svg");
+//   &[ic*=fff] {
+//     content: url("../icon/default/more-dot-vert/fff.svg");
+//   }
+// }
+// img[ic*=more-dot-horz] {
+//   content: url("../icon/default/more-dot-horz/444.svg");
+//   &[ic*=fff] {
+//     content: url("../icon/default/more-dot-horz/fff.svg");
+//   }
+// }
+// img[ic*=watch] {
+//   content: url("../icon/default/watch/444.svg");
+//   &[ic*=fff] {
+//     content: url("../icon/default/watch/fff.svg");
+//   }
+// }
+// img[ic*=phone] {
+//   content: url("../icon/default/phone/444.svg");
+//   &[ic*=fff] {
+//     content: url("../icon/default/phone/fff.svg");
+//   }
+// }
+// /* fill */
+// img[ic*=img-fill] {
+//   content: url("../icon/default/fill/image/444.svg");
+//   background-color: #fff;
+//   &[ic*=fff] {
+//     content: url("../icon/default/fill/image/fff.svg");
+//   }
+// }
+// img[ic*=user-img-fill] {
+//   content: url("../icon/default/fill/portrait/444.svg");
+//   background-color: #fff;
+//   &[ic*=fff] {
+//     content: url("../icon/default/fill/portrait/fff.svg");
+//   }
+// }
+// img[ic*=behance-fill] {
+//   content: url("../icon/default/fill/behance/444.svg");
+//   &[ic*=fff] {
+//     content: url("../icon/default/fill/behance/fff.svg");
+//   }
+// }
+// img[ic*=blog-fill] {
+//   content: url("../icon/default/fill/blog/444.svg");
+//   &[ic*=fff] {
+//     content: url("../icon/default/fill/blog/fff.svg");
+//   }
+// }
+// img[ic*=facebook-fill] {
+//   content: url("../icon/default/fill/facebook/444.svg");
+//   &[ic*=fff] {
+//     content: url("../icon/default/fill/facebook/fff.svg");
+//   }
+// }
+// img[ic*=fb-messager-fill] {
+//   content: url("../icon/default/fill/fb-messager/444.svg");
+//   &[ic*=fff] {
+//     content: url("../icon/default/fill/fb-messager/fff.svg");
+//   }
+// }
+// img[ic*=github-fill] {
+//   content: url("../icon/default/fill/github/444.svg");
+//   &[ic*=fff] {
+//     content: url("../icon/default/fill/github/fff.svg");
+//   }
+// }
+// img[ic*=instagram-fill] {
+//   content: url("../icon/default/fill/instagram/444.svg");
+//   &[ic*=fff] {
+//     content: url("../icon/default/fill/instagram/fff.svg");
+//   }
+// }
+// img[ic*=line-fill] {
+//   content: url("../icon/default/fill/line/444.svg");
+//   &[ic*=fff] {
+//     content: url("../icon/default/fill/line/fff.svg");
+//   }
+// }
+// img[ic*=linkin-fill] {
+//   content: url("../icon/default/fill/linkin/444.svg");
+//   &[ic*=fff] {
+//     content: url("../icon/default/fill/linkin/fff.svg");
+//   }
+// }
+// img[ic*=mail-fill] {
+//   content: url("../icon/default/fill/mail/444.svg");
+//   &[ic*=fff] {
+//     content: url("../icon/default/fill/mail/fff.svg");
+//   }
+// }
+// img[ic*=phone-fill] {
+//   content: url("../icon/default/fill/phone/444.svg");
+//   &[ic*=fff] {
+//     content: url("../icon/default/fill/phone/fff.svg");
+//   }
+// }
+// img[ic*=sms-fill] {
+//   content: url("../icon/default/fill/sms/444.svg");
+//   &[ic*=fff] {
+//     content: url("../icon/default/fill/sms/fff.svg");
+//   }
+// }
+// img[ic*=telegram-fill] {
+//   content: url("../icon/default/fill/telegram/444.svg");
+//   &[ic*=fff] {
+//     content: url("../icon/default/fill/telegram/fff.svg");
+//   }
+// }
+// img[ic*=tumblr-fill] {
+//   content: url("../icon/default/fill/tumblr/444.svg");
+//   &[ic*=fff] {
+//     content: url("../icon/default/fill/tumblr/fff.svg");
+//   }
+// }
+// img[ic*=twitter-fill] {
+//   content: url("../icon/default/fill/twitter/444.svg");
+//   &[ic*=fff] {
+//     content: url("../icon/default/fill/twitter/fff.svg");
+//   }
+// }
+// img[ic*=vimeo-fill] {
+//   content: url("../icon/default/fill/vimeo/444.svg");
+//   &[ic*=fff] {
+//     content: url("../icon/default/fill/vimeo/fff.svg");
+//   }
+// }
+// img[ic*=wechat-fill] {
+//   content: url("../icon/default/fill/wechat/444.svg");
+//   &[ic*=fff] {
+//     content: url("../icon/default/fill/wechat/fff.svg");
+//   }
+// }
+// img[ic*=whatsapp-fill] {
+//   content: url("../icon/default/fill/whatsapp/444.svg");
+//   &[ic*=fff] {
+//     content: url("../icon/default/fill/whatsapp/fff.svg");
+//   }
+// }
+// img[ic*=youtube-fill] {
+//   content: url("../icon/default/fill/youtube/444.svg");
+//   &[ic*=fff] {
+//     content: url("../icon/default/fill/youtube/fff.svg");
+//   }
+// }

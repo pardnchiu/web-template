@@ -1,0 +1,18 @@
+*[df*="sd"]  {
+  @media (hover: hover) and (pointer: fine) {
+    &.unhover {
+      -moz-box-shadow: 0 0 0 transparent, 0 0 0 transparent;
+      -webkit-box-shadow: 0 0 0 transparent, 0 0 0 transparent;
+      box-shadow: 0 0 0 transparent, 0 0 0 transparent;
+      animation: unshadow 0.5s;
+      -webkit-animation: unshadow 0.5s;
+    }
+    &:hover {
+      -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+      -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+      animation: shadow 0.5s;
+      -webkit-animation: shadow 0.5s;
+    }
+  }
+}

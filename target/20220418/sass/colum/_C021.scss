@@ -1,0 +1,328 @@
+div[sn=C021] {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: initial;
+  background-color: #fff;
+  /* module tag */
+  &::after {
+    content: "C021";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    background-color: var(--col-sys-dark);
+    color: #fff;
+    opacity: var(--module-hint);
+  }
+  /* body */
+  > section {
+    position: relative;
+    display: block;
+    left: 50%;
+    width: 100%;
+    max-width: var(--max-width);
+    height: initial;
+    transform: translateX(-50%);
+
+    padding: 4rem 0;
+    > h6 {
+      position: relative;
+      padding: 0 16px;
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-align: center;
+      color: #fff;
+      @media screen and (max-width: 639px) {
+        font-size: 1.25rem;
+      }
+    }
+    > p {
+      position: relative;
+      padding: 0 1rem;
+      line-height: 2rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      text-align: center;
+      color: #fff;
+    }
+    /* child-body */
+    > ul {
+      position: relative;
+      display: block;
+      font-size: 0;
+      /* 
+        * customized 
+        */
+      margin-top: 4rem;
+      text-align: center;
+      /* block */
+      > li  {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        padding: 1.75rem 0;
+        margin: 1rem;
+        background-color: rgba(255, 255, 255, 0.25);
+        border-radius: var(--default-radius);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        font-size: 0;
+        @media (hover: hover) and (pointer: fine) {
+          &.unhover {
+            background-color: rgba(255, 255, 255, 0.25);
+            animation: C021-unhover-item-bg 0.5s;
+            -webkit-animation: C021-unhover-item-bg 0.5s;
+            > a > i {
+              background-color: #fff;
+              color: var(--col-sys-dark);
+              animation: C021-unhover-item-icon-bg 0.5s;
+              -webkit-animation: C021-unhover-item-icon-bg 0.5s;
+            }
+            > h6 {
+              color: #fff;
+              animation: C021-unhover-item-h 0.5s;
+              -webkit-animation: C021-unhover-item-h 0.5s;
+            }
+            > p {
+              color: #fff;
+              border-bottom: 1px solid #fff;
+              animation: C021-unhover-item-p 0.5s;
+              -webkit-animation: C021-unhover-item-p 0.5s;
+            }
+          }
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+            animation: C021-hover-item-bg 0.5s;
+            -webkit-animation: C021-hover-item-bg 0.5s;
+            > a > i {
+              background-color: var(--col-sys-dark);
+              color: #fff;
+              animation: C021-hover-item-icon-bg 0.5s;
+              -webkit-animation: C021-hover-item-icon-bg 0.5s;
+            }
+            > h6 {
+              color: #505050;
+              animation: C021-hover-item-h 0.5s;
+              -webkit-animation: C021-hover-item-h 0.5s;
+            }
+            > p {
+              color: #505050;
+              border-bottom: 1px solid #505050;
+              animation: C021-hover-item-p 0.5s;
+              -webkit-animation: C021-hover-item-p 0.5s;
+            }
+          }
+        }
+        > a {
+          position: relative;
+          display: inline-block;
+          vertical-align: top;
+          margin-left: 1.5rem;
+          width: initial;
+          height: initial;
+          > i {
+            position: relative;
+            width: 4rem;
+            line-height: 4rem;
+            height: 4rem;
+            font-size: 1.5rem;
+            text-align: center;
+            border-radius: var(--default-radius);
+            background-color: #fff;
+            color: var(--col-sys-dark);
+            text-align: center;
+          }
+        }
+        > h6 {
+          position: relative;
+          display: inline-block;
+          vertical-align: top;
+          margin-top: 2rem;
+          padding: 0 1rem;
+          transform: translateY(-50%);
+          width: calc(100% - 6rem);
+          line-height: 2rem;
+          max-height: 4rem;
+          font-size: 1.125rem;
+          font-weight: 600;
+          text-align: left;
+          color: #fff;
+          overflow: hidden;
+          @media screen and (max-width: 639px) {
+            font-size: 1.25rem;
+          }
+        }
+        > p {
+          position: relative;
+          display: block;
+          margin: 0 1.5rem;
+          padding: 1.5rem 0;
+          width: calc(100% - 3rem);
+          line-height: 1.25rem;
+          font-size: 0.875rem;
+          text-align: left;
+          color: #fff;
+          border-bottom: 1px solid #fff;
+        }
+      }
+    }
+  }
+}
+/** 
+ * hover
+ */
+@keyframes C021-hover-item-bg {
+  from { 
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+  to { 
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+}
+@-webkit-keyframes C021-hover-item-bg {
+  from { 
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+  to { 
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+}
+@keyframes C021-hover-item-icon-bg {
+  from { 
+    background-color: #fff;
+    color: var(--col-sys-dark);
+  }
+  to { 
+    background-color: var(--col-sys-dark);
+    color: #fff;
+  }
+}
+@-webkit-keyframes C021-hover-item-icon-bg {
+  from { 
+    background-color: #fff;
+    color: var(--col-sys-dark);
+  }
+  to { 
+    background-color: var(--col-sys-dark);
+    color: #fff;
+  }
+}
+@keyframes C021-hover-item-h {
+  0% { 
+    color: #fff;
+  }
+  50% { 
+    color: #fff;
+  }
+  100% { 
+    color: #505050;
+  }
+}
+@-webkit-keyframes C021-hover-item-h {
+  0% { 
+    color: #fff;
+  }
+  100% { 
+    color: #505050;
+  }
+}
+@keyframes C021-hover-item-p {
+  0% { 
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+  50% { 
+    color: #fff;
+  }
+  100% { 
+    color: #505050;
+    border-bottom: 1px solid #505050;
+  }
+}
+@-webkit-keyframes C021-hover-item-p {
+  0% { 
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+  100% { 
+    color: #505050;
+    border-bottom: 1px solid #505050;
+  }
+}
+/** 
+ * unhover
+ */
+@keyframes C021-unhover-item-bg {
+  from { 
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  to { 
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+}
+@-webkit-keyframes C021-unhover-item-bg {
+  from { 
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  to { 
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+}
+@keyframes C021-unhover-item-icon-bg {
+  from { 
+    background-color: var(--col-sys-dark);
+    color: #fff;
+  }
+  to { 
+    background-color: #fff;
+    color: var(--col-sys-dark);
+  }
+}
+@-webkit-keyframes C021-unhover-item-icon-bg {
+  from { 
+    background-color: var(--col-sys-dark);
+    color: #fff;
+  }
+  to { 
+    background-color: #fff;
+    color: var(--col-sys-dark);
+  }
+}
+@keyframes C021-unhover-item-h {
+  0% { 
+    color: #505050;
+  }
+  100% { 
+    color: #fff;
+  }
+}
+@-webkit-keyframes C021-unhover-item-h {
+  0% { 
+    color: #505050;
+  }
+  100% { 
+    color: #fff;
+  }
+}
+@keyframes C021-unhover-item-p {
+  0% { 
+    color: #505050;
+    border-bottom: 1px solid #505050;
+  }
+  100% { 
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+}
+@-webkit-keyframes C021-unhover-item-p {
+  0% { 
+    color: #505050;
+    border-bottom: 1px solid #505050;
+  }
+  100% { 
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+}

@@ -20,6 +20,24 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://pardn.io/web-template/target/20220412</loc>
+        <lastmod>2024-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://pardn.io/web-template/target/20220413</loc>
+        <lastmod>2024-12-23</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://pardn.io/web-template/target/20220418</loc>
+        <lastmod>2024-12-22</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://pardn.io/web-template/target/20220525</loc>
         <lastmod>2024-12-22</lastmod>
         <changefreq>daily</changefreq>
@@ -33,6 +51,12 @@
     </url>
     <url>
         <loc>https://pardn.io/web-template/target/20230220</loc>
+        <lastmod>2024-12-22</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://pardn.io/web-template/target/20230226</loc>
         <lastmod>2024-12-22</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
@@ -92,6 +116,12 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://pardn.io/web-template/target/20230512</loc>
+        <lastmod>2024-12-22</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://pardn.io/web-template/target/20230604</loc>
         <lastmod>2024-12-22</lastmod>
         <changefreq>daily</changefreq>
@@ -99,6 +129,12 @@
     </url>
     <url>
         <loc>https://pardn.io/web-template/target/20230605</loc>
+        <lastmod>2024-12-22</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://pardn.io/web-template/target/20230607</loc>
         <lastmod>2024-12-22</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
@@ -177,6 +213,12 @@
     </url>
     <url>
         <loc>https://pardn.io/web-template/target/20230730</loc>
+        <lastmod>2024-12-22</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://pardn.io/web-template/target/20240625</loc>
         <lastmod>2024-12-22</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>

@@ -1,0 +1,148 @@
+/*
+  PDModuleTop
+*/
+@import "./top/T-001";
+@import "./top/T-002";
+@import "./top/T-003";
+@import "./top/T004";
+@keyframes nav-ttb-show {
+  from { 
+    height: 20vh;
+  }
+  to { 
+    height: 100vh;
+  }
+}
+@keyframes nav-ttb-hide {
+  from { 
+    height: 100vh;
+  }
+  to { 
+    height: 0;
+  }
+}
+#navbar {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  &.ttb {
+    animation: nav-ttb-show 0.5s;
+    -webkit-animation: nav-ttb-show 0.5s;
+    &.hide {
+      height: 0;
+      animation: nav-ttb-hide 0.5s;
+      -webkit-animation: nav-ttb-hide 0.5s;
+      > div,
+      > p {
+        opacity: 0;
+      }
+    }
+  }
+  // display: none;
+  > div {
+    position: absolute;
+    top: 4rem;
+    left: 50vw;
+    width: 100%;
+    max-width: 360px;
+    height: initial;
+    transform: translateX(-50%);
+    > div,
+    > a {
+      position: relative;
+      display: block;
+      line-height: 3rem;
+      font-size: 1.25rem;
+      font-weight: 400;
+      letter-spacing: 2px;
+      color: #fff;
+      cursor: pointer;
+      &::before {
+        content: "- ";
+      }
+      &[df*="li"]::before {
+        content: "▸ ";
+      }
+      &.act {
+        color: var(--col-sys);
+        &[df*="li"]::before {
+          content: "▾ ";
+        }
+        > ul {
+          display: block;
+        }
+      }
+      @media (hover: hover) and (pointer: fine) {
+        &.unhover {
+          animation: color-hover-fff 0.3s;
+          -webkit-animation: color-hover-fff 0.3s;
+        }
+        &:hover {
+          color: var(--col-sys);
+          animation: color-unhover-fff 0.3s;
+          -webkit-animation: color-unhover-fff 0.3s;
+          > ul {
+            display: block;
+          }
+        }
+      }
+      &.fc {
+        font-weight: 500;
+        color: var(--col-sys);
+        @media (hover: hover) and (pointer: fine) {
+          &:hover {
+            animation: none;
+            -webkit-animation: none;
+          }
+          &.unhover {
+            animation: none;
+            -webkit-animation: none;
+          }
+        }
+      }
+      > ul {
+        position: relative;
+        display: none;
+        width: 100%;
+        border-radius: 2px;
+        list-style: none;
+        > li > a {
+          &::before {
+            content: "○ ";
+          }
+          padding: 0 0.875rem;
+          font-size: 0.875rem;
+          color: #fff;
+          @media (hover: hover) and (pointer: fine) {
+            &:hover {
+              color:  var(--col-sys-light);
+            }
+          }
+        }
+        @media (hover: hover) and (pointer: fine) {
+          &:hover {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  > p {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 2rem 0;
+    width: 100%;
+    line-height: 1rem;
+    color: #fff;
+  }
+}

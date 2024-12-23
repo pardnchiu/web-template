@@ -1,0 +1,228 @@
+div[sn=C003] {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: initial;
+  background-color: #fff;
+  /* module tag */
+  &::after {
+    content: "C003";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    background-color: var(--col-sys-dark);
+    color: #fff;
+    opacity: var(--module-hint);
+  }
+  /* body */
+  > section {
+    position: relative;
+    display: block;
+    left: 50%;
+    width: 100%;
+    max-width: var(--max-width);
+    height: initial;
+    transform: translateX(-50%);
+    /* 
+     * customized 
+     */
+    padding: 5rem 0 4rem;
+    > h6 {
+      position: relative;
+      padding: 0 16px;
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-align: center;
+      @media screen and (max-width: 639px) {
+        font-size: 1.25rem;
+      }
+    }
+    > p {
+      position: relative;
+      padding: 0 1rem;
+      line-height: 2rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      text-align: center;
+    }
+    /* child-body */
+    > ul {
+      position: relative;
+      display: block;
+      font-size: 0;
+      /* 
+        * customized 
+        */
+      margin-top: 4rem;
+      text-align: center;
+
+      /* x2 */
+      &[df=x2] {
+        text-align: left;
+        > li {
+          > div {
+            padding-top: 56.25%;
+          }
+          width: calc(100% / 2 - 2rem);
+          text-align: center;
+          @media screen and (max-width: 767px) {
+            width: calc(100% - 2rem);
+          }
+          @media screen and (max-width: 479px) {
+          }
+        }
+      }
+      /* x3 */
+      &[df=x3] {
+        @media screen and (max-width: 767px) {
+          text-align: left;
+        }
+        > li {
+          width: calc(100% / 3 - 2rem);
+          @media screen and (max-width: 767px) {
+            width: calc(100% / 2 - 2rem);
+            text-align: center;
+          }
+          @media screen and (max-width: 479px) {
+            margin-top: 3rem;
+            width: calc(100% - 2rem);
+            &:nth-child(1) {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+      /* x4 */
+      &[df=x4] {
+        @media screen and (max-width: 767px) {
+          text-align: left;
+        }
+        > li {
+          width: calc(100% / 4 - 2rem);
+          @media screen and (max-width: 767px) {
+            width: calc(100% / 2 - 2rem);
+            text-align: center;
+          }
+          @media screen and (max-width: 479px) {
+            width: calc(100% - 2rem);
+          }
+        }
+      }
+      /* x5 */
+      &[df=x5] {
+        @media screen and (max-width: 639px) {
+          text-align: left;
+        }
+        > li {
+          width: calc(100% / 5 - 2rem);
+          @media screen and (max-width: 1023px) {
+            width: calc(100% / 3 - 2rem);
+          }
+          @media screen and (max-width: 639px) {
+            width: calc(100% / 2 - 2rem);
+            text-align: center;
+          }
+          @media screen and (max-width: 479px) {
+            width: calc(100% - 2rem);
+          }
+        }
+      }
+      /* item */
+      > li {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin: 1rem;
+        > article {
+          position: relative;
+          width: 100%;
+          height: initial;
+          > h6 {
+            position: relative;
+            font-size: 1.25rem;
+            font-weight: 500;
+          }
+          > ul {
+            position: relative;
+            margin-top: 0.5rem;
+            width: initial;
+            height: initial;
+            > li {
+              position: relative;
+              display: inline-block;
+              vertical-align: top;
+              margin-left: 0.75rem;
+              width: initial;
+              height: initial;
+              border-left: 1px solid var(--col-hint);
+              &:nth-child(1) {
+                margin-left: 0;
+                border-left: none;
+              }
+              > i {
+                position: relative;
+                line-height: 1.5rem;
+                font-size: 0.75rem;
+              }
+              > a {
+                position: relative;
+                margin-left: 0.75rem;
+                line-height: 1.5rem;
+                font-size: 0.875rem;
+                font-weight: 500;
+                color: var(--col-sys);
+              }
+              > p {
+                position: relative;
+                margin-left: 0.75rem;
+                line-height: 1.5rem;
+                font-size: 0.875rem;
+                font-weight: 500;
+              }
+            }
+          }
+          > figure {
+            position: relative;
+            width: 100%;
+            height: initial;
+            > div {
+              position: relative;
+              margin-top: 1rem;
+              padding-top: 75%;
+              width: 100%;
+              border-radius: var(--default-radius);
+              overflow: hidden;
+              > img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+            > figcaption {
+              > p {
+                position: relative;
+                margin-top: 1rem;
+                line-height: 1.5rem;
+                font-size: 1rem;
+                font-weight: 500;
+              }
+              > a {
+                position: relative;
+                display: inline-block;
+                vertical-align: top;
+                margin-top: 1.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

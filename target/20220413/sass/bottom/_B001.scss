@@ -1,0 +1,113 @@
+div[sn="B001"]  {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: initial;
+  /* module tag */
+  &::after {
+    content: "B001";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    background-color: var(--col-sys-dark);
+    color: #fff;
+    opacity: var(--module-hint);
+  }
+  /* center */
+  > div {
+    position: relative;
+    display: block;
+    left: 50%;
+    width: 100%;
+    max-width: var(--max-width);
+    height: initial;
+    transform: translateX(-50%);
+    /* 
+     * customized 
+     */
+    padding: 4rem 0;
+    /* body */
+    > ul {
+      position: relative;
+      padding-bottom: 1rem;
+      width: 100%;
+      height: initial;
+      font-size: 0;
+      text-align: center;
+      &[df=x2] {
+        > li {
+          width: calc(100% / 2 - 2rem);
+        }
+      }
+      &[df=x3] {
+        > li {
+          width: calc(100% / 3 - 2rem);
+        }
+      }
+      &[df=x4] {
+        > li {
+          width: calc(100% / 4 - 2rem);
+          @media screen and (max-width: 639px) {
+            width: calc(100% / 2 - 2rem);
+          }
+          @media screen and (max-width: 413px) {
+            width: calc(100% - 2rem);
+          }
+        }
+      }
+      /* block */
+      > li {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin: 1rem;
+        border-radius: 4px;
+        text-align: left;
+      }
+    }
+  }
+  > footer {
+    position: relative;
+    width: 100%;
+    height: initial;
+    font-size: 0;
+    // 置中
+    > div {
+      position: relative;
+      display: block;
+      left: 50%;
+      padding: 1rem 0;
+      width: 100%;
+      max-width: 1140px;
+      height: initial;
+      transform: translateX(-50%);
+      > p {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+        line-height: 1.375rem;
+        max-height: 2.75rem;
+        font-size: 0.875rem;
+        color: #fff;
+        &.l {
+          padding-left: 1rem;
+          text-align: left;
+        }
+        &.r {
+          padding-right: 1rem;
+          text-align: right;
+        }
+        @media screen and (max-width: 639px) {
+          width: 100%;
+          &.l, &.r {
+            padding: 0 16px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

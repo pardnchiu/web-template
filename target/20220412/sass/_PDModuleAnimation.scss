@@ -1,0 +1,224 @@
+/*
+  PDModuleAnimation
+*/
+@keyframes border {
+  from { 
+    border: 0px solid var(--col-sys-light);
+  }
+  to { 
+    border: 3px solid var(--col-sys-light);
+  }
+}
+
+@keyframes unborder {
+  from { 
+    border: 3px solid var(--col-sys-light);
+  }
+  to { 
+    border: 0px solid var(--col-sys-light);
+  }
+}
+/* 透明度 */
+@keyframes unhide {
+  from { 
+    opacity: 0;
+  }
+  to { 
+    opacity: 1;
+  }
+}
+@-webkit-keyframes unhide {
+  from { 
+    opacity: 0;
+  }
+  to { 
+    opacity: 1;
+  }
+}
+@keyframes hide {
+  from { 
+    opacity: 1;
+  }
+  to { 
+    opacity: 0;
+  }
+}
+@-webkit-keyframes hide {
+  from { 
+    opacity: 1;
+  }
+  to { 
+    opacity: 0;
+  }
+}
+/* 陰影 */
+@keyframes unshadow {
+  from { 
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+  }
+  to { 
+    -moz-box-shadow: 0 0 0 transparent, 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent, 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent, 0 0 0 transparent;
+  }
+}
+@-webkit-keyframes unshadow {
+  from { 
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+  }
+  to { 
+    -moz-box-shadow: 0 0 0 transparent, 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent, 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent, 0 0 0 transparent;
+  }
+}
+@keyframes shadow {
+  from { 
+    -moz-box-shadow: 0 0 0 transparent, 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent, 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent, 0 0 0 transparent;
+  }
+  to { 
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+  }
+}
+@-webkit-keyframes shadow {
+  from { 
+    -moz-box-shadow: 0 0 0 transparent, 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent, 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent, 0 0 0 transparent;
+  }
+  to { 
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+  }
+}
+/* 字體顏色 */
+@keyframes color-hover-fff {
+  from { 
+    color: var(--col-sys-light);
+  }
+  to { 
+    color: #fff;
+  }
+}
+@-webkit-keyframes color-hover-fff {
+  from { 
+    color: var(--col-sys-light);
+  }
+  to { 
+    color: #fff;
+  }
+}
+@keyframes color-unhover-fff {
+  from { 
+    color: #fff;
+  }
+  to { 
+    color: var(--col-sys-light);
+  }
+}
+@-webkit-keyframes color-unhover-fff {
+  from { 
+    color: #fff;
+  }
+  to { 
+    color: var(--col-sys-light);
+  }
+}
+/* 背景＆邊框 */
+@keyframes btn-hover-fff {
+  from { 
+    background-color: var(--col-sys-light);
+    border: 1px solid var(--col-sys-light);
+  }
+  to { 
+    background-color: transparent;
+    border: 1px solid #fff;
+  }
+}
+@-webkit-keyframes btn-hover-fff {
+  from { 
+    background-color: var(--col-sys-light);
+    border: 1px solid var(--col-sys-light);
+  }
+  to { 
+    background-color: transparent;
+    border: 1px solid #fff;
+  }
+}
+@keyframes btn-unhover-fff {
+  from { 
+    background-color: transparent;
+    border: 1px solid #fff;
+  }
+  to { 
+    background-color: var(--col-sys-light);
+    border: 1px solid var(--col-sys-light);
+  }
+}
+@-webkit-keyframes btn-unhover-fff {
+  from { 
+    background-color: transparent;
+    border: 1px solid #fff;
+  }
+  to { 
+    background-color: var(--col-sys-light);
+    border: 1px solid var(--col-sys-light);
+  }
+}
+@keyframes btn-hover {
+  from { 
+    background-color: var(--col-sys-light);
+    border: 1px solid var(--col-sys-light);
+    color: #fff;
+  }
+  to { 
+    background-color: transparent;
+    border: 1px solid #505050;
+    color: #505050;
+  }
+}
+@-webkit-keyframes btn-hover {
+  from { 
+    background-color: var(--col-sys-light);
+    border: 1px solid var(--col-sys-light);
+    color: #fff;
+  }
+  to { 
+    background-color: transparent;
+    border: 1px solid #505050;
+    color: #505050;
+  }
+}
+@keyframes btn-unhover {
+  from { 
+    background-color: transparent;
+    border: 1px solid #505050;
+    color: #505050;
+  }
+  to { 
+    background-color: var(--col-sys-light);
+    border: 1px solid var(--col-sys-light);
+    color: #fff;
+  }
+}
+@-webkit-keyframes btn-unhover {
+  from { 
+    background-color: transparent;
+    border: 1px solid #505050;
+    color: #505050;
+  }
+  to { 
+    background-color: var(--col-sys-light);
+    border: 1px solid var(--col-sys-light);
+    color: #fff;
+  }
+}

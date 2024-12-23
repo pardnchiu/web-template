@@ -1,0 +1,117 @@
+div[sn=C005] {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: initial;
+  background-color: #fff;
+  /* module tag */
+  &::after {
+    content: "C005";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    background-color: var(--col-sys-dark);
+    color: #fff;
+    opacity: var(--module-hint);
+  }
+  /* body */
+  > section {
+    position: relative;
+    display: block;
+    left: 50%;
+    width: 100%;
+    max-width: var(--max-width);
+    height: initial;
+    transform: translateX(-50%);
+    /* 
+     * customized 
+     */
+    padding: 5rem 0;
+    > h6 {
+      position: relative;
+      padding: 0 1rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-align: center;
+    }
+    > hr {
+      position: relative;
+      margin-top: 0.5rem;
+      margin-left: calc(50% - 30px);
+      width: 60px;
+      border: 2px solid var(--col-sys);
+    }
+    /* child-body */
+    > div {
+      position: relative;
+      display: block;
+      font-size: 0;
+      /* 
+        * customized 
+        */
+      margin-top: 5rem;
+      /* block */
+      > div {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 1rem;
+        width: calc(100% / 3 - 2rem);
+        height: initial;
+        &.x2 > div {
+          padding-top: 66%;
+        }
+        /* item */
+        > div,
+        > a {
+          position: relative;
+          display: block;
+          margin-top: 2rem;
+          padding-top: calc(66% * 2 + 2rem);
+          width: 100%;
+          border-radius: var(--default-radius);
+          overflow: hidden;
+          &:nth-child(1) {
+            margin-top: 0;
+          }
+          > img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        @media screen and (max-width: 767px) {
+          > div,
+          > a {
+            padding-top: 100%;
+          }
+          &.x2 > div {
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 0;
+            padding-top: calc((100% - 2rem) / 2);
+            width: calc((100% - 2rem) / 2);
+            &:nth-child(2) {
+              margin-left: 2rem;
+            }
+          }
+          &:nth-child(1),
+          &:nth-child(2) {
+            width: calc(100% / 2 - 2rem);
+          }
+          &:nth-child(3) {
+            margin-top: 2rem;
+            width: calc(100% - 2rem);
+          }
+        }
+      }
+    }
+  }
+}

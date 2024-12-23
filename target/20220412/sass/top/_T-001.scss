@@ -1,0 +1,263 @@
+div[sn=T001] {
+  position: relative;
+  display: block;
+  width: 100%;
+  &::after {
+    content: "T001";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    background-color: var(--col-sys-dark);
+    color: #fff;
+    opacity: var(--module-hint);
+  }
+  &[path="/"],
+  &[path="/index"],
+  &[path="/index.html"] {
+    > div[df=bd] {
+      display: block;
+    }
+  }
+  > div[df=ex] {
+    position: relative;
+    left: 50%;
+    padding-top: 1rem;
+    width: 100%;
+    max-width: var(--max-width);
+    height: 4rem;
+    transform: translateX(-50%); 
+    font-size: 0;
+    > div {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      width: initial;
+      margin-top: 0.5rem;
+      height: 1.5rem;
+      font-size: 0;
+      cursor: pointer;
+      > img {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 1rem;
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+      > p,
+      > a {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 1rem;
+        line-height: 1.5rem;
+        max-height: 1.5rem;
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: #fff;
+        > i {
+          margin-right: 0.5rem;
+          font-size: 1rem;
+          color: #fff;
+        }
+      }
+    }
+    > a {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+  }
+  > nav[df=nvb] {
+    position: relative;
+    display: block;
+    z-index: 1;
+    margin-top: 1rem;
+    margin-left: 50%;
+    width: 100%;
+    max-width: var(--max-width);
+    height: 5rem;
+    transform: translateX(-50%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    > h1 {
+      position: absolute;
+      top: 0;
+      left: 1rem;
+      line-height: 5rem;
+      max-height: 5rem;
+      font-size: 1.875rem;
+      font-weight: 500;
+      color: #fff;
+    }
+    > img[df=nvb] {
+      display: none;
+      position: absolute;
+      top: 1.5rem;
+      right: 1rem;
+      width: 2rem;;
+      height: 2rem;;
+      object-fit: cover;
+      @media screen and (max-width: 639px) {
+        display: block;
+      }
+    }
+    > div {
+      position: absolute;
+      top: 0;
+      right: 1rem;
+      width: initial;
+      height: 5rem;
+      @media screen and (max-width: 639px) {
+       visibility: hidden;
+      }
+      > div,
+      > a {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 1.5rem;
+        line-height: 5rem;
+        font-size: 1rem;
+        font-weight: 500;
+        color: #fff;
+        cursor: pointer;
+        &::before {
+          content: "";
+        }
+        &:nth-child(1) {
+          margin-left: 1rem;
+        }
+        &.act {
+          color: var(--col-sys-light);
+          > ul {
+            display: block;
+          }
+        }
+        @media (hover: hover) and (pointer: fine) {
+          &.unhover {
+            animation: color-hover-fff 0.3s;
+            -webkit-animation: color-hover-fff 0.3s;
+          }
+          &:hover {
+            color: var(--col-sys-light);
+            animation: color-unhover-fff 0.3s;
+            -webkit-animation: color-unhover-fff 0.3s;
+            > ul {
+              display: block;
+            }
+          }
+        }
+        &.fc {
+          font-weight: 500;
+          color: var(--col-sys-light);
+          &::before {
+            content: "";
+          }
+          @media (hover: hover) and (pointer: fine) {
+            &:hover {
+              animation: none;
+              -webkit-animation: none;
+            }
+            &.unhover {
+              animation: none;
+              -webkit-animation: none;
+            }
+          }
+        }
+        > ul {
+          position: absolute;
+          display: none;
+          right: -1rem;
+          width: 120px;
+          background-color: rgba(0, 0, 0, 0.5);
+          -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+          border-radius: 2px;
+          list-style: none;
+          > li > a {
+            position: relative;
+            display: block;
+            padding: 0 0.875rem;
+            line-height: 3rem;
+            font-size: 0.875rem;
+            text-align: right;
+            color: #fff;
+            @media (hover: hover) and (pointer: fine) {
+              &:hover {
+                background-color:  var(--col-sys-light);
+              }
+            }
+          }
+          @media (hover: hover) and (pointer: fine) {
+            &:hover {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+  > div[df=bd] {
+    position: relative;
+    display: none;
+    padding: 12rem 0;
+    width: 100%;
+    > article {
+      position: relative;
+      display: block;
+      margin-right: -50%;
+      width: initial;
+      max-width: 100%;
+      height: initial;
+      text-align: center;
+      > p {
+        position: relative;
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0 1rem;
+        width: initial;
+        max-width: calc(100% - 2rem);
+        line-height: 1.375rem;
+        font-size: 0.875rem;
+        color: #fff;
+        &.subtitle {
+          font-size: 2rem;
+          @media screen and (max-width: 639px) {
+            font-size: 1.5rem;
+          }
+        }
+      }
+      > h3 {
+        position: relative;
+        display: block;
+        margin-top: 1rem;
+        width: initial;
+        max-width: 100%;
+        font-size: 4rem;
+        font-weight: 400;
+        color: #fff;
+        @media screen and (max-width: 639px) {
+          font-size: 3rem;
+        }
+        @media screen and (max-width: 479px) {
+          font-size: 2.5rem;
+        }
+      }
+      > div {
+        position: relative;
+        display: block;
+        margin-top: 2rem;
+        width: initial;
+        max-width: 100%;
+        text-align: center;
+        > a {
+          display: inline-block;
+          vertical-align: top;
+          margin: 0 0.5rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,142 @@
+div[sn=C016] {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: initial;
+  background-color: #fff;
+  /* module tag */
+  &::after {
+    content: "C-016";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    background-color: var(--col-sys-dark);
+    color: #fff;
+    opacity: var(--module-hint);
+  }
+  /* body */
+  > section {
+    position: relative;
+    display: block;
+    left: 50%;
+    width: 100%;
+    max-width: var(--max-width);
+    height: initial;
+    transform: translateX(-50%);
+    /* 
+     * customized 
+     */
+    padding: 4rem 0;
+    > ul {
+      position: relative;
+      display: block;
+      font-size: 0;
+      /* 
+        * customized 
+        */
+      text-align: center;
+      /* x2 */
+      &[df=x2] {
+        text-align: left;
+        > li {
+          width: calc(100% / 2 - 2rem);
+          text-align: center;
+        }
+      }
+      /* x3 */
+      &[df=x3] {
+        @media screen and (max-width: 639px) {
+          text-align: left;
+        }
+        > li {
+          width: calc(100% / 3 - 2rem);
+          @media screen and (max-width: 639px) {
+            width: calc(100% / 2 - 2rem);
+            text-align: center;
+          }
+        }
+      }
+      /* x4 */
+      &[df=x4] {
+        @media screen and (max-width: 639px) {
+          text-align: left;
+        }
+        > li {
+          width: calc(100% / 4 - 2rem);
+          @media screen and (max-width: 639px) {
+            width: calc(100% / 2 - 2rem);
+            text-align: center;
+          }
+        }
+      }
+      /* x5 */
+      &[df=x5] {
+        @media screen and (max-width: 479px) {
+          text-align: left;
+        }
+        > li {
+          width: calc(100% / 5 - 2rem);
+          @media screen and (max-width: 959px) {
+            width: calc(100% / 3 - 2rem);
+          }
+          @media screen and (max-width: 479px) {
+            width: calc(100% / 2 - 2rem);
+            text-align: center;
+          }
+        }
+      }
+      > li {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin: 1rem;
+        height: initial;
+        > div,
+        > a {
+          position: relative;
+          display: block;
+          margin-left: calc(50% - 40px);
+          width: 5rem;
+          height: 5rem;
+          > img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+          > i {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 5rem;
+            line-height: 5rem;
+            height: 5rem;
+            font-size: 2rem;
+            color: var(--col-sys-light);
+          }
+        }
+        > p {
+          position: relative;
+          margin-top: 1rem;
+          padding: 0 1rem;
+          font-size: 1rem;
+          font-weight: 500;
+          letter-spacing: 1px;
+          text-align: center;
+          color: #fff;
+          &:nth-child(3) {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}

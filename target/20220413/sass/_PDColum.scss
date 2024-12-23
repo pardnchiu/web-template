@@ -1,0 +1,129 @@
+/*
+  PDModuleColum
+*/
+@import "./colum/C001.scss";
+@import "./colum/C002.scss";
+@import "./colum/C003.scss";
+@import "./colum/C004.scss";
+@import "./colum/C005.scss";
+@import "./colum/C006.scss";
+@import "./colum/C007.scss";
+@import "./colum/C008.scss";
+@import "./colum/C009.scss";
+@import "./colum/C010.scss";
+@import "./colum/C011.scss";
+@import "./colum/C012.scss";
+@import "./colum/C013.scss";
+@import "./colum/C014.scss";
+@import "./colum/C015.scss";
+@import "./colum/C016.scss";
+@import "./colum/C017.scss";
+@import "./colum/C018.scss";
+@import "./colum/C019.scss";
+@import "./colum/C020.scss";
+@import "./colum/C021.scss";
+@import "./colum/C022.scss";
+@import "./colum/C023.scss";
+@import "./colum/C024.scss";
+
+
+ul.resize {
+  /* x2 - 1 */
+  &[df=w_2] {
+    text-align: left;
+    > li {
+      width: calc(100% / 2 - 2rem);
+      @media screen and (max-width: 767px) {
+        width: calc(100% - 2rem);
+        text-align: center;
+      }
+    }
+  }
+  /* x3 */
+  &[df=w_3_2_1] {
+    @media screen and (max-width: 767px) {
+      text-align: left;
+    }
+    > li {
+      width: calc(100% / 3 - 2rem);
+      @media screen and (max-width: 767px) {
+        width: calc(100% / 2 - 2rem);
+      }
+      @media screen and (max-width: 639px) {
+        width: calc(100% - 2rem);
+      }
+    }
+  }
+  /* x4 */
+  &[df=w_4_2] {
+    @media screen and (max-width: 767px) {
+      text-align: left;
+    }
+    @media screen and (max-width: 479px) {
+      padding: 0 0.5rem;
+    }
+    > li {
+      width: calc(100% / 4 - 2rem);
+      @media screen and (max-width: 767px) {
+        width: calc(100% / 2 - 2rem);
+      }
+      @media screen and (max-width: 479px) {
+        margin: 0.5rem;
+        width: calc(100% / 2 - 1rem);
+      }
+    }
+  }
+
+  &[df=w_4_2_1] {
+    > li  {
+      width: calc(100% / 4 - 2rem);
+      @media screen and (max-width: 767px) {
+        width: calc(100% / 2 - 2rem);
+      }
+      @media screen and (max-width: 479px) {
+        width: calc(100% - 2rem);
+      }
+    }
+  }
+  /* x5 */
+  &[df=w_5_3_2] {
+    @media screen and (max-width: 639px) {
+      text-align: left;
+    }
+    @media screen and (max-width: 479px) {
+      padding: 0 0.5rem;
+    }
+    > li {
+      width: calc(100% / 5 - 2rem);
+      @media screen and (max-width: 959px) {
+        width: calc(100% / 3 - 2rem);
+      }
+      @media screen and (max-width: 639px) {
+        width: calc(100% / 2 - 2rem);
+      }
+      @media screen and (max-width: 479px) {
+        margin: 0.5rem;
+        width: calc(100% / 2 - 1rem);
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

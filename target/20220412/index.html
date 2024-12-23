@@ -1,0 +1,605 @@
+<!--
+
+    Copyright 2023 Pardn Ltd 帕登國際有限公司.
+    Created by 邱敬幃 Pardn Chiu.
+    Email: dev@pardn.io
+
+-->
+<!DOCTYPE html>
+<html lang="zh-Hans-TW">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="robots" content="index, follow">
+
+        <!-- SEO 標題與描述 -->
+        <title>網站前端範例 22-04-12 - 邱敬幃 Pardn Chiu</title>
+        <meta name="title" content="網站前端範例 22-04-12 - 邱敬幃 Pardn Chiu">
+        <meta name="description" content="網站前端範例 22-04-12 - 邱敬幃 Pardn Chiu">
+        <meta name="keywords" content="Website範例, 邱敬幃, Pardn Chiu">
+        <meta name="author" content="邱敬幃 Pardn Chiu">
+        <link rel="author" href="https://pardn.io">
+        <link rel="canonical" href="https://pardn.io/web-template/target/20220412">
+
+        <!-- Favicon -->
+        <link rel="icon" href="https://pardn.io/image/head.png" type="image/x-icon">
+
+        <!-- Open Graph -->
+        <meta property="og:title" content="網站前端範例 22-04-12 - 邱敬幃 Pardn Chiu">
+        <meta property="og:description" content="網站前端範例 22-04-12 - 邱敬幃 Pardn Chiu">
+        <meta property="og:image" content="https://pardn.io/web-template/image/20220412.jpg">
+        <meta property="og:url" content="https://pardn.io/web-template/target/20220412">
+        <meta property="og:site_name" content="Pardn Chiu">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="zh_TW">
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="twitter:title" content="網站前端範例 22-04-12 - 邱敬幃 Pardn Chiu">
+        <meta property="og:description" content="網站前端範例 22-04-12 - 邱敬幃 Pardn Chiu">
+        <meta property="twitter:image" content="https://pardn.io/web-template/image/20220412.jpg">
+        <meta property="twitter:url" content="https://pardn.io/web-template/target/20220412">
+
+        <!-- Google Verification -->
+        <meta name="google-site-verification" content="YQQ2f6AchR8dcb55Az2BYd_mw4TrP0J1RApD-v2v65Y">
+
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-L5VYEZPVXX"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-L5VYEZPVXX');
+        </script>
+
+        <!-- Preload and Preconnect -->
+        <link rel="preconnect" href="https://cdn.jsdelivr.net">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" as="style">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" as="style">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap">
+
+        <!-- Local Resources -->
+        <link rel="stylesheet" href="./css/PDWebsitemplate.min.css">
+
+        <!-- JSON-LD Schema -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "datePublished": "2022-04-12",
+            "dateModified": "2024-12-22",
+            "inLanguage": "zh-TW",
+            "name": {
+                "@language": "zh-TW",
+                "@value": "網站前端範例 22-04-12 - 邱敬幃 Pardn Chiu"
+            },
+            "alternateName": {
+                "@language": "en",
+                "@value": "Web Example 22-04-12 - 邱敬幃 Pardn Chiu"
+            },
+            "description": {
+                "@language": "zh-TW",
+                "@value": "網站前端範例 22-04-12 - 邱敬幃 Pardn Chiu"
+            },
+            "alternateDescription": {
+                "@language": "en",
+                "@value": "Web Example 22-04-12 - 邱敬幃 Pardn Chiu"
+            },
+            "url": "https://pardn.io/web-template/target/20220412",
+            "creator": {
+                "@type": "Person",
+                "name": [
+                    {
+                        "@language": "zh-TW",
+                        "@value": "邱敬幃"
+                    },
+                    {
+                        "@language": "en",
+                        "@value": "Pardn Chiu"
+                    }
+                ],
+                "url": "https://pardn.io/",
+                "sameAs": [
+                    "https://github.com/pardnchiu"
+                ],
+                "email": "dev@pardn.io"
+            },
+            "image": "https://pardn.io/web-template/image/20220412.jpg"
+        }
+        </script>
+        <style>
+            * {
+                --module-hint: 1;
+                --max-width: 1140px;
+                --col-sys: rgb(200, 30, 60, 0.9);
+                --col-sys-light: rgb(255, 90, 120, 0.9);
+                --col-sys-hint: rgba(255, 90, 120, 0.2);
+                --col-sys-dark: rgb(140, 0, 0, 0.9);
+                --col-border: rgb(215, 215, 215);
+                --col-hint: rgb(230, 230, 230);
+                --col-bg-lightgray: rgb(245, 245, 245);
+                --default-radius: 0.5rem;
+            }
+        </style>
+    </head>
+
+    <body class="no-select">
+        <div sn="T003" df="bg" style="background-image: url(https://fakeimg.pl/1024/282828/eae0d0/?text=sample);">
+            <div df="top">
+                <div>
+                    <h1>PARDN CHIU</h1>
+                    <p>邱敬幃</p>
+                </div>
+                <ul>
+                    <li>
+                        <a href="https://github.com/pardnchiu" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <div>
+                            <p><strong>GitHub</strong>邱敬幃</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="mailto:dev@pardn.io" target="_blank">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                        <div>
+                            <p><strong>Email</strong>dev@pardn.io</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <nav df="nvb" dir="ttb">
+                <div>
+                    <a class="fc" href="" mi="1">ITEM</a>
+                    <div mi="1" df="li">LIST
+                        <ul>
+                            <li>
+                                <a href="">ITEM</a>
+                            </li>
+                            <li>
+                                <a href="">ITEM</a>
+                            </li>
+                            <li>
+                                <a href="">ITEM</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="" mi="1">ITEM</a>
+                    <a href="" mi="1">ITEM</a>
+                </div>
+            </nav>
+            <div df="bd">
+                <article>
+                    <p class="subtitle">Lorem, ipsum dolor.</p>
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet<br>
+                        consectetur adipisicing elit. Animi accusantium voluptas<br>
+                        hic optio molestiae, aliquam voluptate<br>
+                        nobis unde necessitatibus dolorum dicta soluta,<br>
+                        veniam blanditiis laudantium sed. Dolor maiores vero dolorum?
+                    </p>
+                    <div>
+                        <a href="https://github.com/pardnchiu/web-template" df="btn fff col xl" mi="1" target="_blank">
+                            <i class="fas fa-code"></i>
+                            Code
+                        </a>
+                        <a href="https://github.com/pardnchiu" df="btn fff xl" mi="1">
+                            <i class="fab fa-github"></i>
+                            Github
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div sn="C012">
+            <!-- body -->
+            <section>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <h6>Lorem, ipsum</h6>
+                <!-- child-body -->
+                <ul df="x2">
+                    <!-- item -->
+                    <li>
+                        <time>
+                            <strong>01</strong>
+                            <em>一月</em>
+                        </time>
+                        <div>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-user"></i>
+                                    <p><a href="">Lorem, ipsum.</a></p>
+                                </li>
+                                <li>
+                                    <i class="fas fa-user-friends"></i>
+                                    <p><a href="">Lorem, ipsum dolor.</a></p>
+                                </li>
+                                <li>
+                                    <i class="fas fa-tag"></i>
+                                    <p><a href="">Lorem, ipsum.</a></p>
+                                </li>
+                            </ul>
+                            <h6>Lorem, ipsum dolor.</h6>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga laborum quas impedit accusantium itaque? Cum cupiditate ab placeat saepe qui expedita illum natus, vel, aperiam, porro impedit maiores aspernatur quas!
+                            </p>
+                            <a href="">MORE →</a>
+                        </div>
+                    </li>
+                    <!-- item -->
+                    <li>
+                        <time>
+                            <strong>01</strong>
+                            <em>一月</em>
+                        </time>
+                        <div>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-user"></i>
+                                    <p><a href="">Lorem, ipsum.</a></p>
+                                </li>
+                                <li>
+                                    <i class="fas fa-user-friends"></i>
+                                    <p><a href="">Lorem, ipsum dolor.</a></p>
+                                </li>
+                                <li>
+                                    <i class="fas fa-tag"></i>
+                                    <p><a href="">Lorem, ipsum.</a></p>
+                                </li>
+                            </ul>
+                            <h6>Lorem, ipsum dolor.</h6>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga laborum quas impedit accusantium itaque? Cum cupiditate ab placeat saepe qui expedita illum natus, vel, aperiam, porro impedit maiores aspernatur quas!
+                            </p>
+                            <a href="">MORE →</a>
+                        </div>
+                    </li>
+                </ul>
+                <a href="https://pardn.io" df="btn col xxl" mi="1">
+                    <i class="fas fa-user" style="color: #fff;"></i>
+                    My Page
+                </a>
+            </section>
+        </div>
+        <div sn="C010" style="background-color: var(--col-sys);">
+            <!-- body -->
+            <section>
+                <p>Lorem, ipsum dolor.</p>
+                <h6>Lorem, ipsum.</h6>
+                <!-- child-body -->
+                <ul df="x4">
+                    <!-- item -->
+                    <li>
+                        <div wh="1">
+                            <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                        </div>
+                        <h6>Lorem, ipsum.</h6>
+                        <i>Lorem, ipsum dolor.</i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non recusandae molestias culpa!</p>
+                    </li>
+                    <!-- item -->
+                    <li>
+                        <div wh="1">
+                            <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                        </div>
+                        <h6>Lorem, ipsum.</h6>
+                        <i>Lorem, ipsum dolor.</i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non recusandae molestias culpa!</p>
+                    </li>
+                    <!-- item -->
+                    <li>
+                        <div wh="1">
+                            <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                        </div>
+                        <h6>Lorem, ipsum.</h6>
+                        <i>Lorem, ipsum dolor.</i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non recusandae molestias culpa!</p>
+                    </li>
+                    <!-- item -->
+                    <li>
+                        <div wh="1">
+                            <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                        </div>
+                        <h6>Lorem, ipsum.</h6>
+                        <i>Lorem, ipsum dolor.</i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non recusandae molestias culpa!</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div sn="C008">
+            <!-- body -->
+            <section>
+                <!-- child-body -->
+                <ul df="x4">
+                    <!-- item -->
+                    <li>
+                        <figure>
+                            <div wh="1">
+                                <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                            </div>
+                            <figcaption>
+                                <h6>Lorem, ipsum dolor.</h6>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi totam incidunt veritatis.
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <!-- item -->
+                    <li>
+                        <figure>
+                            <div wh="1">
+                                <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                            </div>
+                            <figcaption>
+                                <h6>Lorem, ipsum dolor.</h6>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi totam incidunt veritatis.
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <!-- item -->
+                    <li>
+                        <figure>
+                            <div wh="1">
+                                <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                            </div>
+                            <figcaption>
+                                <h6>Lorem, ipsum dolor.</h6>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi totam incidunt veritatis.
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <!-- item -->
+                    <li>
+                        <figure>
+                            <div wh="1">
+                                <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                            </div>
+                            <figcaption>
+                                <h6>Lorem, ipsum dolor.</h6>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi totam incidunt veritatis.
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <!-- item -->
+                    <li>
+                        <figure>
+                            <div wh="1">
+                                <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                            </div>
+                            <figcaption>
+                                <h6>Lorem, ipsum dolor.</h6>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi totam incidunt veritatis.
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <!-- item -->
+                    <li>
+                        <figure>
+                            <div wh="1">
+                                <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                            </div>
+                            <figcaption>
+                                <h6>Lorem, ipsum dolor.</h6>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi totam incidunt veritatis.
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <!-- item -->
+                    <li>
+                        <figure>
+                            <div wh="1">
+                                <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                            </div>
+                            <figcaption>
+                                <h6>Lorem, ipsum dolor.</h6>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi totam incidunt veritatis.
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <!-- item -->
+                    <li>
+                        <figure>
+                            <div wh="1">
+                                <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                            </div>
+                            <figcaption>
+                                <h6>Lorem, ipsum dolor.</h6>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi totam incidunt veritatis.
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div sn="C011" style="background-color: var(--col-hint);">
+            <!-- body -->
+            <section>
+                <p>Lorem, ipsum.</p>
+                <h6>Lorem, ipsum dolor.</h6>
+                <!-- child body -->
+                <ul df="x4">
+                    <!-- item -->
+                    <li>
+                        <i class="fas fa-chess-queen"></i>
+                        <h6>Lorem.</h6>
+                        <p>Lorem, ipsum dolor.</p>
+                    </li>
+                    <!-- item -->
+                    <li>
+                        <i class="fas fa-globe"></i>
+                        <h6>Lorem.</h6>
+                        <p>Lorem, ipsum dolor.</p>
+                    </li>
+                    <!-- item -->
+                    <li>
+                        <i class="fas fa-broadcast-tower"></i>
+                        <h6>Lorem.</h6>
+                        <p>Lorem, ipsum dolor.</p>
+                    </li>
+                    <!-- item -->
+                    <li>
+                        <i class="fas fa-bus"></i>
+                        <h6>Lorem.</h6>
+                        <p>Lorem, ipsum dolor.</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div sn="B003" style="background-color: rgb(78, 25, 25);">
+            <!-- 頂部 -->
+            <nav>
+                <h6>Lorem, ipsum dolor.</h6>
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-tumblr-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-youtube-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/pardnchiu" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/pardnchiu" target="_blank">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/pardnchiu" target="_blank">
+                            <i class="fab fa-facebook-messenger"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-whatsapp-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <i class="fab fa-line"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- 置中 -->
+            <div>
+                <ul df="x4">
+                    <!-- child-block -->
+                    <li sn="BC004">
+                        <h6>Template</h6>
+                        <div>
+                            <a href="">
+                                <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                            </a>
+                            <a href="">
+                                <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                            </a>
+                            <a href="">
+                                <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                            </a>
+                            <a href="">
+                                <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                            </a>
+                            <a href="">
+                                <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                            </a>
+                            <a href="">
+                                <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                            </a>
+                            <a href="">
+                                <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                            </a>
+                            <a href="">
+                                <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                            </a>
+                            <a href="">
+                                <img src="https://fakeimg.pl/1024/282828/eae0d0/?text=sample" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <!-- 子區塊 -->
+                    <li sn="BC006">
+                        <h6>Lorem, ipsum.</h6>
+                        <div>
+                            <div>
+                                <a href="" target="_blank">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore similique earum assumenda!
+                                </a>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <div>
+                                <a href="" target="_blank">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore similique earum assumenda!
+                                </a>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 子區塊 -->
+                    <li sn="BC002">
+                        <h6>Github</h6>
+                        <div>
+                            <a href="">Lorem ipsum dolor sit.</a>
+                            <a href="">Lorem ipsum dolor sit.</a>
+                            <a href="">Lorem ipsum dolor sit.</a>
+                            <a href="">Lorem ipsum dolor sit.</a>
+                            <a href="">Lorem ipsum dolor sit.</a>
+                        </div>
+                    </li>
+                    <!-- 子區塊 -->
+                    <li sn="BC003">
+                        <h6>Contact</h6>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo corrupti in commodi?</p>
+                            <div>
+                                <input type="text" placeholder="名稱">
+                                <input type="text" placeholder="信箱">
+                                <a href="" df="btn col fff xxl">送出</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 底部 -->
+            <footer>
+                <div>
+                    <p class="l">© 2022 邱敬幃</p>
+                    <p class="r">Created by 邱敬幃</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+
+</html>

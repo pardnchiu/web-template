@@ -1,0 +1,119 @@
+div[sn=C015] {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: initial;
+  background-color: #fff;
+  /* module tag */
+  &::after {
+    content: "C015";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    background-color: var(--col-sys-dark);
+    color: #fff;
+    opacity: var(--module-hint);
+  }
+  /* body */
+  > section {
+    position: relative;
+    display: block;
+    left: 50%;
+    width: 100%;
+    max-width: var(--max-width);
+    height: initial;
+    transform: translateX(-50%);
+    /* 
+     * customized 
+     */
+    padding: 5rem 0 4rem;
+    > h6 {
+      position: relative;
+      padding: 0 1rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-align: center;
+      color: #fff;
+    }
+    > hr {
+      position: relative;
+      margin-top: 0.5rem;
+      margin-left: calc(50% - 30px);
+      width: 60px;
+      border: 2px solid var(--col-sys);
+    }
+    /* child-body */
+    > div {
+      position: relative;
+      margin-top: 5rem;
+      font-size: 0;
+      /* block */
+      > div {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 1rem;
+        height: initial;
+        &:nth-child(1) {
+          width: calc(100% - 2rem - 360px);
+          @media screen and (max-width: 767px) {
+            width: calc(50% - 2rem);
+          }
+          @media screen and (max-width: 639px) {
+            width: calc(100% - 2rem);
+          }
+        }
+        &:nth-child(2) {
+          width: calc(360px - 2rem);
+          @media screen and (max-width: 767px) {
+            width: calc(50% - 2rem);
+          }
+          @media screen and (max-width: 639px) {
+            margin-top: 2rem;
+            width: calc(100% - 2rem);
+          }
+        }
+        > p {
+          position: relative;
+          margin-top: 1rem;
+          line-height: 1.5rem;
+          font-size: 1rem;
+          font-weight: 500;
+          color: #fff;
+          > strong {
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 600;
+          }
+          &:nth-child(1) {
+            margin-top: 0;
+            font-size: 1rem;
+          }
+        }
+        > div {
+          position: relative;
+          margin-top: 1rem;
+          padding-top: calc(100% / 16 * 9);
+          width: 100%;
+          background-color: rgba(50, 50, 50);
+          > iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        > a {
+          position: relative;
+          display: inline-block;
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,294 @@
+div[sn=T003]  {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: initial;
+  /* module tag */
+  &::after {
+    content: "T003";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    background-color: var(--col-sys-dark);
+    color: #fff;
+    opacity: var(--module-hint);
+  }
+  > div[df=top] {
+    position: relative;
+    z-index: 1;
+    padding: 3rem 1rem;
+    left: 50%;
+    width: 100%;
+    max-width: var(--max-width);
+    height: initial;
+    transform: translateX(-50%);
+    font-size: 0;
+    text-align: left;
+    > div {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      width: initial;
+      height: 4rem;
+      > h1 {
+        position: relative;
+        font-size: 2rem;
+        color: #fff;
+      }
+      > p {
+        position: relative;
+        font-size: 0.75rem;
+        color: #fff;
+      }
+    }
+    > ul {
+      position: absolute;
+      top: 3.5rem;
+      right: 1rem;
+      width: initial;
+      height: initial;
+      font-size: 0;
+      @media screen and (max-width: 1023px) {
+        position: relative;
+        top: unset;
+        right: unset;
+        width: 100%;
+      }
+      > li {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 1.5rem;
+        width: initial;
+        height: initial;
+        font-size: 0;
+        &:nth-child(1) {
+          margin-left: 0;
+        }
+        @media screen and (max-width: 1023px) {
+          margin-top: 1rem;
+          width: calc((100% - 3rem) / 3);
+        }
+        @media screen and (max-width: 767px) {
+          margin-left: 0;
+          width: 100%;
+        }
+        > img {
+          position: relative;
+          display: inline-block;
+          vertical-align: top;
+          margin-top: 0.5rem;
+          width: 2rem;
+          height: 2rem;
+          background-color: #fff;
+          border-radius: 50%;
+        }
+        > a {
+          position: relative;
+          display: inline-block;
+          vertical-align: top;
+          width: 3rem;
+          line-height: 3rem;
+          background-color: #fff;
+          border-radius: 50%;
+          font-size: 1.25rem;
+          text-align: center;  
+          > i {
+            color: var(--col-sys-light);
+          }
+          @media (hover: hover) and (pointer: fine) {
+            &:hover {
+              background-color: var(--col-sys-light);
+              > i {
+                color: #fff;
+              }
+            }
+          }
+        }
+        > div {
+          position: relative;
+          display: inline-block;
+          vertical-align: top;
+          margin-left: 1rem;
+          > p {
+            position: relative;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            color: #fff;
+            > strong {
+              position: relative;
+              display: block;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+  > nav[df^=nvb] {
+    position: relative;
+    z-index: 1;
+    left: 50%;
+    width: 100%;
+    max-width: var(--max-width);
+    height: 4rem;;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0.25rem;
+    > div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3.5rem;
+      > div,
+      > a {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 1.5rem;
+        line-height: 4rem;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #fff;
+        cursor: pointer;
+        &::before {
+          content: "";
+        }
+        &:nth-child(1) {
+          margin-left: 2rem;
+        }
+        &.act {
+          color: var(--col-sys-light);
+          > ul {
+            display: block;
+          }
+        }
+        @media (hover: hover) and (pointer: fine) {
+          &.unhover {
+            animation: color-hover-fff 0.3s;
+            -webkit-animation: color-hover-fff 0.3s;
+          }
+          &:hover {
+            color: var(--col-sys-light);
+            animation: color-unhover-fff 0.3s;
+            -webkit-animation: color-unhover-fff 0.3s;
+            > ul {
+              display: block;
+            }
+          }
+        }
+        &.fc {
+          font-weight: 500;
+          color: var(--col-sys-light);
+          &::before {
+            content: "";
+          }
+          @media (hover: hover) and (pointer: fine) {
+            &:hover {
+              animation: none;
+              -webkit-animation: none;
+            }
+            &.unhover {
+              animation: none;
+              -webkit-animation: none;
+            }
+          }
+        }
+        > ul {
+          position: absolute;
+          display: none;
+          width: 160px;
+          background-color: var(--col-sys);
+          -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+          border-radius: 2px;
+          list-style: none;
+          > li > a {
+            position: relative;
+            display: block;
+            padding: 0 0.875rem;
+            font-size: 0.875rem;
+            color: #fff;
+            @media (hover: hover) and (pointer: fine) {
+              &:hover {
+                background-color:  var(--col-sys-light);
+              }
+            }
+          }
+          @media (hover: hover) and (pointer: fine) {
+            &:hover {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+  > div[df=bd] {
+    position: relative;
+    display: block;
+    padding: 10em 0 12rem;
+    width: 100%;
+    > article {
+      position: relative;
+      display: block;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      padding: 0 1rem;
+      width: 100%;
+      max-width: var(--max-width);
+      height: initial;
+      text-align: left;
+      > h3 {
+        position: relative;
+        display: block;
+        margin-top: 1.5rem;
+        width: initial;
+        max-width: 100%;
+        font-size: 4rem;
+        font-weight: 400;
+        color: #fff;
+        @media screen and (max-width: 639px) {
+          font-size: 3rem;
+        }
+        @media screen and (max-width: 479px) {
+          font-size: 2.5rem;
+        }
+      }
+      > p {
+        position: relative;
+        display: block;
+        margin-top: 1.5rem;
+        width: initial;
+        max-width: calc(100% - 2rem);
+        line-height: 1.5rem;
+        font-size: 1rem;
+        color: #fff;
+        &.subtitle {
+          margin-top: 0;
+          font-size: 1.75rem;
+          @media screen and (max-width: 639px) {
+            font-size: 1.25rem;
+          }
+        }
+      }
+      > div {
+        position: relative;
+        display: block;
+        margin-top: 3rem;
+        width: initial;
+        max-width: 100%;
+        text-align: left;
+        > a {
+          position: relative;
+          display: inline-block;
+          vertical-align: top;
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+}

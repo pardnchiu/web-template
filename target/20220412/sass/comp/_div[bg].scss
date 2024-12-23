@@ -1,0 +1,22 @@
+div[df^="bg"] {
+  background-color: #000;
+  background-image: url(../image/bg-l.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &[df*="fx"] {
+    background-attachment: fixed;
+  }
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+}

@@ -1,0 +1,169 @@
+div[sn=C001] {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: initial;
+  background-color: #fff;
+  /* module tag */
+  &::after {
+    content: "C001";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    background-color: var(--col-sys-dark);
+    color: #fff;
+    opacity: var(--module-hint);
+  }
+  /* body */
+  > section {
+    position: relative;
+    display: block;
+    left: 50%;
+    width: 100%;
+    max-width: var(--max-width);
+    height: initial;
+    transform: translateX(-50%);
+    /* 
+     * customized 
+     */
+    padding: 5rem 0 4rem;
+    > h6 {
+      position: relative;
+      padding: 0 1rem;
+      font-size: 2.25rem;
+      font-weight: 600;
+      @media screen and (max-width: 639px) {
+        font-size: 1.5rem;
+      }
+    }
+    > p {
+      position: relative;
+      margin-top: 1.25rem;
+      line-height: 1.5rem;
+      padding: 0 1rem;
+      font-size: 1.125rem;
+      font-weight: 500;
+      @media screen and (max-width: 639px) {
+        font-size: 1rem;
+      }
+    }
+    /* child-body */
+    > ul {
+      position: relative;
+      display: block;
+      font-size: 0;
+      /* 
+        * customized 
+        */
+      margin-top: 4rem;
+      text-align: center;
+      /* x2 */
+      &[df=x2] {
+        > li {
+          width: calc(100% / 2 - 2rem);
+          @media screen and (max-width: 639px) {
+            width: calc(100% - 2rem);
+          }
+        }
+      }
+      /* x3 */
+      &[df=x3] {
+        @media screen and (max-width: 767px) {
+          text-align: left;
+        }
+        > li  {
+          width: calc(100% / 3 - 2rem);
+          @media screen and (max-width: 767px) {
+            width: calc(100% / 2 - 2rem);
+            text-align: center;
+          }
+          @media screen and (max-width: 479px) {
+            width: calc(100% - 2rem);
+          }
+        }
+      }
+      /* x4 */
+      &[df=x4] {
+        > li  {
+          width: calc(100% / 4 - 2rem);
+          @media screen and (max-width: 767px) {
+            width: calc(100% / 2 - 2rem);
+          }
+          @media screen and (max-width: 479px) {
+            width: calc(100% - 2rem);
+          }
+        }
+      }
+      /* x5 */
+      &[df=x5] {
+        @media screen and (max-width: 639px) {
+          text-align: left;
+        }
+        > li  {
+          width: calc(100% / 5 - 2rem);
+          @media screen and (max-width: 1023px) {
+            width: calc(100% / 3 - 2rem);
+          }
+          @media screen and (max-width: 639px) {
+            width: calc(100% / 2 - 2rem);
+            text-align: center;
+          }
+          @media screen and (max-width: 413px) {
+            width: calc(100% - 2rem);
+          }
+        }
+      }
+      /* block */
+      > li  {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin: 1rem;
+        padding-bottom: 2rem;
+        width: calc(100% - 2rem);
+        border-radius: var(--default-radius);
+        border: 0.5px solid rgba(0, 0, 0, 0.1);
+        > article {
+          > img {
+            position: relative;
+            margin-top: 2rem;
+            width: 5rem;
+            height: 5rem;
+          }
+          > i {
+            position: relative;
+            margin-top: 2rem;
+            font-size: 3.5rem;
+            font-weight: 600;
+            width: 5rem;
+            height: 5rem;
+          }
+          > h6 {
+            position: relative;
+            margin-top: 1rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+            @media screen and (max-width: 639px) {
+              font-size: 1.25rem;
+            }
+          }
+          > p {
+            position: relative;
+            margin-top: 1rem;
+            padding: 0 2rem;
+            line-height: 1.5rem;
+            font-size: 1rem;
+          }
+          > a {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 2rem;
+          }
+        }
+      }
+    }
+  }
+}

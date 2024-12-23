@@ -1,0 +1,208 @@
+div[sn=C027] {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: initial;
+  background-color: #fff;
+  &::after {
+    content: "C027";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    background-color: var(--col-sys-dark);
+    color: #fff;
+    opacity: var(--module-hint);
+  }
+   /*
+    *
+    */
+  > section {
+    position: relative;
+    display: block;
+    left: 50%;
+    width: 100%;
+    max-width: var(--max-width);
+    height: initial;
+    transform: translateX(-50%);
+    /* 
+     * customized 
+     */
+    padding: 5rem 0;  
+    > h6 {
+      position: relative;
+      padding: 0 1rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-align: center;
+      color: #fff;
+      @media screen and (max-width: 639px) {
+        font-size: 1.25rem;
+      }
+    }
+    > p {
+      position: relative;
+      padding: 0 1rem;
+      line-height: 2rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      text-align: center;
+      color: #fff;
+    }
+    > div {
+      position: relative;
+      display: block;
+      height: initial;
+      /* 
+       * customized 
+       */
+      margin: 4rem 1rem 0;
+      padding: 3rem 1rem;
+      width: calc(100% - 2rem);
+      background-color: #fff;
+      border-radius: var(--default-radius);
+      font-size: 0;
+      @media screen and (max-width: 799px) {
+        text-align: center;
+      }
+      @media screen and (max-width: 639px) {
+        padding: 3rem 0;
+        text-align: center;
+      }
+      /*
+       *
+       */
+      > div {
+        &:nth-child(1) {
+          position: relative;
+          display: inline-block;
+          vertical-align: top;
+          width: calc(100% / 3 * 2);
+          @media screen and (max-width: 1023px) {
+            width: 50%;
+          }
+          @media screen and (max-width: 799px) {
+            width: 480px;
+          }
+          @media screen and (max-width: 543px) {
+            width: 100%;
+          }
+        }
+        &:nth-child(2) {
+          position: absolute;
+          top: 3rem;
+          bottom: 3rem;
+          right: 2rem;
+          width: calc(100% / 3 - 2rem);
+          @media screen and (max-width: 1023px) {
+            width: calc(50% - 6rem);
+          }
+          @media screen and (max-width: 799px) {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            top: unset;
+            bottom: unset;
+            right: unset;
+            margin-top: 2rem;
+            width: calc(480px - 2rem);
+            height: calc(360px - 2rem);
+          }
+          @media screen and (max-width: 543px) {
+            padding-top: calc(75% - 2rem);
+            width: calc(100% - 2rem);
+            height: unset;
+          }
+        }
+        > h6 {
+          position: relative;
+          padding: 0 1rem;
+          width: 100%;
+          font-size: 1.25rem;
+          text-align: left;
+        }
+        > p {
+          position: relative;
+          margin-top: 1rem;
+          padding: 0 1rem;
+          width: 100%;
+          line-height: 1.5rem;
+          font-size: 1rem;
+          text-align: left;
+        }
+        > img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: var(--default-radius);
+        }
+        > ul {
+          position: relative;
+          width: 100%;
+          font-size: 0;
+          > li {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            margin: 1.25rem 1rem 0;
+            padding-right: 1rem;
+            width: 50%;
+            line-height: 1.75rem;
+            font-size: 1rem;
+            text-align: left;
+            @media (hover: hover) and (pointer: fine) {
+              &.unhover {
+                > b {
+                  background-color: var(--col-sys-light);
+                  animation: C027-icon-bg-unhover 0.3s;
+                  -webkit-animation: C027-icon-bg-unhover 0.3s;
+                }
+              }
+              &:hover {
+                > b {
+                  background-color: var(--col-sys-dark);
+                  animation: C027-icon-bg-hover 0.3s;
+                  -webkit-animation: C027-icon-bg-hover 0.3s;
+                }
+              }
+            }
+            > b {
+              position: relative;
+              float: left;
+              margin-right: 0.75rem;
+              width: 2rem;
+              height: 2rem;
+              line-height: 2rem;
+              text-align: center;
+              background-color: var(--col-sys-light);
+              color: #fff;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes C027-icon-bg-hover {
+  from { background-color: var(--col-sys-light); }
+  to { background-color: var(--col-sys-dark); }
+}
+@keyframes C027-icon-bg-unhover{
+  from { background-color: var(--col-sys-dark); }
+  to { background-color: var(--col-sys-light); }
+}
+@-webkit-keyframes C027-icon-bg-hover {
+  from { background-color: var(--col-sys-light); }
+  to { background-color: var(--col-sys-dark); }
+}
+@-webkit-keyframes C027-icon-bg-unhover {
+  from { background-color: var(--col-sys-dark); }
+  to { background-color: var(--col-sys-light); }
+}

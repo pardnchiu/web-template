@@ -1,0 +1,60 @@
+div[sn=C024]{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: initial;
+  background-color: #fff;
+  /* module tag */
+  &::after {
+    content: "C024";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    background-color: var(--col-sys-dark);
+    color: #fff;
+    opacity: var(--module-hint);
+  }
+  /* body */
+  > section {
+    position: relative;
+    display: block;
+    left: 50%;
+    width: 100%;
+    max-width: var(--max-width);
+    height: initial;
+    transform: translateX(-50%);
+    /* 
+     * customized 
+     */
+    padding: 5rem 0 5rem;
+    text-align: center;
+    > h6 {
+      position: relative;
+      margin-top: 0.5rem;
+      padding: 0 1rem;
+      font-size: 3rem;
+      font-weight: 600;
+      text-align: center;
+      color: #fff;
+      @media screen and (max-width: 639px) {
+        font-size: 1.25rem;
+      }
+    }
+    > p {
+      position: relative;
+      padding: 0 1rem;
+      line-height: 2rem;
+      font-size: 1rem;
+      font-weight: 500;
+      text-align: center;
+      color: #fff;
+    }
+    > a {
+      position: relative;
+      display: inline-block;
+      margin-top: 3rem;
+    }
+  }
+}

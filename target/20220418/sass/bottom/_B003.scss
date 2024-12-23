@@ -1,0 +1,248 @@
+div[sn=B003] {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: initial;
+  &::after {
+    content: "B003";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    background-color: var(--col-sys-dark);
+    color: #fff;
+    opacity: var(--module-hint);
+  }
+  // 頂部
+  > nav {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5rem 0;
+    width: 100%;
+    max-width: 1140px;
+    height: initial;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    > h6 {
+      position: relative;
+      font-size: 1.75rem;
+      color: #fff;
+    }
+    > ul {
+      position: relative;
+      display: block;
+      margin-top: 1rem;
+      width: 100%;
+      font-size: 0;
+      > li {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 1rem;
+        margin-right: 0.75rem;
+        width: 2rem;
+        height: 2rem;
+        background-color: rgba(255, 255, 255, 0.25);
+        border-radius: 4px;
+        > a {
+          position: relative;
+          display: block;
+          width: 100%;
+          height: 100%;
+          > i {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+            line-height: 2rem;
+            font-size: 1rem;
+            color: #fff;
+          }
+        }
+      }
+    }
+    > p {
+      position: relative;
+      margin-top: 2rem;
+      font-size: 0.875rem;
+      color: #fff;
+    }
+  }
+  // 置中
+  > div {
+    position: relative;
+    display: block;
+    left: 50%;
+    width: 100%;
+    max-width: var(--max-width);
+    height: initial;
+    transform: translateX(-50%);
+    /* 
+     * customized 
+     */
+    padding: 5rem 0;
+    /* block */
+    > ul {
+      position: relative;
+      padding-bottom: 1rem;
+      width: 100%;
+      height: initial;
+      font-size: 0;
+      text-align: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+      &[df=x2] {
+        > li {
+          width: calc(100% / 2 - 2rem);
+        }
+      }
+      &[df=x3] {
+        > li {
+          width: calc(100% / 3 - 2rem);
+        }
+      }
+      &[df=x4] {
+        > li {
+          width: calc(100% / 4 - 2rem);
+          @media screen and (max-width: 639px) {
+            width: calc(100% / 2 - 2rem);
+          }
+          @media screen and (max-width: 413px) {
+            width: calc(100% - 2rem);
+          }
+        }
+      }
+      > li {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin: 1rem;
+        border-radius: 4px;
+        text-align: left;
+      }
+    }
+    > nav {
+      position: relative;
+      padding: 2rem 0;
+      width: 100%;
+      height: initial;
+      font-size: 0;
+      text-align: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+      > a {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0.5rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        > img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      > ul {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        border-radius: 2px;
+        list-style: none;
+        > li {
+          position: relative;
+          display: inline-block;
+          vertical-align: top;
+          margin: 0.5rem;
+          > a {
+            line-height: 1.5rem;
+            font-size: 1rem;
+            color: #fff;
+          }
+        }
+      }
+    }
+    > footer {
+      position: relative;
+      padding-bottom: 3rem;
+      width: 100%;
+      height: initial;
+      font-size: 0;
+      > p {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        top: 3rem;
+        width: 50%;
+        line-height: 1.375rem;
+        max-height: 2.75rem;
+        font-size: 0.875rem;
+        color: #fff;
+        &.l {
+          padding-left: 1rem;
+          text-align: left;
+        }
+        &.r {
+          padding-right: 1rem;
+          text-align: right;
+        }
+        @media screen and (max-width: 639px) {
+          width: calc(100% - 32px);
+          &.l, &.r {
+            padding: 0 16px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  // 底部
+  > footer {
+    position: relative;
+    width: 100%;
+    height: initial;
+    background-color: rgb(55, 60, 70);
+    // 置中
+    > div {
+      position: relative;
+      display: block;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 1rem 0;
+      width: 100%;
+      max-width: 1140px;
+      height: initial;
+      font-size: 0;
+      > p {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+        line-height: 1.375rem;
+        max-height: 2.75rem;
+        font-size: 0.875rem;
+        color: #fff;
+        &.l {
+          padding-left: 1rem;
+          text-align: left;
+        }
+        &.r {
+          padding-right: 1rem;
+          text-align: right;
+        }
+        @media screen and (max-width: 639px) {
+          width: calc(100% - 2rem);
+          &.l, &.r {
+            padding: 0 16px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

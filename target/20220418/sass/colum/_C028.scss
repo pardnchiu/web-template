@@ -1,0 +1,104 @@
+div[sn=C028] {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: initial;
+  background-color: #fff;
+  /*
+   * module tag
+   */
+  &::after {
+    content: "C028";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    background-color: var(--col-sys-dark);
+    color: #fff;
+    opacity: var(--module-hint);
+  }
+   /*
+    *
+    */
+  > section {
+    position: relative;
+    display: block;
+    left: 50%;
+    width: 100%;
+    max-width: var(--max-width);
+    height: initial;
+    transform: translateX(-50%);
+    /* 
+     * customized 
+     */
+    padding: 5rem 0;  
+    font-size: 0;
+    text-align: center;
+    > h6 {
+      position: relative;
+      padding: 0 1rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      @media screen and (max-width: 639px) {
+        font-size: 1.25rem;
+      }
+    }
+    > p {
+      position: relative;
+      padding: 0 1rem;
+      line-height: 2rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+    }   
+    > div {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      margin: 4rem 1rem 0;
+      width: calc(50% - 2rem);
+      font-size: 0;
+      @media screen and (max-width: 799px) {
+        width: 480px;
+      }
+      @media screen and (max-width: 523px) {
+        width: calc(100% - 32px);
+      }
+      > h6 {
+        position: relative;
+        display: block;
+        width: 100%;
+        font-size: 1.5rem;
+        text-align: left;
+      }
+      > p {
+        position: relative;
+        display: block;
+        margin-top: 1rem;
+        width: 100%;
+        line-height: 1.5rem;
+        font-size: 1rem;
+        text-align: left;
+      }
+      > div {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0.5rem;
+        padding-top: calc((100% / 3 - 1rem) * 0.75);
+        width: calc(100% / 3 - 1rem);
+        > img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+}

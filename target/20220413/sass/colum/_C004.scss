@@ -1,0 +1,160 @@
+div[sn=C004] {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: initial;
+  background-color: #fff;
+  /* module tag */
+  &::after {
+    content: "C004";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    background-color: var(--col-sys-dark);
+    color: #fff;
+    opacity: var(--module-hint);
+  }
+  /* body */
+  > section {
+    position: relative;
+    display: block;
+    left: 50%;
+    width: 100%;
+    max-width: var(--max-width);
+    height: initial;
+    transform: translateX(-50%);
+    /* 
+     * customized 
+     */
+    padding: 3rem 0;
+    > ul {
+      position: relative;
+      display: block;
+      font-size: 0;
+      /* 
+       * customized 
+       */
+      text-align: center;
+      /* x2 */
+      &[df=x2] {
+        text-align: left;
+        > li {
+          width: calc(100% / 2 - 2rem);
+          text-align: center;
+          @media screen and (max-width: 639px) {
+            width: calc(100% - 2rem);
+          }
+        }
+      }
+      /* x3 */
+      &[df=x3] {
+        @media screen and (max-width: 767px) {
+          text-align: left;
+        }
+        > li {
+          width: calc(100% / 3 - 2rem);
+          @media screen and (max-width: 767px) {
+            width: calc(100% / 2 - 2rem);
+            text-align: center;
+          }
+          @media screen and (max-width: 479px) {
+            width: calc(100% - 2rem);
+          }
+        }
+      }
+      /* x4 */
+      &[df=x4] {
+        @media screen and (max-width: 959px) {
+          text-align: left;
+        }
+        > li {
+          width: calc(100% / 4 - 2rem);
+          @media screen and (max-width: 959px) {
+            width: calc(100% / 2 - 2rem);
+            text-align: center;
+          }
+          @media screen and (max-width: 413px) {
+            width: calc(100% - 2rem);
+          }
+        }
+      }
+      /* x5 */
+      &[df=x5] {
+        @media screen and (max-width: 639px) {
+          text-align: left;
+        }
+        > li {
+          width: calc(100% / 5 - 2rem);
+          @media screen and (max-width: 959px) {
+            width: calc(100% / 3 - 2rem);
+          }
+          @media screen and (max-width: 639px) {
+            width: calc(100% / 2 - 2rem);
+            text-align: center;
+          }
+          @media screen and (max-width: 413px) {
+            width: calc(100% - 2rem);
+          }
+        }
+      }
+      @media (hover: hover) and (pointer: fine) {
+        > li.unhover {
+          animation: unshadow 0.5s;
+          -webkit-animation: unshadow 0.5s;
+        }
+        > li:hover {
+          -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+          -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1), 0 0 24px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.1), 0 0 24px rgba(0, 0, 0, 0.1);
+          animation: shadow 0.5s;
+          -webkit-animation: shadow 0.5s; 
+        }
+      }
+      /* item */
+      > li {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin: 1rem;
+        border-radius: var(--default-radius);
+        > article {
+          position: relative;
+          display: block;
+          padding: 1rem 0;
+          > a {
+            position: relative;
+            display: block;
+            > img {
+              position: relative;
+              width: 3rem;
+              height: 3rem;
+            }
+            > i {
+              position: relative;
+              width: 3rem;
+              height: 3rem;
+              font-size: 1.75rem;
+            }
+            > h6 {
+              position: relative;
+              margin-top: 0.5rem;
+              padding: 0 1rem;
+              font-size: 1.25rem;
+              font-weight: 500;
+            }
+            > p {
+              position: relative;
+              margin-top: 1rem;
+              padding: 0 1rem;
+              line-height: 1.5rem;
+              font-size: 1rem;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+}

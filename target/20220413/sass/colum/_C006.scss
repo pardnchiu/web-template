@@ -1,0 +1,176 @@
+div[sn=C006] {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: initial;
+  background-color: #fff;
+  /* module tag */
+  &::after {
+    content: "C006";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    background-color: var(--col-sys-dark);
+    color: #fff;
+    opacity: var(--module-hint);
+  }
+  /* body */
+  > section {
+    position: relative;
+    display: block;
+    left: 50%;
+    width: 100%;
+    max-width: var(--max-width);
+    height: initial;
+    transform: translateX(-50%);
+    /* 
+     * customized 
+     */
+    padding: 5rem 0 4rem;
+    > h6 {
+      position: relative;
+      padding: 0 1rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-align: center;
+    }
+    > hr {
+      position: relative;
+      margin-top: 0.5rem;
+      margin-left: calc(50% - 30px);
+      width: 60px;
+      border: 2px solid var(--col-sys);
+    }
+    /* child-body */
+    > ul {
+      position: relative;
+      display: block;
+      font-size: 0;
+      /* 
+        * customized 
+        */
+      margin-top: 5rem;
+      /* x2 */
+      &[df=x2] {
+        text-align: left;
+        > li {
+          width: calc(100% / 2 - 2rem - 2px);
+          text-align: center;
+          @media screen and (max-width: 639px) {
+            width: calc(100% - 2rem - 2px);
+          }
+        }
+      }
+      /* x3 */
+      &[df=x3] {
+        @media screen and (max-width: 767px) {
+          text-align: left;
+        }
+        > li {
+          width: calc(100% / 3 - 2rem - 2px);
+          @media screen and (max-width: 767px) {
+            width: calc(100% / 2 - 2rem - 2px);
+            text-align: center;
+          }
+          @media screen and (max-width: 639px) {
+            width: calc(100% - 2rem - 2px);
+          }
+        }
+      }
+      /* x4 */
+      &[df=x4] {
+        @media screen and (max-width: 959px) {
+          text-align: left;
+        }
+        > li {
+          width: calc(100% / 4 - 2rem - 2px);
+          @media screen and (max-width: 959px) {
+            width: calc(100% / 2 - 2rem - 2px);
+            text-align: center;
+          }
+          @media screen and (max-width: 639px) {
+            width: calc(100% - 2rem - 2px);
+          }
+        }
+      }
+      /* item */
+      > li {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin: 1rem;
+        height: initial;
+        border: #ddd 1px solid;
+        border-radius: 0.25rem;
+        &.fc {
+          -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+          -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+          @media (hover: hover) and (pointer: fine) {
+            &.unhover {
+              animation: none;
+              -webkit-animation: none;
+            }
+            &:hover {
+              animation: none;
+              -webkit-animation: none;
+            }
+          }
+        }
+        > p {
+          position: relative;
+          font-size: 1.25rem;
+          color: #fff;
+          text-align: center;
+          > strong {
+            padding-top: 1rem;
+            font-size: 3rem;
+            font-weight: 900;
+          }
+          > em {
+            font-size: 1rem;
+            font-style: normal;
+          }
+          &:nth-child(1) {
+            padding: 1.5rem 0;
+          }
+          &:nth-child(2) {
+            padding: 1.5rem 0;
+            background-color: #505050;
+          }
+        }
+        > ul {
+          position: relative;
+          padding: 1rem 0;
+          > li {
+            position: relative;
+            line-height: 2.75rem;
+            font-size: 1rem;
+            font-weight: 500;
+            text-align: center;
+            list-style: none;
+          }
+        }
+        > div {
+          position: relative;
+          padding: 1.5rem 0;
+          width: 100%;
+          text-align: center;
+          border-top: #ddd 1px solid;
+          > p {
+            position: relative;
+            font-size: 0.875rem;
+            font-weight: 500;
+          } 
+          > a {
+            position: relative;
+            display: inline-block;
+            margin-top: 0.75rem;
+          }
+        }
+      }
+    }
+  }
+}
