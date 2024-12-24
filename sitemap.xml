@@ -223,4 +223,10 @@
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://pardn.io/web-template/target/20241220</loc>
+        <lastmod>2024-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>
