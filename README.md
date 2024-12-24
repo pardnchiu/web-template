@@ -14,6 +14,9 @@
 因此決定不會再針對現有的項目進行修改<br>
 並且 2024/10 開始，授權從 GPL3.0 改爲 MIT
 
+- ### Smart Clock (Voice Control)
+    製作日期: 2024/12/20
+    [![](./image/20241220.jpg)](https://pardn.io/web-template/target/20241220)
 - ### Zeczec
     製作日期: 2024/06/25
     [![](./image/20240625.jpg)](https://pardn.io/web-template/target/20240625)

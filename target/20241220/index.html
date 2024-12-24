@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="robots" content="index, follow">
+
+        <!-- SEO 標題與描述 -->
+        <title>智能時鐘 - 邱敬幃 Pardn Chiu</title>
+        <meta name="title" content="智能時鐘 - 邱敬幃 Pardn Chiu">
+        <meta name="description" content="智能時鐘 - 邱敬幃 Pardn Chiu">
+        <meta name="keywords" content="Website範例, 邱敬幃, Pardn Chiu">
+        <meta name="author" content="邱敬幃 Pardn Chiu">
+        <link rel="author" href="https://pardn.io">
+        <link rel="canonical" href="https://pardn.io/web-template/target/20241220">
+
+        <!-- Favicon -->
+        <link rel="icon" href="https://pardn.io/image/head.png" type="image/x-icon">
+
+        <!-- Open Graph -->
+        <meta property="og:title" content="智能時鐘 - 邱敬幃 Pardn Chiu">
+        <meta property="og:description" content="智能時鐘 - 邱敬幃 Pardn Chiu">
+        <meta property="og:image" content="https://pardn.io/web-template/image/20241220.jpg">
+        <meta property="og:url" content="https://pardn.io/web-template/target/20241220">
+        <meta property="og:site_name" content="Pardn Chiu">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="zh_TW">
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="twitter:title" content="智能時鐘 - 邱敬幃 Pardn Chiu">
+        <meta property="og:description" content="智能時鐘 - 邱敬幃 Pardn Chiu">
+        <meta property="twitter:image" content="https://pardn.io/web-template/image/20241220.jpg">
+        <meta property="twitter:url" content="https://pardn.io/web-template/target/20241220">
+
+        <!-- Google Verification -->
+        <meta name="google-site-verification" content="YQQ2f6AchR8dcb55Az2BYd_mw4TrP0J1RApD-v2v65Y">
+
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-L5VYEZPVXX"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-L5VYEZPVXX');
+        </script>
+
+        <!-- Preload and Preconnect -->
+        <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" as="style">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/@pardnchiu/quickui@0.6.2/dist/QuickUI.js" as="script">
+        <script src="https://cdn.jsdelivr.net/npm/@pardnchiu/quickui@0.6.2/dist/QuickUI.js" copyright="Pardn Ltd"></script>
+
+        <!-- Local Resources -->
+        <link rel="stylesheet" href="./css/index.css">
+
+        <!-- JSON-LD Schema -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "datePublished": "2024-12-20",
+            "dateModified": "2024-12-22",
+            "inLanguage": "zh-TW",
+            "name": {
+                "@language": "zh-TW",
+                "@value": "智能時鐘 智能時鐘 - 邱敬幃 Pardn Chiu"
+            },
+            "alternateName": {
+                "@language": "en",
+                "@value": "Smart Clock - 邱敬幃 Pardn Chiu"
+            },
+            "description": {
+                "@language": "zh-TW",
+                "@value": "智能時鐘 - 邱敬幃 Pardn Chiu"
+            },
+            "alternateDescription": {
+                "@language": "en",
+                "@value": "Smart Clock - 邱敬幃 Pardn Chiu"
+            },
+            "url": "https://pardn.io/web-template/target/20241220",
+            "creator": {
+                "@type": "Person",
+                "name": [
+                    {
+                        "@language": "zh-TW",
+                        "@value": "邱敬幃"
+                    },
+                    {
+                        "@language": "en",
+                        "@value": "Pardn Chiu"
+                    }
+                ],
+                "url": "https://pardn.io/",
+                "sameAs": [
+                    "https://github.com/pardnchiu"
+                ],
+                "email": "dev@pardn.io"
+            },
+            "image": "https://pardn.io/web-template/image/20241220.jpg"
+        }
+        </script>
+    </head>
+
+    <body id="body">
+        <section id="timer" class="timer">
+            <div class="number" data-value="-">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="number" data-value="-">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="colon"></div>
+            <div class="number" data-value="-">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="number" data-value="-">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </section>
+        <section class="bottom">
+            <p>支持語音指令的智能時鐘<br>顯示當前日期、顯示當前年份、顯示當前時間、顯示當前秒數、計時xx分鐘、計時xx秒</p>
+        </section>
+    </body>
+    <script>
+        document.addEventListener("DOMContentLoaded", async _ => {
+            page = new QUI({
+                id: "body",
+                when: {
+                    rendered: _ => {
+                        if (!('webkitSpeechRecognition' in window)) {
+                            alert('此瀏覽器不支援語音識別功能');
+                        }
+                        else {
+                            const recognition = new webkitSpeechRecognition();
+
+                            recognition.lang = 'zh-TW';
+                            recognition.continuous = true;
+                            recognition.interimResults = true;
+
+                            let debounceTimer = null;
+
+                            recognition.onresult = (event) => {
+                                let text = '';
+                                for (let i = event.resultIndex; i < event.results.length; i++) {
+                                    text += event.results[i][0].transcript;
+                                }
+                                console.log('偵測到語音：', text);
+
+                                clearTimeout(debounceTimer);
+                                clearInterval(timer);
+                                time = null;
+
+                                debounceTimer = setTimeout(() => {
+                                    if (text.includes('現在時間') || text.includes('當前時間')) {
+                                        setTime();
+                                        timer = setInterval(() => {
+                                            setTime();
+                                        }, 1000);
+                                    }
+                                    if (text.includes('現在年份') || text.includes('當前年份')) {
+                                        setYear();
+                                        timer = setInterval(() => {
+                                            setYear();
+                                        }, 1000);
+                                    }
+                                    else if (text.includes('現在日期') || text.includes('當前日期')) {
+                                        setDate();
+                                        timer = setInterval(() => {
+                                            setDate();
+                                        }, 1000);
+                                    }
+                                    else if (text.includes('現在秒數') || text.includes('當前秒數')) {
+                                        setSec();
+                                        timer = setInterval(() => {
+                                            setSec();
+                                        }, 1000);
+                                    }
+                                    else if (text.includes('計時') && text.includes('分鐘')) {
+                                        const regex = text.match(/計時(\d+)分鐘/);
+                                        const sec = parseInt(regex[1] || 0);
+                                        time = sec * 60;
+
+                                        setCountDown();
+                                        timer = setInterval(() => {
+                                            setCountDown();
+                                        }, 1000);
+                                    }
+                                    else if (text.includes('計時') && text.includes('秒')) {
+                                        const regex = text.match(/計時(\d+)秒/);
+                                        const sec = parseInt(regex[1] || 0);
+                                        time = sec;
+
+                                        setCountDown();
+                                        timer = setInterval(() => {
+                                            setCountDown();
+                                        }, 1000);
+                                    }
+                                    else if (text.includes('停止')) {
+                                        setStop();
+                                    }
+                                    else if (text.length >= 2) {
+                                        setFace();
+                                    }
+                                }, 500);
+                            };
+
+                            recognition.onerror = (event) => {
+                                setFace();
+                            };
+
+                            recognition.onend = () => {
+                                setFace();
+                            };
+
+                            recognition.start();
+                        }
+
+                    }
+                }
+            });
+
+            const dom = document.getElementById("timer");
+            const number_0 = dom.children[0];
+            const number_1 = dom.children[1];
+            const number_2 = dom.children[3];
+            const number_3 = dom.children[4];
+            const colon = dom.children[2];
+
+            let timer, time;
+
+            function getNow() {
+                const domTime = document.getElementById("time-time");
+                const date = new Date();
+                const h = ("0" + date.getHours()).slice(-2);
+                const m = ("0" + date.getMinutes()).slice(-2);
+                const s = ("0" + date.getSeconds()).slice(-2);
+                const M = ("0" + (date.getMonth() + 1)).slice(-2);
+                const D = ("0" + date.getDate()).slice(-2);
+                const Y = String(date.getFullYear());
+
+                return {
+                    Y,
+                    M,
+                    D,
+                    h,
+                    m,
+                    s
+                }
+            }
+
+            function setYear() {
+                let now = getNow();
+
+                number_0.dataset.value = now.Y[0];
+                number_1.dataset.value = now.Y[1];
+                number_2.dataset.value = now.Y[2];
+                number_3.dataset.value = now.Y[3];
+                colon.dataset.value = "none"
+            };
+
+            function setDate() {
+                let now = getNow();
+
+                number_0.dataset.value = now.M[0];
+                number_1.dataset.value = now.M[1];
+                number_2.dataset.value = now.D[0];
+                number_3.dataset.value = now.D[1];
+                colon.dataset.value = "mouth"
+            };
+
+            function setTime() {
+                let now = getNow();
+
+                number_0.dataset.value = now.h[0];
+                number_1.dataset.value = now.h[1];
+                number_2.dataset.value = now.m[0];
+                number_3.dataset.value = now.m[1];
+                colon.dataset.value = ""
+            };
+
+            function setSec() {
+                let now = getNow();
+
+                number_0.dataset.value = now.m[0];
+                number_1.dataset.value = now.m[1];
+                number_2.dataset.value = now.s[0];
+                number_3.dataset.value = now.s[1];
+                colon.dataset.value = ""
+            };
+
+            function setStop() {
+                number_0.dataset.value = number_1.dataset.value = number_2.dataset.value = number_3.dataset.value = "-";
+                colon.dataset.value = "";
+            };
+
+            function setFace() {
+                number_0.dataset.value = number_3.dataset.value = "";
+                number_1.dataset.value = number_2.dataset.value = "eye"
+                colon.dataset.value = "mouth"
+            };
+
+            function setCountDown() {
+                if (time < 0) {
+                    clearInterval(timer);
+                    time = null
+                    console.log("Countdown finished!");
+                }
+                else if (time >= 60) {
+                    let m = ("0" + Math.floor(time / 60)).slice(-2);
+                    let s = ("0" + time % 60).slice(-2);
+
+                    number_0.dataset.value = m[0];
+                    number_1.dataset.value = m[1];
+                    number_2.dataset.value = s[0];
+                    number_3.dataset.value = s[1];
+
+                    time--;
+                }
+                else {
+                    let s = ("0" + time).slice(-2);
+
+                    number_0.dataset.value = number_1.dataset.value = "0";
+                    number_2.dataset.value = s[0];
+                    number_3.dataset.value = s[1];
+
+                    time--;
+                };
+            };
+        });
+    </script>
+
+</html>
